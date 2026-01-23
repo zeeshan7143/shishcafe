@@ -1,0 +1,32 @@
+# WordPress core files
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+readme.html
+license.txt
+
+# wp-config.php should be kept if customized, but typically ignored for security
+# wp-config.php
+
+# Themes and plugins (uncomment if you want to ignore defaults)
+# wp-content/themes/twenty*/
+# wp-content/plugins/
+
+# Uploads (uncomment if you don't want to version control uploads)
+# wp-content/uploads/
+
+# Other common ignores
+*.log
+wp-content/debug.log
+wp-content/uploads/
+.htaccess
+wp-content/cache/
+wp-content/upgrade/
+
+# Node modules if any
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
