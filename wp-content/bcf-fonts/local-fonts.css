@@ -1,0 +1,351 @@
+
+						@font-face {
+							font-family: 'akronim';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Akronim/akronim-400-normal0.woff2') format('woff2');
+							font-weight: 400;
+							font-style: normal0;
+						}
+						
+						@font-face {
+							font-family: 'akronim';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Akronim/akronim-400-normal1.woff2') format('woff2');
+							font-weight: 400;
+							font-style: normal1;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-300italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 300italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-400-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-400-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-400-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-400-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 400;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-500italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 500italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-600italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 600italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-700italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 700italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800-normal0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800-normal1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800-normal2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800-normal3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-800italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: 800italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-italic-italic0.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-italic-italic1.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-italic-italic2.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						
+						@font-face {
+							font-family: 'merriweather';
+							src: url('http://localhost/shish/wp-content/bcf-fonts/Merriweather Sans/merriweather-sans-italic-italic3.woff2') format('woff2');
+							font-weight: sans;
+							font-style: italic;
+						}
+						

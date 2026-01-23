@@ -1,0 +1,4 @@
+/* Yoo Theme */
+.tm-header-placeholder {
+	height: calc(1px*var(--uk-header-placeholder-cy));
+}

@@ -1,0 +1,8 @@
+/* Ultimate Carousel */
+.seraph-accel-js-lzl-ing .ult-carousel-wrapper {
+	visibility:initial!important;
+}
+
+.seraph-accel-js-lzl-ing .ult-carousel-wrapper .ult-item-wrap:not(:first-child) {
+	display:none;
+}

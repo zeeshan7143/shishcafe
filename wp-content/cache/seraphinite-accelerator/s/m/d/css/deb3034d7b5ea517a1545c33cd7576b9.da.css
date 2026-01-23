@@ -1,0 +1,13 @@
+/* Photonic Photo Gallery */
+.photonic-thumb,
+.photonic-thumb a img {
+	display: unset !important;
+}
+
+.photonic-loading {
+	display: none !important;
+}
+
+.photonic-stream * {
+	animation-name: none !important;
+}

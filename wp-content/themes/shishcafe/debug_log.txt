@@ -1,0 +1,7 @@
+Array
+(
+    [action] => load_more_products
+    [page] => 1
+    [categories] => 
+    [location] => rochdale
+)

@@ -1,0 +1,8 @@
+/* Airtech Plumber Slider */
+.seraph-accel-js-lzl-ing .bdt-prime-slider-previous, .seraph-accel-js-lzl-ing .bdt-prime-slider-next {
+	display: none !important;
+}
+
+.seraph-accel-js-lzl-ing .bdt-post-slider-item:first-child {
+	display: unset !important;
+}

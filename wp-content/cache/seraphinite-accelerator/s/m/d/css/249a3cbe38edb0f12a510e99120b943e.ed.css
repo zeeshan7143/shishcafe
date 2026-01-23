@@ -1,0 +1,1 @@
+.owl-carousel:not(.wd-owl):not(.owl-loaded){display:block!important;visibility:visible!important}.owl-carousel:not(.wd-owl):not(.owl-loaded)>*:not(:first-child){display:none}.owl-carousel:not(.wd-owl) .container.full-screen{height:100vh}

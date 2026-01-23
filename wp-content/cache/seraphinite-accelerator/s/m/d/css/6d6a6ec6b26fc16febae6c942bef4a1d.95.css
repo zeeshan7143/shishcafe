@@ -1,0 +1,1 @@
+[class*=wp-block-ultimate-post-post-slider] .ultp-block-items-wrap:not(.slick-initialized)>.ultp-block-item:not(:first-child){display:none!important}

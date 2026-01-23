@@ -1,0 +1,1 @@
+[data-packery-options].row.row-grid>.col:not([style*=position]),[data-packery-options].row.row-masonry>.col:not([style*=position]){float:unset;display:inline-block!important;vertical-align:top}
