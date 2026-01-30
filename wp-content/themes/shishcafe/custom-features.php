@@ -3,9 +3,6 @@
 add_filter('woocommerce_add_cart_item_data', function($cart_item_data, $product_id, $variation_id) {
     // Example: If you have a custom field or taxonomy "location"
     $location = get_post_meta($product_id, 'location', true); // from ACF or custom field
-    // OR if you want product_tag instead of meta:
-    // $terms = wp_get_post_terms($product_id, 'product_tag', ['fields' => 'names']);
-    // $location = !empty($terms) ? $terms[0] : '';
 
     if (!empty($location)) {
         $cart_item_data['product_location'] = $location;

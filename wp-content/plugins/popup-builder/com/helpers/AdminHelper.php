@@ -1,5 +1,9 @@
 <?php
 namespace sgpb;
+
+defined( 'ABSPATH' ) || exit;
+
+
 use \WP_Query;
 use \DateTime;
 use \DateTimeZone;
@@ -907,10 +911,28 @@ class AdminHelper
 		if (isset($params['popup'])) {
 			$popup = $params['popup'];
 		}
+		// Check if this is an old MD5 token (32 characters, hexadecimal) first
+		$receivedToken = isset($params['token']) ? $params['token'] : '';
+		$isOldMd5Token = (strlen($receivedToken) == 32 && ctype_xdigit($receivedToken));
+		
+		if ($isOldMd5Token) {
+			// Old unsubscribe link - show form to request new secure link
+			self::displayUnsubscribeLinkRequestForm($popup);
+			wp_die();
+		}
+		
+		// If no email provided, show form
+		if (empty($email)) {
+			self::displayUnsubscribeLinkRequestForm($popup);
+			wp_die();
+		}
+		
 		$subscribersTableName = $wpdb->prefix.SGPB_SUBSCRIBERS_TABLE_NAME;
 		$res = $wpdb->get_row( $wpdb->prepare("SELECT id FROM $subscribersTableName WHERE email = %s && subscriptionType = %s", $email, $popup), ARRAY_A);
 		if (!isset($res['id'])) {
-			$noSubscriber = false;
+			// Subscriber not found - show form to request new link
+			self::displayUnsubscribeLinkRequestForm($popup);
+			wp_die();
 		}
 		$params['subscriberId'] = $res['id'];
 
@@ -918,10 +940,9 @@ class AdminHelper
 		if ($subscriber && $noSubscriber) {
 			self::deleteSubscriber($params);
 		}
-		else if (!$noSubscriber) {						
-			printf( '<span>%s</span>' , 
-				wp_kses_post(__('Oops, something went wrong, please try again or contact the administrator to check more info.', 'popup-builder') )				
-			);		
+		else {
+			// Token is invalid or expired - show form to request new link
+			self::displayUnsubscribeLinkRequestForm($popup);
 			wp_die();
 		}
 	}
@@ -932,12 +953,29 @@ class AdminHelper
 			return false;
 		}
 
-		$receivedToken = $params['token'];
-		$realToken = md5($params['subscriberId'].$params['email']);
-		if ($receivedToken == $realToken) {
-			return true;
+		global $wpdb;
+		$subscribersTableName = $wpdb->prefix.SGPB_SUBSCRIBERS_TABLE_NAME;
+		
+		// Get the stored token from database
+		$subscriber = $wpdb->get_row( $wpdb->prepare( "SELECT unsubscribe_token FROM $subscribersTableName WHERE id = %d", $params['subscriberId'] ), ARRAY_A );
+		
+		if (empty($subscriber)) {
+			return false;
 		}
-
+		
+		$receivedToken = isset($params['token']) ? $params['token'] : '';
+		$storedToken = isset($subscriber['unsubscribe_token']) ? $subscriber['unsubscribe_token'] : '';
+		
+		// SECURITY: Old MD5 tokens are no longer accepted
+		// If no secure token is stored, the subscriber must request a new unsubscribe link
+		if (empty($storedToken)) {
+			// Old subscribers without secure tokens cannot use old MD5 links
+			// They must contact the administrator or request a new unsubscribe link
+			return false;
+		}
+		
+		// Use secure comparison to prevent timing attacks
+		return hash_equals($storedToken, $receivedToken);
 	}
 
 	public static function deleteSubscriber($params = array())
@@ -988,6 +1026,135 @@ class AdminHelper
 		global $wpdb;
 		$subscribersTableName = $wpdb->prefix.SGPB_SUBSCRIBERS_TABLE_NAME;
 		$wpdb->query( "ALTER TABLE $subscribersTableName ADD COLUMN unsubscribed INT NOT NULL DEFAULT 0 " );
+	}
+
+	/**
+	 * Generate a cryptographically secure random token for unsubscribe links
+	 * 
+	 * @return string A secure random token
+	 */
+	public static function generateUnsubscribeToken()
+	{
+		// Use wp_generate_password with 32 characters for a secure random token
+		// This uses cryptographically secure random number generator
+		return wp_generate_password(32, false);
+	}
+
+	/**
+	 * Add unsubscribe_token column to subscribers table if it doesn't exist
+	 * This is a migration function to add the secure token column
+	 */
+	public static function addUnsubscribeTokenColumn()
+	{
+		global $wpdb;
+		$subscribersTableName = $wpdb->prefix.SGPB_SUBSCRIBERS_TABLE_NAME;
+		
+		// Check if column already exists
+		$column_exists = $wpdb->get_results( $wpdb->prepare( "SHOW COLUMNS FROM `$subscribersTableName` LIKE %s", 'unsubscribe_token' ) );
+		
+		if (empty($column_exists)) {
+			$wpdb->query( "ALTER TABLE $subscribersTableName ADD COLUMN unsubscribe_token VARCHAR(255) NULL DEFAULT NULL" );
+			
+			// Generate tokens for existing subscribers that don't have one
+			// This ensures backward compatibility
+			$subscribers_without_token = $wpdb->get_results( "SELECT id, email FROM $subscribersTableName WHERE unsubscribe_token IS NULL OR unsubscribe_token = ''", ARRAY_A );
+			
+			foreach ($subscribers_without_token as $subscriber) {
+				$token = self::generateUnsubscribeToken();
+				$wpdb->query( $wpdb->prepare( "UPDATE $subscribersTableName SET unsubscribe_token = %s WHERE id = %d", $token, $subscriber['id'] ) );
+			}
+		}
+	}
+
+	/**
+	 * Display form to request a new unsubscribe link when old link is expired
+	 * 
+	 * @param string $popup Popup ID
+	 */
+	public static function displayUnsubscribeLinkRequestForm($popup = '')
+	{
+		$homeUrl = get_home_url();
+		$actionUrl = admin_url('admin-post.php');
+		
+		// Check if this is a redirect from form submission
+		$status = isset($_GET['sgpb_unsubscribe_status']) ? sanitize_text_field(wp_unslash($_GET['sgpb_unsubscribe_status'])) : '';
+		$emailValue = isset($_GET['email']) ? sanitize_email(wp_unslash($_GET['email'])) : '';
+		
+		// Include the view template
+		$viewPath = SG_POPUP_VIEWS_PATH.'unsubscribeLinkRequestForm.php';
+		if (file_exists($viewPath)) {
+			include $viewPath;
+		} else {
+			// Fallback if view file doesn't exist
+			printf( '<span>%s</span>' , 
+				wp_kses_post(__('This unsubscribe link is no longer valid. Please contact the site administrator to unsubscribe from the mailing list.', 'popup-builder') )				
+			);
+		}
+	}
+
+	/**
+	 * Send a new secure unsubscribe link to the subscriber
+	 * 
+	 * @param string $email Subscriber email
+	 * @param string $popup Popup ID
+	 * @return bool True if email sent successfully, false otherwise
+	 */
+	public static function sendNewUnsubscribeLink($email, $popup = '')
+	{
+		global $wpdb;
+		$subscribersTableName = $wpdb->prefix.SGPB_SUBSCRIBERS_TABLE_NAME;
+		
+		// Find subscriber by email and popup
+		$subscriber = $wpdb->get_row( $wpdb->prepare(
+			"SELECT id, firstName, lastName FROM $subscribersTableName WHERE email = %s AND subscriptionType = %s AND unsubscribed = 0",
+			$email,
+			$popup
+		), ARRAY_A);
+		
+		if (empty($subscriber)) {
+			return false;
+		}
+		
+		// Generate or update secure token
+		$newToken = self::generateUnsubscribeToken();
+		$wpdb->query( $wpdb->prepare(
+			"UPDATE $subscribersTableName SET unsubscribe_token = %s WHERE id = %d",
+			$newToken,
+			$subscriber['id']
+		));
+		
+		// Build unsubscribe URL
+		$homeUrl = get_home_url();
+		$unsubscribeUrl = $homeUrl;
+		$unsubscribeUrl .= '?sgpbUnsubscribe='.urlencode($newToken);
+		$unsubscribeUrl .= '&email='.urlencode($email);
+		$unsubscribeUrl .= '&popup='.$popup;
+		
+		// Get blog info for email
+		$blogName = wp_specialchars_decode(get_bloginfo('name'));
+		$adminEmail = get_bloginfo('admin_email');
+		
+		// Prepare email
+		/* translators: %s: Blog name */
+		$subject = sprintf(__('[%s] New Unsubscribe Link', 'popup-builder'), $blogName);
+		
+		$message = '<html><body>';
+		/* translators: %s: Subcriber first name */
+		$message .= '<p>'.sprintf(__('Hello %s,', 'popup-builder'), esc_html($subscriber['firstName'] ? $subscriber['firstName'] : '')).'</p>';
+		$message .= '<p>'.esc_html__('You requested a new unsubscribe link. Click the link below to unsubscribe from our mailing list:', 'popup-builder').'</p>';
+		$message .= '<p><a href="'.esc_url($unsubscribeUrl).'" style="background: #2271b1; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">'.esc_html__('Unsubscribe', 'popup-builder').'</a></p>';
+		$message .= '<p>'.esc_html__('Or copy and paste this link into your browser:', 'popup-builder').'<br>';
+		$message .= '<a href="'.esc_url($unsubscribeUrl).'">'.esc_url($unsubscribeUrl).'</a></p>';
+		$message .= '<p>'.esc_html__('If you did not request this link, please ignore this email.', 'popup-builder').'</p>';
+		$message .= '</body></html>';
+		
+		$headers = array(
+			'From: "'.$blogName.'" <'.$adminEmail.'>',
+			'MIME-Version: 1.0',
+			'Content-type: text/html; charset=UTF-8'
+		);
+		
+		return wp_mail($email, $subject, $message, $headers);
 	}
 
 	public static function isPluginActive($key)
@@ -1111,7 +1278,7 @@ class AdminHelper
 				<button class="press press-grey sgpb-button-1 sgpb-close-promo-notification" data-action="sg-already-did-review"><?php esc_html_e('I already did', 'popup-builder'); ?></button>
 				<button class="press press-lightblue sgpb-button-3 sgpb-close-promo-notification" data-action="sg-you-worth-it"><?php esc_html_e('You worth it!', 'popup-builder'); ?></button>
 				<button class="press press-grey sgpb-button-2 sgpb-close-promo-notification" data-action="sg-show-popup-period" data-message-type="<?php echo esc_attr($type); ?>"><?php esc_html_e('Maybe later', 'popup-builder'); ?></button></div>
-			<div> </div>
+			<div></div>
 		</div>
 		<?php
 		$popupContent = ob_get_clean();

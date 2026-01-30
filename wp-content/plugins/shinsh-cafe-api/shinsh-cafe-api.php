@@ -5,7 +5,6 @@
  * Description: Custom REST API endpoints for fetching and printing WooCommerce order data.
  * Version: 1.2
  * Author: Enigmatix Global
- * License: GPLv2 or later
  * Text Domain: shinsh-cafe-api
  */
 

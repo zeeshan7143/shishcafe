@@ -6,9 +6,9 @@ Plugin URI: https://popup-builder.com
 Donate link: https://popup-builder.com
 Tags: popup, pop up, wordpress popup, popup maker, popup builder
 Requires at least: 4.2
-Tested up to: 6.8.3
+Tested up to: 6.9
 Requires PHP: 5.3.3
-Stable tag: 4.4.2
+Stable tag: 4.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -145,6 +145,10 @@ Go to the Popup Builder settings and set your desired options.
 14. Registration popup
 
 == Changelog ==
+
+= Version 4.4.3
+* Security: Fixed a vulnerability related to predictable unsubscribe tokens.
+* Security: Improved unsubscribe token generation and validation.
 
 = Version 4.4.2
 * Security: avoid GET parameter serialization

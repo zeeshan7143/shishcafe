@@ -15214,15 +15214,23 @@ ControlMediaItemView = ControlBaseDataView.extend({
     elementor.config.user.dismissed_editor_notices.push(eventName);
   },
   onPromotionAction: function onPromotionAction(event) {
-    var _JSON$parse = JSON.parse(event.target.closest('button').dataset.settings),
-      _JSON$parse$action_ur = _JSON$parse.action_url,
-      actionURL = _JSON$parse$action_ur === void 0 ? null : _JSON$parse$action_ur;
+    var settings = {};
+    try {
+      settings = JSON.parse(event.target.closest('button').dataset.settings);
+    } catch (e) {
+      // Do nothing.
+    }
+    var _settings = settings,
+      _settings$action_url = _settings.action_url,
+      actionURL = _settings$action_url === void 0 ? null : _settings$action_url,
+      _settings$source = _settings.source,
+      source = _settings$source === void 0 ? 'io-editor-gallery-install' : _settings$source;
     if (actionURL) {
       window.open(actionURL, '_blank');
     }
     elementorCommon.ajax.addRequest('elementor_image_optimization_campaign', {
       data: {
-        source: 'io-editor-gallery-install'
+        source: source
       }
     });
     this.hidePromotion();
@@ -16082,13 +16090,21 @@ ControlMediaItemView = ControlMultipleBaseItemView.extend({
     this.dismissPromotion(this.getDismissPromotionEventName());
   },
   onPromotionAction: function onPromotionAction(event) {
-    var _JSON$parse = JSON.parse(event.target.closest('button').dataset.settings),
-      _JSON$parse$action_ur = _JSON$parse.action_url,
-      actionURL = _JSON$parse$action_ur === void 0 ? null : _JSON$parse$action_ur;
+    var settings = {};
+    try {
+      settings = JSON.parse(event.target.closest('button').dataset.settings);
+    } catch (e) {
+      // Do nothing.
+    }
+    var _settings = settings,
+      _settings$action_url = _settings.action_url,
+      actionURL = _settings$action_url === void 0 ? null : _settings$action_url,
+      _settings$source = _settings.source,
+      source = _settings$source === void 0 ? 'io-editor-image-install' : _settings$source;
     if (actionURL) {
       window.open(actionURL, '_blank');
     }
-    this.hidePromotion();
+    this.hidePromotion(null, source);
   },
   dismissPromotion: function dismissPromotion(eventName) {
     this.hidePromotion(eventName);
@@ -16102,6 +16118,7 @@ ControlMediaItemView = ControlMultipleBaseItemView.extend({
   },
   hidePromotion: function hidePromotion() {
     var eventName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'io-editor-image-install';
     var $promotions = this.ui.promotions;
     $promotions.hide();
     if (!eventName) {
@@ -16109,7 +16126,7 @@ ControlMediaItemView = ControlMultipleBaseItemView.extend({
     }
     elementorCommon.ajax.addRequest('elementor_image_optimization_campaign', {
       data: {
-        source: 'io-editor-image-install'
+        source: source
       }
     });
 
@@ -29421,7 +29438,7 @@ var EditorBase = exports["default"] = /*#__PURE__*/function (_Marionette$Applica
               return _context.abrupt("return");
             case 1:
               _context.next = 2;
-              return Promise.all(/*! import() */[__webpack_require__.e("app_modules_onboarding_assets_js_utils_modules_post-onboarding-tracker_js"), __webpack_require__.e("assets_dev_js_editor_utils_post-onboarding-tracking_js")]).then(__webpack_require__.bind(__webpack_require__, /*! ./utils/post-onboarding-tracking */ "../assets/dev/js/editor/utils/post-onboarding-tracking.js"));
+              return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_mixpanel-browser_dist_mixpanel_module_js"), __webpack_require__.e("app_modules_onboarding_assets_js_utils_modules_post-onboarding-tracker_js"), __webpack_require__.e("assets_dev_js_editor_utils_post-onboarding-tracking_js")]).then(__webpack_require__.bind(__webpack_require__, /*! ./utils/post-onboarding-tracking */ "../assets/dev/js/editor/utils/post-onboarding-tracking.js"));
             case 2:
               _yield$import = _context.sent;
               PostOnboardingTracking = _yield$import.default;
@@ -49283,8 +49300,10 @@ var TemplatesModule = exports["default"] = /*#__PURE__*/function (_elementorModu
       elementor.templates.getDefaultTemplateTypeData().then(function (templateTypesData) {
         var _elementor;
         jQuery.each((_elementor = elementor) === null || _elementor === void 0 || (_elementor = _elementor.config) === null || _elementor === void 0 || (_elementor = _elementor.library) === null || _elementor === void 0 ? void 0 : _elementor.doc_types, function (type, title) {
-          var safeData = jQuery.extend(true, {}, templateTypesData, elementor.templates.getDefaultTemplateTypeSafeData(title));
-          elementor.templates.registerTemplateType(type, safeData);
+          elementor.templates.getDefaultTemplateTypeSafeData(title).then(function (defaultData) {
+            var safeData = jQuery.extend(true, {}, templateTypesData, defaultData);
+            elementor.templates.registerTemplateType(type, safeData);
+          });
         });
       });
     }
@@ -63478,7 +63497,8 @@ module.exports = ReactDOM;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "app_modules_onboarding_assets_js_utils_modules_post-onboarding-tracker_js") return "b2e8e6071c9bc14c04e4.bundle.js";
+/******/ 			if (chunkId === "vendors-node_modules_mixpanel-browser_dist_mixpanel_module_js") return "e4d209bf3a704ff88e1a.bundle.js";
+/******/ 			if (chunkId === "app_modules_onboarding_assets_js_utils_modules_post-onboarding-tracker_js") return "b423d91809cf7e0cb8b0.bundle.js";
 /******/ 			if (chunkId === "assets_dev_js_editor_utils_post-onboarding-tracking_js") return "e883e6638ef93bfd3204.bundle.js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;

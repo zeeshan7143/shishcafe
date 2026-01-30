@@ -924,7 +924,7 @@ $className = 'TrustindexPlugin_' . $forcePlatform;
 if (!class_exists($className)) {
 return wp_kses_post($this->frontEndErrorForAdmins(ucfirst($forcePlatform) . ' plugin is not active or not found!'));
 }
-$chosedPlatform = new $className($forcePlatform, $filePath, "do-not-care-13.2.6", "do-not-care-Widgets for Google Reviews", "do-not-care-Google");
+$chosedPlatform = new $className($forcePlatform, $filePath, "do-not-care-13.2.7", "do-not-care-Widgets for Google Reviews", "do-not-care-Google");
 $chosedPlatform->setNotificationParam('not-using-no-widget', 'active', false);
 if (!$chosedPlatform->is_noreg_linked()) {
 /* translators: %s: Platform name */
@@ -6273,7 +6273,7 @@ $reviews = $wpdb->get_results($wpdb->prepare('SELECT *, rating AS original_ratin
 }
 if ($onlyRatings) {
 for ($i = 0; $i < count($reviews); $i++) {
-if (!trim($reviews[$i]->text)) {
+if (!$reviews[$i]->text || !trim($reviews[$i]->text)) {
 array_splice($reviews, $i, 1);
 $i--;
 }

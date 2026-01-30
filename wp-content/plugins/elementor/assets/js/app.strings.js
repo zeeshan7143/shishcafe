@@ -96,6 +96,14 @@ __( 'Popup Builder', 'elementor' );
 __( 'Custom Code & CSS', 'elementor' );
 __( 'Motion Effects & Animations', 'elementor' );
 __( 'Notes & Collaboration', 'elementor' );
+__( 'Theme Builder', 'elementor' );
+__( 'AI for code, images, & layouts', 'elementor' );
+__( 'Lead Collection', 'elementor' );
+__( 'Image optimization', 'elementor' );
+__( 'Custom Code & CSS', 'elementor' );
+__( 'Accessibility scans and fixes', 'elementor' );
+__( 'Email deliverability', 'elementor' );
+__( 'WooCommerce Builder', 'elementor' );
 __( 'Upload and Install Elementor Pro', 'elementor' );
 __( 'Uploading', 'elementor' );
 __( 'Import your Elementor Pro plugin file', 'elementor' );
@@ -135,12 +143,11 @@ __( 'You can switch your theme anytime', 'elementor' );
 __( 'You can switch your theme later on', 'elementor' );
 __( 'Continue with blank canvas', 'elementor' );
 __( 'Skip', 'elementor' );
+__( 'One', 'elementor' );
 __( 'Advanced', 'elementor' );
 __( 'Essential', 'elementor' );
 __( 'Upgrade Now', 'elementor' );
 __( 'Skip', 'elementor' );
-__( 'Elevate your website with additional Pro features.', 'elementor' );
-__( 'Which Elementor Pro features do you need to bring your creative vision to life?', 'elementor' );
 __( 'Skip setup', 'elementor' );
 __( 'To get the most out of Elementor, we\'ll help you take your', 'elementor' );
 __( 'first steps:', 'elementor' );
@@ -719,6 +726,19 @@ __( 'Upgrade now', 'elementor' );
 __( 'Cancel', 'elementor' );
 __( 'Export as .zip', 'elementor' );
 __( 'Try Again', 'elementor' );
+__( 'Version' ) } ${ cellLinkProps.text }` } <Icon className="eicon-editor-external-link" />
+		</InlineLink>
+	);
+
+	const getHeaders = () => {
+		if ( ! withHeader ) {
+			return [];
+		}
+
+		const headers = [ 'Plugin Name', 'Version' ];
+
+		if ( withStatus ) {
+			headers.splice( 1, 0, 'Status' );
 __( 'Previous', 'elementor' );
 __( 'Next', 'elementor' );
 __( 'Learn More', 'elementor' );
@@ -727,10 +747,10 @@ __( 'Parts of this kit overlap with your site’s templates, design and settings
 __( 'Note:', 'elementor' );
 __( "Your site's homepage will be determined by the kit. You can change this later.", 'elementor' );
 __( 'Select the items you want to keep and apply:', 'elementor' );
+__( 'Activating plugins:', 'elementor' );
 __( 'Importing your content, templates and site settings', 'elementor' );
 __( 'This allows Elementor to scan your SVGs for malicious content. Otherwise, you can skip any SVGs in this import.', 'elementor' );
 __( 'Nothing to worry about, just continue without importing SVGs or go back and start the import again.', 'elementor' );
-__( 'Activating plugins:', 'elementor' );
 __( 'Select which plugins to include', 'elementor' );
 __( 'All items are already selected by default. Uncheck the ones you don\'t want.', 'elementor' );
 __( ' Recommended:', 'elementor' );
@@ -780,19 +800,6 @@ __( 'You can find it in the My Website Templates tab.', 'elementor' );
 __( 'Once the download is complete, you can upload it to be used for other sites.', 'elementor' );
 __( 'Build sites faster with Website Templates.', 'elementor' );
 __( 'Is the automatic download not starting?', 'elementor' );
-__( 'Version' ) } ${ cellLinkProps.text }` } <Icon className="eicon-editor-external-link" />
-		</InlineLink>
-	);
-
-	const getHeaders = () => {
-		if ( ! withHeader ) {
-			return [];
-		}
-
-		const headers = [ 'Plugin Name', 'Version' ];
-
-		if ( withStatus ) {
-			headers.splice( 1, 0, 'Status' );
 __( 'Edit Template', 'elementor' );
 __( 'Imported', 'elementor' );
 __( 'Existing', 'elementor' );

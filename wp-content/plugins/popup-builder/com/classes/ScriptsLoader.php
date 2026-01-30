@@ -1,6 +1,8 @@
 <?php
-
 namespace sgpb;
+
+defined( 'ABSPATH' ) || exit;
+
 
 // load popups data's from popups object
 class ScriptsLoader
