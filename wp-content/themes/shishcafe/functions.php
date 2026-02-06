@@ -164,7 +164,6 @@ function shishcafe_scripts()
 add_action('wp_enqueue_scripts', 'shishcafe_scripts');
 // Custom script 
 
-
 // Custom Function Files 
 // Shop Page 
 require_once get_template_directory() . '/custom-shop.php';
@@ -255,8 +254,8 @@ function add_data_tags_to_product_li($classes, $product)
 }
 
 // always english language 
-add_filter( 'locale', function( $locale ) {
-    return 'en_US'; // Force site language to English (United States)
+add_filter('locale', function ($locale) {
+	return 'en_US'; // Force site language to English (United States)
 });
 
 

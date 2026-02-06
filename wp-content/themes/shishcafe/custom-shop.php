@@ -107,7 +107,6 @@ function load_more_products()
             $query->the_post();
             global $product;
             $product_id = get_the_ID();
-
             if ($product->is_type('variable')) {
                 $variations = $product->get_available_variations();
 
@@ -126,8 +125,6 @@ function load_more_products()
                     }
                 }
             }
-
-
             wc_get_template_part('content', 'product'); // Load the WooCommerce product template
             $tags = wp_get_post_terms(get_the_ID(), 'product_tag', array('fields' => 'slugs'));
             $product_tags_data[get_the_ID()] = $tags;

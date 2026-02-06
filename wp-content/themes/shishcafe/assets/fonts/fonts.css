@@ -1,5 +1,19 @@
-/* Mona Sans  */
+/* Shippori Antique B1   */
 @font-face {
+    font-family: 'Shippori Antique B1';
+    src: url('./shippori/ShipporiAntiqueB1-Regular.eot');
+    src: url('./shippori/ShipporiAntiqueB1-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./shippori/ShipporiAntiqueB1-Regular.woff2') format('woff2'),
+        url('./shippori/ShipporiAntiqueB1-Regular.woff') format('woff'),
+        url('./shippori/ShipporiAntiqueB1-Regular.ttf') format('truetype'),
+        url('./shippori/ShipporiAntiqueB1-Regular.svg#ShipporiAntiqueB1-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Mona Sans  */
+/* @font-face {
     font-family: 'Mona-Sans';
     src: url('./MonaSans/Mona-Sans-Light.eot');
     src: url('./MonaSans/Mona-Sans-Light.eot?#iefix') format('embedded-opentype'),
@@ -75,7 +89,7 @@
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 
 /* Monteserat  */

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Shippori Antique B1';
+    src: url('ShipporiAntiqueB1-Regular.eot');
+    src: url('ShipporiAntiqueB1-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ShipporiAntiqueB1-Regular.woff2') format('woff2'),
+        url('ShipporiAntiqueB1-Regular.woff') format('woff'),
+        url('ShipporiAntiqueB1-Regular.ttf') format('truetype'),
+        url('ShipporiAntiqueB1-Regular.svg#ShipporiAntiqueB1-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

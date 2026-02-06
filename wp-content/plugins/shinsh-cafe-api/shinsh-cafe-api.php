@@ -5,6 +5,7 @@
  * Description: Custom REST API endpoints for fetching and printing WooCommerce order data.
  * Version: 1.2
  * Author: Enigmatix Global
+ * License: GPLv2 or later
  * Text Domain: shinsh-cafe-api
  */
 
@@ -34,16 +35,16 @@ require_once plugin_dir_path(__FILE__) . '/includes/shinsh-cafe-extra.php';
 // add_filter('woocommerce_payment_complete_order_status', function ($status, $order_id, $order) {
 //     return 'on-hold';
 // }, 999, 3);
-// add_action('woocommerce_order_status_processing', function ($order_id) {
-//     $order = wc_get_order($order_id);
+add_action('woocommerce_order_status_processing', function ($order_id) {
+    $order = wc_get_order($order_id);
 
-//     if ($order) {
-//         $order->update_status(
-//             'on-hold',
-//             'Payment received, moved to on-hold for manual confirmation.'
-//         );
-//     }
-// }, 20);
+    if ($order) {
+        $order->update_status(
+            'on-hold',
+            'Payment received, moved to on-hold for manual confirmation.'
+        );
+    }
+}, 20);
 
 
 /**
@@ -479,8 +480,21 @@ function shinsh_cafe_generate_order_html($order_or_id)
         $item_total_raw = $item->get_total();
         $base_price = $item_total_raw - $final_ppom_total;
         $unit_price = $base_price / $quantity;
+        // Get product categories
+        $category_slugs = [];
+        $category_names = [];
+
+        $terms = get_the_terms($product->get_id(), 'product_cat');
+        if (!is_wp_error($terms) && !empty($terms)) {
+            foreach ($terms as $term) {
+                $category_slugs[] = $term->slug;
+                $category_names[] = $term->name;
+            }
+        }
         $products[] = [
             'product_name' => $product_name,
+            'categories_slug'   => $category_slugs,
+            'category_names'    => $category_names,
             'quantity'     => $quantity,
             'unit_price'   => '£' . number_format($unit_price, 2),
             'base_price'   => '£' . number_format($base_price, 2),
@@ -525,7 +539,6 @@ function shinsh_cafe_generate_order_html($order_or_id)
                 <img src="<?php echo esc_url(get_site_url() . '/wp-content/uploads/2025/03/shishcafe-logo-200x60-1.png'); ?>"
                     alt="Logo" style="max-width:180px;display:block;margin:0 auto;" />
             </div>
-
             <div style="text-align:center;font-size:14px;font-weight:bold;margin-bottom:4px;line-height:1.9;">
                 Order #<?php echo esc_html($order->get_order_number()); ?>
             </div>
@@ -548,56 +561,98 @@ function shinsh_cafe_generate_order_html($order_or_id)
             <table style="width:100%;border-collapse:collapse;font-size:12px;">
                 <thead>
                     <tr>
-                        <th style="border:0px solid #000;padding:4px;text-align:left;width:55%;">Product Name</th>
-                        <th style="border:0px solid #000;padding:4px;text-align:right;width:15%;">Price</th>
-                        <th style="border:0px solid #000;padding:4px;text-align:right;width:30%;">Total</th>
+                        <th style="border:0px solid #000;padding:4px;text-align:left;width:64%; visibility: hidden;">Product Name</th>
+                        <th style="border:0px solid #000;padding:4px;text-align:right;width:16%;">Price</th>
+                        <th style="border:0px solid #000;padding:4px;text-align:right;width:20%;">Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($products as $prod): ?>
+                        <?php
+                        $is_pizza_or_fatayer = false;
+
+                        if (!empty($prod['category_names']) && is_array($prod['category_names'])) {
+                            $is_pizza_or_fatayer = array_intersect(
+                                ['Pizzas', 'Fatayers'],
+                                $prod['category_names']
+                            );
+                        }
+                        ?>
                         <!-- Main product row -->
                         <tr>
-                            <td style="border:0px solid #000;padding:4px;text-align:left;vertical-align:top;">
-                                <strong><?php echo esc_html($prod['quantity']); ?> x <?php echo esc_html($prod['product_name']); ?></strong>
+                            <?php
+                            $size_value = '';
+                            $filtered_variations = [];
+
+                            if (!empty($prod['variations']) && $is_pizza_or_fatayer) {
+                                foreach ($prod['variations'] as $var) {
+                                    if (strtolower($var['label']) === 'size') {
+                                        // $size_value = $var['value'];
+                                        preg_match('/\d+(\.\d+)?/', $var['value'], $matches);
+                                        $size_value = $matches[0] ?? '';
+                                        continue; // hide size from variations
+                                    }
+                                    $filtered_variations[] = $var;
+                                }
+                            } else {
+                                $filtered_variations = $prod['variations'] ?? [];
+                            }
+                            ?>
+                            <td style="border:0px solid #000;padding:4px;text-align:left;vertical-align:top; display: flex;">
+                                <span style="font-weight: 600; margin-right: 3px;">
+                                    <?php echo esc_html($prod['quantity']); ?> x
+                                    <?php echo esc_html($prod['product_name']); ?>
+                                </span>
+                                <span style="font-weight: 600; width: 30px; text-align: right;">
+                                    <?php if ($size_value): ?>
+                                        <?php echo esc_html($size_value); ?> "
+                                    <?php endif; ?>
+                                </span>
                             </td>
                             <td style="border:0px solid #000;padding:4px;text-align:right;vertical-align:top;">
-                                <?php echo esc_html($prod['unit_price']); ?>
+                                <?php echo esc_html($prod['unit_price'] ?? '£0.00'); ?>
                             </td>
                             <td style="border:0px solid #000;padding:4px;text-align:right;vertical-align:top;">
-                                <?php echo esc_html($prod['base_price']); ?>
+                                <?php echo esc_html($prod['base_price'] ?? '£0.00'); ?>
                             </td>
                         </tr>
 
                         <!-- Variations -->
-                        <?php if (!empty($prod['variations'])): ?>
-                            <?php foreach ($prod['variations'] as $var): ?>
+                        <?php if (!empty($filtered_variations)): ?>
+                            <?php foreach ($filtered_variations as $var): ?>
                                 <tr>
-                                    <td style="border:0px solid #000;padding:4px;text-align:left; padding-left: 8px">
-                                        <?php echo esc_html($var['label']); ?>:</br><?php echo esc_html($var['value']); ?>
+                                    <td style="border:0px solid #000;padding:4px;text-align:left; padding-left: 8px; font-size: 11px;">
+                                        <span style="font-weight: bold;">
+                                            <?php echo esc_html($var['label']); ?>:
+                                        </span><br />
+                                        <span style="padding-left: 10px; padding-top: 3px; display: inline-block;">
+                                            <?php echo esc_html($var['value']); ?>
+                                        </span>
                                     </td>
-                                    <td style="border:0px solid #000;padding:4px;text-align:right;">
-
-                                    </td>
-                                    <td style="border:0px solid #000;padding:4px;text-align:right;">
-
-                                    </td>
-
+                                    <td style="border:0px solid #000;"></td>
+                                    <td style="border:0px solid #000;"></td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php endif; ?>
+
 
                         <!-- PPOM Options -->
                         <?php if (!empty($prod['ppom_options'])): ?>
                             <?php foreach ($prod['ppom_options'] as $ppom): ?>
                                 <tr>
-                                    <td style="border:0px solid #000;padding:4px;text-align:left; padding-left: 8px">
-                                        <?php echo esc_html($ppom['label']); ?>:</br><?php echo esc_html($ppom['qty'] . ' x ' . $ppom['value']); ?>
+                                    <td style="border:0px solid #000;padding:4px;text-align:left; padding-left: 8px; font-size: 11px;">
+                                        <span style="font-weight: bold;"><?php echo esc_html($ppom['label']); ?>:</span></br>
+                                        <span style="padding-left: 10px; padding-top: 3px; display: inline-block;"><?php echo esc_html($ppom['qty'] . ' x ' . $ppom['value']); ?></span>
                                     </td>
                                     <td style="border:0px solid #000;padding:4px;text-align:right;">
-                                        <?php echo esc_html($ppom['item_price']); ?>
+                                        <?php echo esc_html(! empty($ppom['item_price']) ? $ppom['item_price'] : '£0.00'); ?>
+                                        <?php // echo esc_html($ppom['item_price']  ?? '£0.00'); 
+                                        ?>
                                     </td>
                                     <td style="border:0px solid #000;padding:4px;text-align:right;">
-                                        <?php echo esc_html($ppom['full_price']); ?>
+                                        <?php echo esc_html(! empty($ppom['full_price']) ? $ppom['full_price'] : '£0.00'); ?>
+                                        <?php // echo esc_html($ppom['full_price'] ?? '£0.00'); 
+                                        ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -815,9 +870,21 @@ function shinsh_cafe_get_order_print_data($data)
         if (!$order_type) {
             $order_type = get_post_meta($order->get_id(), '_custom_delivery_option', true);
         }
+        // Get product categories
+        $category_slugs = [];
+        $category_names = [];
 
+        $terms = get_the_terms($product->get_id(), 'product_cat');
+        if (!is_wp_error($terms) && !empty($terms)) {
+            foreach ($terms as $term) {
+                $category_slugs[] = $term->slug;
+                $category_names[] = $term->name;
+            }
+        }
         $products[] = [
             'product_name'      => $product_name,
+            'categories_slug'   => $category_slugs,
+            'category_names'    => $category_names,
             'quantity'          => $quantity,
             'unit_price'        => '£' . number_format($unit_price, 2),
             'base_price'        => '£' . number_format($base_price, 2),
