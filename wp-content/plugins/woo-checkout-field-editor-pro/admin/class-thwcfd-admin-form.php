@@ -204,7 +204,8 @@ abstract class THWCFD_Admin_Form {
 			$field_html = '<select '. wp_kses_post($field_props) .' >';
 			foreach($field['options'] as $value => $label){
 				$selected = $value === $fvalue ? 'selected' : '';
-				$field_html .= '<option value="'. esc_attr(trim($value)) .'" '.esc_attr($selected).'>'. esc_html__($label, 'woo-checkout-field-editor-pro') .'</option>';
+				$label = THWCFD_Utils::translate_dynamic_text($label, 'option');
+				$field_html .= '<option value="'. esc_attr(trim($value)) .'" '.esc_attr($selected).'>'. esc_html($label) .'</option>';
 			}
 			$field_html .= '</select>';
 		}
@@ -228,7 +229,8 @@ abstract class THWCFD_Admin_Form {
 			$field_html = '<select multiple="multiple" '. wp_kses_post($field_props) .'>';
 			foreach($field['options'] as $value => $label){
 				//$selected = $value === $fvalue ? 'selected' : '';
-				$field_html .= '<option value="'. esc_attr(trim($value)) .'" >'. esc_html__($label, 'woo-checkout-field-editor-pro') .'</option>';
+				$label = THWCFD_Utils::translate_dynamic_text($label, 'option');
+				$field_html .= '<option value="'. esc_attr(trim($value)) .'" >'. esc_html($label) .'</option>';
 			}
 			$field_html .= '</select>';
 		}
@@ -249,8 +251,8 @@ abstract class THWCFD_Admin_Form {
 					if(isset($field['glue']) && !empty($field['glue'])){
 						$value = $value.$field['glue'].trim($label);
 					}
-
-					$field_html .= '<option value="'. esc_attr($value) .'">'. esc_html__($label, 'woo-checkout-field-editor-pro') .'</option>';
+					$label = THWCFD_Utils::translate_dynamic_text($label, 'option');
+					$field_html .= '<option value="'. esc_attr($value) .'">'. esc_html($label) .'</option>';
 				}
 
 				$field_html .= '</optgroup>';
@@ -288,7 +290,7 @@ abstract class THWCFD_Admin_Form {
 			), $atts );
 
 			$fid 	= $args['id_prefix']. $field['name'];
-			$flabel = isset($field['label']) && !empty($field['label']) ? __($field['label'], 'woo-checkout-field-editor-pro') : '';
+			$flabel = isset($field['label']) && !empty($field['label']) ? THWCFD_Utils::translate_dynamic_text($field['label'], 'label') : '';
 
 			$field_props  = $this->prepare_form_field_props($field, $atts);
 			$field_props .= isset($field['checked']) && $field['checked'] === 1 ? ' checked' : '';

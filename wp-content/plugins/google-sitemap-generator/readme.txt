@@ -3,7 +3,7 @@ Contributors: auctollo
 Tags: SEO, xml sitemap, video sitemap, news sitemap, html sitemap
 Requires at least: 4.6
 Tested up to: 6.9
-Stable tag: 4.1.22
+Stable tag: 4.1.23
 Requires PHP: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -100,6 +100,9 @@ Please post your question at the [WordPress support forum](https://wordpress.org
 
 
 == Changelog ==
+
+= 4.1.22 (2026-02-09) =
+* Improved security further for unauthenticated users from modifying plugin settings by enforcing proper permission and security‑token checks. CVE-2025-64632
 
 = 4.1.22 (2025-12-23) =
 * Fixed preventing unauthenticated users from modifying plugin settings by enforcing proper permission and security‑token checks.
@@ -629,5 +632,5 @@ The plugin comes with various translations, please refer to the [WordPress Codex
 
 == Upgrade Notice ==
 
-= 4.1.22 =
-Critical Security Fix: Resolved a flaw where certain actions could be triggered without verifying the requester’s identity, privileges, or a valid security token.
+= 4.1.23 =
+Critical Security Fix: Resolved a flaw where certain actions could be triggered without verifying the requester’s identity, privileges, or a valid security token. CVE-2025-64632

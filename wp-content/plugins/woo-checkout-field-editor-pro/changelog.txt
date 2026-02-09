@@ -1,4 +1,10 @@
 == Changelog ==
+= 2.1.6 =
+* Added compatiblity for Archiva for WooCommerce.
+* Improved dynamic string translation for WPML.
+* Added WooCommerce 10.4 compatibility.
+* Added WordPress 6.9 compatibility.
+
 = 2.1.5 =
 * Added required validation for the checkbox field in the block checkout (WC 9.8+).
 * Fixed radio button styling issues with default WordPress block themes (e.g., Twenty Twenty-Four, Twenty Twenty-Five).

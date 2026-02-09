@@ -258,10 +258,11 @@ class THWCFD_Block_Order_Data {
 			$title = $section->get_property('title');
 
 			if($title){
-				$title    = __($title, 'woo-checkout-field-editor-pro');
+				//$title    = __($title, 'woo-checkout-field-editor-pro');
+				$title    = THWCFD_Utils::translate_dynamic_text($title, 'label');
 				$subtitle = $section->get_property('subtitle');
 				$subtitle = apply_filters('thwcfe_section_subtitle', $subtitle, $section->name, $context);
-				$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
+				//$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
 
 				if($context === self::VIEW_ADMIN_ORDER){
 					$html = $this->get_section_title_html_admin_order($title, $subtitle);
@@ -395,11 +396,11 @@ class THWCFD_Block_Order_Data {
 
 			if($title || $subtitle){
 				if($esc_attr_label){
-					$title    = $title ? __($title,'woo-checkout-field-editor-pro') : '';
-					$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
+					$title    = $title ? THWCFD_Utils::translate_dynamic_text($title, 'label') : '';
+					//$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
 				}else{
-					$title    = $title ? __($title,'woo-checkout-field-editor-pro') : '';
-					$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
+					$title    = $title ? THWCFD_Utils::translate_dynamic_text($title, 'label') : '';
+					//$subtitle = $subtitle ? __($subtitle,'woo-checkout-field-editor-pro') : '';
 				}
 
 				$field_data['label'] = $title;
@@ -416,7 +417,7 @@ class THWCFD_Block_Order_Data {
 
 			if(!empty($value) || (($value === '0') && apply_filters( 'thwcfe_accept_value_zero',false))){
 				$title = $field->get_property('title') ? $field->get_property('title') : $name;
-				$title = $esc_attr_label ? __($title, 'woo-checkout-field-editor-pro') : __($title, 'woo-checkout-field-editor-pro');
+				$title = THWCFD_Utils::translate_dynamic_text( $title, 'label' );
 
 				if($type === 'file'){
 					$value = $this->get_field_display_value_file($name, $value, $context);

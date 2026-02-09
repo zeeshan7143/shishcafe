@@ -45,9 +45,9 @@ class THWCFD_Admin_Settings_Pro extends THWCFD_Admin_Settings{
 		$render_time = $thwcfd_since + $render_time;
 
 		if($now > $render_time){
-			$url = "https://www.themehigh.com/?edd_action=add_to_cart&download_id=12&cp=lyCDSy&utm_source=free&utm_medium=premium_tab&utm_campaign=wcfe_upgrade_link";
+			$url = "https://www.themehigh.com/?edd_action=add_to_cart&download_id=12&cp=lyCDSy&utm_source=wcfe_free&utm_medium=referral&utm_campaign=wcfe_premium_tab_upgrade_link";
 		}else{
-			$url = "https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=free&utm_medium=premium_tab&utm_campaign=wcfe_upgrade_link";
+			$url = "https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=wcfe_premium_tab_upgrade_link";
 		}
 
 		?>
@@ -75,7 +75,7 @@ class THWCFD_Admin_Settings_Pro extends THWCFD_Admin_Settings{
 				<div class="th-try-demo">
 					<h3 class="trydemo-heading">The Golden Perks that Come with the Checkout Field Editor Pro</h3>
 					<p class="try-demo-desc">The numerous advanced features that accompany the Checkout Field Editor Pro for WooCommerce plugin lets you create an organized and flawless checkout page. Why wait? Go pro and advance your checkout page to the next level now.</p>
-					<div class="th-pro-btn"><a class="btn-get-pro" onclick="this.classList.add('clicked')" href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener noreferrer" >Get Pro</a><a class="btn-try-demo" href="https://flydemos.com/wcfe/?utm_source=free&utm_medium=banner&utm_campaign=trydemo"
+					<div class="th-pro-btn"><a class="btn-get-pro" onclick="this.classList.add('clicked')" href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener noreferrer" >Get Pro</a><a class="btn-try-demo" href="https://flydemos.com/wcfe/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=premium_tab_try_demo"
 						target="_blank" rel="noopener noreferrer" onclick="this.classList.add('clicked')" >Try Demo</a></div>
 					<!-- <img class="vedio" src="" alt="no img">  ADD vedio tutorial-->
 				</div>

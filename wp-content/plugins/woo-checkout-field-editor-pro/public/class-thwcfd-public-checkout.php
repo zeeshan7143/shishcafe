@@ -195,18 +195,22 @@ class THWCFD_Public_Checkout {
 		return $locale;
 	}
 
-	public function get_posted_value($key){
-		$value = isset($_POST[$key]) ? stripslashes($_POST[$key]) : '';
+	public function get_posted_value( $key ) {
+		$value = '';
+		if ( isset( $_POST[ $key ] ) ) {
+			$value = wp_unslash( $_POST[ $key ] );
+		}
+		if ( '' === $value && isset( $_POST['post_data'] ) ) {
+			$post_data = wp_unslash( $_POST['post_data'] );
 
-		if(!$value){
-			$post_data = isset($_POST['post_data']) ? $_POST['post_data'] : '';
+			if ( is_string( $post_data ) ) {
+				parse_str( $post_data, $post_data_arr );
 
-			if($post_data){
-				parse_str($post_data, $post_data_arr);
-				$value = isset($post_data_arr[$key]) ? stripslashes($post_data_arr[$key]) : '';
+				if ( isset( $post_data_arr[ $key ] ) ) {
+					$value = $post_data_arr[ $key ];
+				}
 			}
 		}
-
 		return $value;
 	}
 
@@ -480,7 +484,8 @@ class THWCFD_Public_Checkout {
 							$options_arr = THWCFD_Utils::prepare_field_options($new_field['options']);
 							$options = array();
 							foreach($options_arr as $key => $value) {
-								$options[$key] = __($value, 'woo-checkout-field-editor-pro');
+								$value = $this->translate_text($value, 'option');
+								$options[$key] = $value;
 							}
 							$new_field['options'] = $options;
 						}
@@ -491,11 +496,14 @@ class THWCFD_Public_Checkout {
 					}
 					
 					if(isset($new_field['label'])){
-						$new_field['label'] = __($new_field['label'], 'woo-checkout-field-editor-pro');
+						//$new_field['label'] = __($new_field['label'], 'woo-checkout-field-editor-pro');
+						$new_field['label'] = $this->translate_text($new_field['label'], 'label');
 					}
 
 					if(isset($new_field['placeholder'])){
-						$new_field['placeholder'] = __($new_field['placeholder'], 'woo-checkout-field-editor-pro');
+						$new_field['placeholder'] = $this->translate_text($new_field['placeholder'], 'placeholder');
+						// 
+						//$new_field['placeholder'] = __($new_field['placeholder'], 'woo-checkout-field-editor-pro');
 					}
 					
 					$fields[$name] = $new_field;
@@ -540,10 +548,12 @@ class THWCFD_Public_Checkout {
 
 				if($vname === 'number'){
 					if(!is_numeric($value)){
+						/* translators: %s: Field label */
 						$err_msg = sprintf( __( '<strong>%s</strong> is not a valid number.', 'woo-checkout-field-editor-pro' ), $flabel );
 					}
 				}else if($vname === 'url'){
 					if (!filter_var($value, FILTER_VALIDATE_URL)) {
+						/* translators: %s: Field label */
 						$err_msg = sprintf( __( '<strong>%s</strong> is not a valid url.', 'woo-checkout-field-editor-pro' ), $flabel );
 					}
 				}
@@ -669,13 +679,13 @@ class THWCFD_Public_Checkout {
 					$value = THWCFD_Utils::get_option_text($field, $value);
 
 					$f_type = isset($field['type']) ? $field['type'] : 'text';
-					$value = esc_html__($value, 'woo-checkout-field-editor-pro');
+					$value = esc_html($this->translate_text($value, 'option'));
 					if($f_type == 'textarea'){
 						$value =  nl2br($value);
 					}
 					
 					$custom_field = array();
-					$custom_field['label'] = wp_kses_post(__($label, 'woo-checkout-field-editor-pro'));
+					$custom_field['label'] = wp_kses_post($this->translate_text($label, 'label'));
 					$custom_field['value'] = $value;
 					
 					$custom_fields[$key] = $custom_field;
@@ -690,6 +700,10 @@ class THWCFD_Public_Checkout {
 	 * Display custom checkout fields on view order pages
 	 */
 	public function order_details_after_customer_details($order){
+
+		if ( ! $order instanceof WC_Order ) {
+			return;
+		}
 		$order_id = THWCFD_Utils::get_order_id($order);
 		$fields = THWCFD_Utils::get_checkout_fields($order);
 		if(is_array($fields) && !empty($fields)){
@@ -697,20 +711,31 @@ class THWCFD_Public_Checkout {
 			// Loop through all custom fields to see if it should be added
 			foreach($fields as $key => $field){	
 				if(THWCFD_Utils::is_active_custom_field($field) && isset($field['show_in_order']) && $field['show_in_order'] && !THWCFD_Utils::is_wc_handle_custom_field($field)){
-					$order = wc_get_order( $order_id );
-				
+					// Compatibility for Archiva for WooCommerce.
+					/*if (wc_get_order( $order_id ) && is_a( wc_get_order( $order_id ), 'WC_Order' )) {
+						$order = wc_get_order( $order_id ); // Kept old code unchanged.
+					} else {
+						// Check if $order is a valid WC_Order object
+						$order = is_a($order, 'WC_Order') ? $order : false;
+						if (!$order) {
+							return;
+						}
+					}*/
+
 					// $value = get_post_meta( $order_id, $key, true );
 					$value = $order->get_meta( $key, true );
 
 					if($value || (($value !== '') && ($value == 0) && apply_filters( 'thwcfe_accept_value_zero',false))){
 						$label = isset($field['label']) && $field['label'] ? $field['label'] : $key;
 						//$label = esc_attr($label);
-						$label = wp_kses_post(__($label, 'woo-checkout-field-editor-pro'));
+						$label = $this->translate_text($label, 'label');
+						$label = wp_kses_post($label);
 						//$value = wptexturize($value);
 						$value = THWCFD_Utils::get_option_text($field, $value);
 
 						$f_type = isset($field['type']) ? $field['type'] : 'text';
-						$value = esc_html__($value, 'woo-checkout-field-editor-pro');
+						$value = $this->translate_text($value, 'option');
+						$value = esc_html($value);
 						if($f_type == 'textarea'){
 							$value =  nl2br($value);
 						}
@@ -761,9 +786,11 @@ class THWCFD_Public_Checkout {
 			if(version_compare(THWCFD_Utils::get_wc_version(), '9.7.0', ">=")){
 				$required        ='&nbsp;<span class="required" aria-hidden="true">*</span>';
 			}else{
-				$required        = '&nbsp;<abbr class="required" title="' . esc_attr__( 'required', 'woocommerce' ) . '">*</abbr>';
+				// phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+				$required        = '&nbsp;<abbr class="required" title="' . esc_attr__( 'required', 'woocommerce' ) . '">*</abbr>'; 
 			}		
 		} else {
+			// phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
 			$required = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
 		}
 
@@ -821,9 +848,11 @@ class THWCFD_Public_Checkout {
 				$value = is_array($value) ? $value : array_map('trim', (array) explode(',', $value));
 
 				if (!empty($args['options'])) {
-					$field .= '<select name="' . esc_attr($key) . '[]" id="' . esc_attr($key) . '" class="select ' . esc_attr(implode(' ', $args['input_class'])) . '" multiple="multiple" ' . esc_attr(implode(' ', $custom_attributes)) . ' data-placeholder="' . esc_html__($args['placeholder'], 'woo-checkout-field-editor-pro') . '" >';
-					foreach ($args['options'] as $option_key => $option_text) {
-						$field .= '<option value="' . esc_attr($option_key) . '" ' . selected(in_array($option_key, $value), 1, false) . '>' . esc_html__($option_text, 'woo-checkout-field-editor-pro') . '</option>';
+					$placeholder = !empty($args['placeholder']) ? $this->translate_text($args['placeholder'], 'placeholder') : '';
+					$field .= '<select name="' . esc_attr($key) . '[]" id="' . esc_attr($key) . '" class="select ' . esc_attr(implode(' ', $args['input_class'])) . '" multiple="multiple" ' . esc_attr(implode(' ', $custom_attributes)) . ' data-placeholder="' . esc_attr($placeholder) . '" >';
+					foreach ($args['options'] as $option_key => $option_text) {	
+						$option_text = $this->translate_text( $option_text, 'option' );
+						$field .= '<option value="' . esc_attr($option_key) . '" ' . selected(in_array($option_key, $value), 1, false) . '>' . esc_html($option_text) . '</option>';
 					}
 					$field .= ' </select>';
 				}
@@ -853,7 +882,8 @@ class THWCFD_Public_Checkout {
 					$field .= ' <span class="woocommerce-multicheckbox-wrapper" ' . esc_attr(implode(' ', $custom_attributes)) . '>';
 
 					foreach ($args['options'] as $option_key => $option_text) {
-						$field .= '<label><input type="checkbox" name="' . esc_attr($key) . '[]" value="' . esc_attr($option_key) . '"' . checked(in_array($option_key, $value), 1, false) . ' /> ' . esc_html__($option_text, 'woo-checkout-field-editor-pro') . '</label>';
+						$option_text = $this->translate_text( $option_text, 'option' );
+						$field .= '<label><input type="checkbox" name="' . esc_attr($key) . '[]" value="' . esc_attr($option_key) . '"' . checked(in_array($option_key, $value), 1, false) . ' /> ' . esc_html($option_text) . '</label>';
 					}
 
 					$field .= '</span>';
@@ -909,7 +939,8 @@ class THWCFD_Public_Checkout {
 			$field_html = '';
 
 			if ($args['label'] && 'checkbox' !== $args['type']) {
-				$field_html .= '<label for="' . esc_attr($label_id) . '" class="' . esc_attr(implode(' ', $args['label_class'])) . '">' . esc_html__($args['label'], 'woo-checkout-field-editor-pro') . $required . '</label>';
+				$f_label = $this->translate_text($args['label'], 'label');
+				$field_html .= '<label for="' . esc_attr($label_id) . '" class="' . esc_attr(implode(' ', $args['label_class'])) . '">' . esc_html($f_label) . $required . '</label>';
 			}
 
 			$field_html .= '<span class="woocommerce-input-wrapper">' . $field;
@@ -940,7 +971,8 @@ class THWCFD_Public_Checkout {
 		$args['class'][] = 'thwcfd-field-wrapper thwcfd-field-paragraph';
 		
 		if(isset($args['label']) && !empty($args['label'])){
-			$field  = '<p class="form-row '.esc_attr(implode(' ', $args['class'])).'" id="'.esc_attr($key).'_field" name="'.esc_attr($key).'" >'. esc_html__($args['label'], 'woo-checkout-field-editor-pro') .'</ p >';
+			$f_label = $this->translate_text($args['label'], 'label');
+			$field  = '<p class="form-row '.esc_attr(implode(' ', $args['class'])).'" id="'.esc_attr($key).'_field" name="'.esc_attr($key).'" >'. esc_html($f_label) .'</ p >';
 		}
 
 		return $field;
@@ -954,8 +986,8 @@ class THWCFD_Public_Checkout {
 
 		if(isset($args['label']) && !empty($args['label'])){
 			$title_type  = isset($args['title_type']) && !empty($args['title_type']) ? $args['title_type'] : 'label';
-
-			$heading_html .= '<'. esc_attr($title_type) .' class="'. esc_attr(implode(' ', $args['label_class'])) .'" >'. esc_html__($args['label'], 'woo-checkout-field-editor-pro') .'</'. $title_type .'>';
+			$f_label = $this->translate_text($args['label'], 'label');
+			$heading_html .= '<'. esc_attr($title_type) .' class="'. esc_attr(implode(' ', $args['label_class'])) .'" >'. esc_html($f_label) .'</'. $title_type .'>';
 		}
 
 		if(!empty($heading_html)){
@@ -970,6 +1002,63 @@ class THWCFD_Public_Checkout {
 		$field = preg_replace('/(<input[^>]*>)(<label[^>]*>)(.*?)(&nbsp;<span class="optional">\(optional\)<\/span>)/', '$1$2$3', $field);
 		return $field;
 
+	}
+
+	/**
+	 * Translate dynamic strings with WPML / Polylang,
+	 * fallback to WooCommerce core translations when applicable.
+	 *
+	 * @param string $text Original text.
+	 * @param string $key  Stable translation key.
+	 * @return string
+	 */
+	private function translate_text( $text, $text_type = 'label' ) {
+
+		if ( empty( $text ) ) {
+			return '';
+		}
+		$key = 'Field label - ' . $text;
+		if ( $text_type === 'placeholder' ) {
+			$key = 'Field placeholder - ' . $text;
+		} elseif ( $text_type === 'option' ) {
+			$key = 'Field option text - ' . $text;
+		}
+
+		// WPML (preferred for dynamic/admin strings)
+		if ( has_filter( 'wpml_translate_single_string' ) ) {
+			$translated = apply_filters(
+				'wpml_translate_single_string',
+				$text,
+				'woo-checkout-field-editor-pro',
+				$key
+			);
+
+			if ( $translated !== $text ) {
+				return $translated;
+			}
+		}
+
+		// Polylang, 2nd preference for dynamic/admin strings, consider when add support for Polylang is requested
+		// if ( function_exists( 'pll__' ) ) {
+		// 	$translated = pll__( $text );
+		// 	if ( $translated !== $text ) {
+		// 		return $translated;
+		// 	}
+		// }
+
+		// Plugin gettext fallback.
+		// This is kept for backward compatibility to support existing translations
+		// that rely on the plugin text domain (.mo files) before WPML integration.
+		// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText
+		$plugin_translation = __( $text, 'woo-checkout-field-editor-pro' );
+
+		if ( $plugin_translation !== $text ) {
+			return $plugin_translation;
+		}
+
+		// WooCommerce core fallback, Used only when WooCommerce already provides a translation for this string in the current locale.
+		// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText, WordPress.WP.I18n.TextDomainMismatch
+		return __( $text, 'woocommerce' );
 	}
 	
 }

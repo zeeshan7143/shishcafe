@@ -152,6 +152,8 @@ class THWCFD_Admin_Settings_General extends THWCFD_Admin_Settings{
 						$type = isset($field['type']) ? $field['type'] : '';
 						$label = isset($field['label']) ? $field['label'] : '';
 						$placeholder = isset($field['placeholder']) ? $field['placeholder'] : '';
+						$label = THWCFD_Utils::translate_dynamic_text($label, 'label');
+						$placeholder = THWCFD_Utils::translate_dynamic_text($placeholder, 'placeholder');
 						$validate = isset($field['validate']) ? $field['validate'] : '';
 						$required = isset($field['required']) && $field['required'] ? 1 : 0;
 						$enabled = isset($field['enabled']) && $field['enabled'] ? 1 : 0;
@@ -184,8 +186,13 @@ class THWCFD_Admin_Settings_General extends THWCFD_Admin_Settings{
 	                        <td class="td_select"><input type="checkbox" name="select_field"/></td>
 	                        <td class="td_name"><?php echo esc_html( $name ); ?></td>
 	                        <td class="td_type"><?php echo esc_html($type); ?></td>
-	                        <td class="td_label"><?php echo esc_html_e($label, 'woo-checkout-field-editor-pro'); ?></td>
-	                        <td class="td_placeholder"><?php echo esc_html_e($placeholder, 'woo-checkout-field-editor-pro'); ?></td>
+							<?php /*
+							// The following lines were removed because they violate WordPress i18n rules.
+							<td class="td_placeholder"><?php echo esc_html_e($placeholder, 'woo-checkout-field-editor-pro'); ?></td> 
+	                        <td class="td_placeholder"><?php echo esc_html_e($placeholder, 'woo-checkout-field-editor-pro'); ?></td> 
+							*/ ?>
+							<td class="td_label"><?php echo esc_html($label); ?></td>
+							<td class="td_placeholder"><?php echo esc_html($placeholder); ?></td>
 	                        <td class="td_validate"><?php echo esc_html($validate); ?></td>
 	                        <td class="td_required status"><?php echo wp_kses($required_status, array('span' => array('class' => true))); ?></td>
 	                        <td class="td_enabled status"><?php echo wp_kses($enabled_status, array('span' => array('class' => true))); ?></td>
@@ -460,7 +467,7 @@ class THWCFD_Admin_Settings_General extends THWCFD_Admin_Settings{
 
 					if(!empty($value)){
 						$value = THWCFD_Utils::get_option_text($field, $value);
-						$label = isset($field['label']) && $field['label'] ? esc_html($field['label'], 'woo-checkout-field-editor-pro') : $name;
+						$label = isset($field['label']) && $field['label'] ? esc_html(THWCFD_Utils::translate_dynamic_text($field['label'], 'label')) : $name;
 						$html .= '<p><strong>'. esc_html($label) .':</strong><br/> '. wp_kses_post(wptexturize($value)) .'</p>';
 					}
 				}
@@ -512,9 +519,9 @@ class THWCFD_Admin_Settings_General extends THWCFD_Admin_Settings{
 		$selected_checkout = $this->get_current_c_type();
 		$c_url = $this->get_admin_url($this->page_id, 'classic');
 		$b_url = $this->get_admin_url($this->page_id, 'block');
-		$tt_content = esc_html("You're on the Classic Checkout Field Editor right now. If your store is not using Classic Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woocommerce-checkout-field-editor-pro');
-		if ( !empty( $_GET['c_type'] ) && 'block' == $_GET['c_type'] ) {
-			$tt_content = esc_html("You're on the Block Checkout Field Editor right now. If your store is not using Block Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woocommerce-checkout-field-editor-pro');
+		$tt_content = esc_html("You're on the Classic Checkout Field Editor right now. If your store is not using Classic Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woo-checkout-field-editor-pro');
+		if ( !empty( $_GET['c_type'] ) && 'block' == sanitize_key($_GET['c_type'] )) {
+			$tt_content = esc_html("You're on the Block Checkout Field Editor right now. If your store is not using Block Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woo-checkout-field-editor-pro');
 		}
 		?>
 		<div class="th-ct-wrap">

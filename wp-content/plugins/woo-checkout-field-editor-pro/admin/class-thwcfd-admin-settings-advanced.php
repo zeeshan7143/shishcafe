@@ -217,10 +217,10 @@ class THWCFD_Admin_Settings_Advanced extends THWCFD_Admin_Settings{
 		// 	echo $this->export_settings($plugin_settings);
 		
 		$imp_exp_fields = array(
-			'section_import_export' => array('title'=>__('Backup and Import Settings', 'woo-checkout-field-editor'), 'type'=>'separator', 'colspan'=>'3'),
+			'section_import_export' => array('title'=>__('Backup and Import Settings', 'woo-checkout-field-editor-pro'), 'type'=>'separator', 'colspan'=>'3'),
 			'settings_data' => array(
-				'name'=>'settings_data', 'label'=>__('Plugin Settings Data', 'woo-checkout-field-editor'), 'type'=>'textarea', 'value' => $plugin_settings,
-				'sub_label'=>__('You can transfer the saved settings data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Settings".', 'woo-checkout-field-editor'),
+				'name'=>'settings_data', 'label'=>__('Plugin Settings Data', 'woo-checkout-field-editor-pro'), 'type'=>'textarea', 'value' => $plugin_settings,
+				'sub_label'=>__('You can transfer the saved settings data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Settings".', 'woo-checkout-field-editor-pro'),
 			),
 		);
 		?>
@@ -237,7 +237,7 @@ class THWCFD_Admin_Settings_Advanced extends THWCFD_Admin_Settings{
 						<tr valign="top">
 							<td colspan="2">&nbsp;</td>
 							<td class="submit">
-								<input type="submit" name="save_plugin_settings" class="btn btn-small btn-primary" value="<?php esc_attr_e('Import Settings', 'woo-checkout-field-editor'); ?>">
+								<input type="submit" name="save_plugin_settings" class="btn btn-small btn-primary" value="<?php esc_attr_e('Import Settings', 'woo-checkout-field-editor-pro'); ?>">
 								<?php wp_nonce_field( 'import_wcfd_settings', 'import_wcfd_nonce' ); ?>
 							</td>
 						</tr>

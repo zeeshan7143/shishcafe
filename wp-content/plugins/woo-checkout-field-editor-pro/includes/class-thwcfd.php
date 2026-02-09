@@ -31,7 +31,7 @@ class THWCFD {
 
     public function init(){
 		$this->define_constants();
-		$this->set_locale();
+		//$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -52,16 +52,43 @@ class THWCFD {
 		// require_once THWCFD_PATH . 'classes/class-thwcfd-checkout.php';
 	}
 
-	private function set_locale() {
-		add_action('plugins_loaded', array($this, 'load_plugin_textdomain'));
-	}
+    /************ Note: Manual loading of the plugin text domain is intentionally omitted.
+     * Since WordPress 4.6+, translations for plugins hosted on WordPress.org are loaded automatically using Just-In-Time (JIT) loading.
+     * This plugin requires WordPress 4.9 or higher, so no explicit call to load_plugin_textdomain is needed here.
+    */
 
-	public function load_plugin_textdomain(){
+	/*private function set_locale() {
+        // WordPress 4.6+ JIT loading of textdomains. This for backward compatibility logging purpose only.
+        $domain = self::TEXT_DOMAIN;
+        if ( is_textdomain_loaded( $domain ) ) {
+            return;
+        }
+        // Determine locale safely (WP 5.0+)
+        $locale = function_exists( 'determine_locale' )
+            ? determine_locale()
+            : get_locale();
+
+        $mofile = WP_LANG_DIR . '/plugins/' . $domain . '-' . $locale . '.mo';
+        if ( file_exists( $mofile ) ) {
+            load_textdomain( $domain, $mofile );
+            return;
+        }
+        load_plugin_textdomain(
+            $domain,
+            false,
+            dirname( THWCFD_BASE_NAME ) . '/languages/'
+        );
+        //plugins_loaded hook not required as load_plugin_textdomain called in init method
+		//add_action('plugins_loaded', array($this, 'load_plugin_textdomain'));  
+	}*/
+
+	/* plugins_loaded hook not required as load_plugin_textdomain called in init method
+    public function load_plugin_textdomain(){
 		$locale = apply_filters('plugin_locale', get_locale(), self::TEXT_DOMAIN);
 	
 		load_textdomain(self::TEXT_DOMAIN, WP_LANG_DIR.'/woo-checkout-field-editor-pro/'.self::TEXT_DOMAIN.'-'.$locale.'.mo');
 		load_plugin_textdomain(self::TEXT_DOMAIN, false, dirname(THWCFD_BASE_NAME) . '/languages/');
-	}
+	}*/
 
 	private function define_admin_hooks() {
 		$plugin_admin = new THWCFD_Admin( $this->get_plugin_name(), $this->get_version() );
@@ -81,6 +108,7 @@ class THWCFD {
         //Landing page added
         add_action( 'admin_init', array($plugin_admin, 'landing_page' ), 10 );
 		add_action( 'admin_init', array($plugin_admin, 'redirect_to_landing_page'), 10 );
+        add_action( 'admin_head', array($plugin_admin, 'remove_welcome_page_menu'));
 		
 		$themehigh_plugins = new THWCFD_Admin_Settings_Themehigh_Plugins();
 		add_action('wp_ajax_th_activate_plugin', array($themehigh_plugins, 'activate_themehigh_plugins'));

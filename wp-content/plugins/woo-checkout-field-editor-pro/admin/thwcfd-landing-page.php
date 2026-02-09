@@ -17,7 +17,7 @@ set_current_screen();
 	<?php //wp_head(); ?>
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title><?php esc_html_e( 'Checkout field editor Landing page', 'woocommerce-checkout-field-editor-pro' ); ?></title>
+		<title><?php esc_html_e( 'Checkout field editor Landing page', 'woo-checkout-field-editor-pro' ); ?></title>
 	</head>
 	<body class="thwcfd-admin-page thwcfd-landing-page wp-core-ui">
 		<div id="th_render_landing_page">
@@ -35,30 +35,30 @@ set_current_screen();
 						</div>
 					</div>
 				</div>
-        		<h1 style="font-weight: 700;"><?php esc_html_e("Welcome to Checkout Field Editor!", 'woocommerce-checkout-field-editor-pro' ); ?></h1>
+        		<h1 style="font-weight: 700;"><?php esc_html_e("Welcome to Checkout Field Editor!", 'woo-checkout-field-editor-pro' ); ?></h1>
 				<p class ="th-desc-head" >
-				<?php esc_html_e( "We’re excited to have you on board! Now, you can easily customize your WooCommerce checkout using both the Block Checkout Editor and the Classic Checkout Field Editor. Enjoy complete flexibility and control! " , 'woocommerce-checkout-field-editor-pro' ); ?>
+				<?php esc_html_e( "We’re excited to have you on board! Now, you can easily customize your WooCommerce checkout using both the Block Checkout Editor and the Classic Checkout Field Editor. Enjoy complete flexibility and control! " , 'woo-checkout-field-editor-pro' ); ?>
 				</p>
 				
 				<a href="<?php echo esc_url(admin_url('admin.php?page=checkout_form_designer&tab=fields&c_type=classic')); ?>" class="th-get-started-btn">
-					<?php esc_html_e("Get Started" , 'woocommerce-checkout-field-editor-pro' ); ?>
+					<?php esc_html_e("Get Started" , 'woo-checkout-field-editor-pro' ); ?>
 				</a>
 
 				<div class="th-read-more">
-					<p> <?php esc_html_e("Learn more about both editors to make the most out of your checkout", 'woocommerce-checkout-field-editor-pro' ); ?>  </p>
+					<p> <?php esc_html_e("Learn more about both editors to make the most out of your checkout", 'woo-checkout-field-editor-pro' ); ?>  </p>
 					<!-- <button>
-					<?php //esc_html_e("Read More!", 'woocommerce-checkout-field-editor-pro' ); ?>
+					<?php //esc_html_e("Read More!", 'woo-checkout-field-editor-pro' ); ?>
 					</button> -->
 					<a href="https://www.themehigh.com/docs/classic-vs-block-checkout/" target="_blank" rel="noopener noreferrer">
 						<button type="button">
-							<?php esc_html_e("Read More!", 'woocommerce-checkout-field-editor-pro' ); ?>
+							<?php esc_html_e("Read More!", 'woo-checkout-field-editor-pro' ); ?>
 						</button>
 					</a>
 				</div>
 
 				<div class="th-sub-content" style="">
-					<p ><?php esc_html_e("We support both Classic and Block Checkout. Choose the one you're using", 'woocommerce-checkout-field-editor-pro' ); ?></p>
-					<h2><?php esc_html_e("Which Checkout Fields should you use?", 'woocommerce-checkout-field-editor-pro' ); ?> </h2>
+					<p ><?php esc_html_e("We support both Classic and Block Checkout. Choose the one you're using", 'woo-checkout-field-editor-pro' ); ?></p>
+					<h2><?php esc_html_e("Which Checkout Fields should you use?", 'woo-checkout-field-editor-pro' ); ?> </h2>
 
 					<div class="th-diff-box-wrap">
 						<div class="th-diff-box">
@@ -69,25 +69,25 @@ set_current_screen();
 									</symbol>
 								</svg>
 								<div>
-									<h3><?php esc_html_e("Classic Checkout", 'woocommerce-checkout-field-editor-pro' ); ?></h3>
+									<h3><?php esc_html_e("Classic Checkout", 'woo-checkout-field-editor-pro' ); ?></h3>
 									<ul>
 										<li>
 											<svg width="11" height="10">
                     							<use xlink:href="#bullet-icon"></use>
                 							</svg>  
-											<p><?php esc_html_e("Use this if you’re still using the traditional WooCommerce checkout page.", 'woocommerce-checkout-field-editor-pro' ); ?></p>
+											<p><?php esc_html_e("Use this if you’re still using the traditional WooCommerce checkout page.", 'woo-checkout-field-editor-pro' ); ?></p>
 										</li>
 										<li>
 											<svg width="11" height="10">
                     							<use xlink:href="#bullet-icon"></use>
                 							</svg>
-											<p><?php esc_html_e("Compatible with older checkout layouts.", 'woocommerce-checkout-field-editor-pro' ); ?></p>
+											<p><?php esc_html_e("Compatible with older checkout layouts.", 'woo-checkout-field-editor-pro' ); ?></p>
 										</li>
 										<li>
 											<svg width="11" height="10">
                     							<use xlink:href="#bullet-icon"></use>
                 							</svg>
-											<p><?php esc_html_e("Best for users who prefer the classic, non-block experience.", 'woocommerce-checkout-field-editor-pro' ); ?> </p>
+											<p><?php esc_html_e("Best for users who prefer the classic, non-block experience.", 'woo-checkout-field-editor-pro' ); ?> </p>
 										</li>
 									</ul>
 								</div>
@@ -100,25 +100,25 @@ set_current_screen();
 							
 							<div class="th-diff-box-content">
 								<div>
-									<h3 style="font-weight: bold;"><?php esc_html_e("Block Checkout", 'woocommerce-checkout-field-editor-pro' ); ?></h3>
+									<h3 style="font-weight: bold;"><?php esc_html_e("Block Checkout", 'woo-checkout-field-editor-pro' ); ?></h3>
 									<ul>
 										<li>
 											<svg width="11" height="10">
 												<use xlink:href="#bullet-icon"></use>
 											</svg> 
-											<p> <?php esc_html_e("Use this if you’ve transitioned to WooCommerce’s new Block-based checkout.", 'woocommerce-checkout-field-editor-pro' ); ?></p>
+											<p> <?php esc_html_e("Use this if you’ve transitioned to WooCommerce’s new Block-based checkout.", 'woo-checkout-field-editor-pro' ); ?></p>
 										</li>
 										<li>
 											<svg width="11" height="10">
 												<use xlink:href="#bullet-icon"></use>
 											</svg>
-											<p> <?php esc_html_e( "Easier to customize with block elements.", 'woocommerce-checkout-field-editor-pro'); ?> </p>	
+											<p> <?php esc_html_e( "Easier to customize with block elements.", 'woo-checkout-field-editor-pro'); ?> </p>	
 										</li>
 										<li>
 											<svg width="11" height="10">
 												<use xlink:href="#bullet-icon"></use>
 											</svg>
-											<p> <?php esc_html_e("Best for users looking for a more modern, flexible checkout design",'woocommerce-checkout-field-editor-pro'); ?>.</p>
+											<p> <?php esc_html_e("Best for users looking for a more modern, flexible checkout design",'woo-checkout-field-editor-pro'); ?>.</p>
 										</li>
 									</ul>
 								</div>
@@ -129,15 +129,15 @@ set_current_screen();
 					</div>
 					<div class="th-btn-box">
 						<a href="<?php echo esc_url(admin_url('admin.php?page=checkout_form_designer&tab=fields&c_type=classic')); ?>" class="th-choose-btn">
-							<?php esc_html_e('Go with Classic Checkout Editor', 'woocommerce-checkout-field-editor-pro') ?>
+							<?php esc_html_e('Go with Classic Checkout Editor', 'woo-checkout-field-editor-pro') ?>
 						</a>
 						<a href="<?php echo esc_url(admin_url('admin.php?page=checkout_form_designer&tab=fields&c_type=block')); ?>" class="th-choose-btn">
-							<?php esc_html_e('Go with Block Checkout Editor', 'woocommerce-checkout-field-editor-pro') ?>
+							<?php esc_html_e('Go with Block Checkout Editor', 'woo-checkout-field-editor-pro') ?>
 						</a>
 					</div>
 				</div>
 				<a href="<?php echo esc_url(admin_url('admin.php?page=checkout_form_designer&tab=fields&c_type=classic')); ?>" class="th-get-started-btn">
-					<?php esc_html_e("Let's Get started", 'woocommerce-checkout-field-editor-pro' ); ?>
+					<?php esc_html_e("Let's Get started", 'woo-checkout-field-editor-pro' ); ?>
 				</a>
 			</div>
 			

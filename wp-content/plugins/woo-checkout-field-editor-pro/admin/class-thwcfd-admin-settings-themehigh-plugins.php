@@ -230,7 +230,7 @@ class THWCFD_Admin_Settings_Themehigh_Plugins extends THWCFD_Admin_Settings{
 				if ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) {
 					// The plugin is already active.
 					$button = array(
-						'message' => esc_attr__( 'Activated', 'storefront' ),
+						'message' => esc_attr__( 'Activated', 'woo-checkout-field-editor-pro' ),
 						'url'     => '#',
 						'classes' => array('button', 'disabled' ),
 					);
@@ -243,7 +243,7 @@ class THWCFD_Admin_Settings_Themehigh_Plugins extends THWCFD_Admin_Settings{
 
 					// The plugin exists but isn't activated yet.
 					$button = array(
-						'message' => esc_attr__( 'Activate', 'storefront' ),
+						'message' => esc_attr__( 'Activate', 'woo-checkout-field-editor-pro' ),
 						'url'     => $url,
 						'classes' => array( 'activate-now', 'button' ),
 					);
@@ -264,7 +264,7 @@ class THWCFD_Admin_Settings_Themehigh_Plugins extends THWCFD_Admin_Settings{
 						'install-plugin_' . $plugin_slug
 					);
 					$button = array(
-						'message' => esc_attr__( 'Install now', 'storefront' ),
+						'message' => esc_attr__( 'Install now', 'woo-checkout-field-editor-pro' ),
 						'url'     => $url,
 						'classes' => array('button-primary', 'install-now', 'install-' . $plugin_slug ),
 					);

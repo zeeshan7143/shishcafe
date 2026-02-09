@@ -573,7 +573,7 @@ class GoogleSitemapGeneratorLoader {
 						),
 					),
 				);
-				$consent_url   = home_url( '/wp-content/plugins/google-sitemap-generator/upgrade-plugin.php' );
+				$consent_url   = wp_nonce_url( home_url( '/wp-content/plugins/google-sitemap-generator/upgrade-plugin.php?action=yes' ), 'user_consent_yesno_nonce' );
 				$decline_consent_url = ( empty( $_SERVER['HTTPS'] ) ? 'http' : 'https' ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 				$qs = 'settings_page_google-sitemap-generator/sitemap' === $current_screen ? '&action=no' : '?action=no';

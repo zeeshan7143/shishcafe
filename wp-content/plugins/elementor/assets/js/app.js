@@ -194,7 +194,8 @@ var AppsEventTracking = exports.AppsEventTracking = /*#__PURE__*/function () {
   return (0, _createClass2.default)(AppsEventTracking, null, [{
     key: "dispatchEvent",
     value: function dispatchEvent(eventName, payload) {
-      return elementorCommon.eventsManager.dispatchEvent(eventName, payload);
+      var _window$elementorComm, _window$elementorComm2;
+      return (_window$elementorComm = window.elementorCommon) === null || _window$elementorComm === void 0 || (_window$elementorComm = _window$elementorComm.eventsManager) === null || _window$elementorComm === void 0 || (_window$elementorComm2 = _window$elementorComm.dispatchEvent) === null || _window$elementorComm2 === void 0 ? void 0 : _window$elementorComm2.call(_window$elementorComm, eventName, payload);
     }
   }, {
     key: "sendPageViewsWebsiteTemplates",
@@ -8139,9 +8140,9 @@ function ImportProcess() {
     size: 30
   }), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "h5"
-  }, (0, _i18n.__)('Settings up your website templates...', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Stack, null, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+  }, (0, _i18n.__)('Setting up your website template...', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Stack, null, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "subtitle1"
-  }, (0, _i18n.__)('This usually take a few moments.', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+  }, (0, _i18n.__)('This usually takes a few moments.', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
     variant: "subtitle1"
   }, (0, _i18n.__)('Don\'t close this window until the process is finished.', 'elementor')))), /*#__PURE__*/_react.default.createElement(_pluginActivation.PluginActivation, {
     plugins: runnersState === null || runnersState === void 0 ? void 0 : runnersState.plugins
@@ -14393,7 +14394,7 @@ function ImportKit() {
     className: "e-app-import__drop-zone",
     heading: __('Choose a file to import', 'elementor'),
     text: __('Drag & drop the .zip file with your website template', 'elementor'),
-    secondaryText: 'Or',
+    secondaryText: __('Or', 'elementor'),
     filetypes: ['zip'],
     onFileChoose: function onFileChoose() {
       return eventTracking('kit-library/choose-file');
@@ -14403,7 +14404,7 @@ function ImportKit() {
       return setErrorType('general');
     },
     isLoading: isLoading,
-    buttonText: __('Import from files')
+    buttonText: __('Import from files', 'elementor')
   }), dialog.isOpen && /*#__PURE__*/_react.default.createElement(_dialog.default, {
     title: __('Warning: JSON or ZIP files may be unsafe', 'elementor'),
     text: __('Uploading JSON or ZIP files from unknown sources can be harmful and put your site at risk. For maximum safety, upload only JSON or ZIP files from trusted sources.', 'elementor'),
@@ -18657,7 +18658,11 @@ var eventsConfig = {
       createCancelled: 'component_creation_cancelled',
       created: 'component_created',
       instanceAdded: 'component_instance_added',
-      edited: 'component_edited'
+      edited: 'component_edited',
+      propertiesPanelOpened: 'component_properties_panel_opened',
+      propertiesGroupCreated: 'component_properties_group_created',
+      propertyExposed: 'component_property_exposed',
+      propertyRemoved: 'component_property_removed'
     },
     global_classes: {
       classApplied: 'class_applied',
@@ -29234,7 +29239,7 @@ module.exports = ReactDOM;
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
 /******/ 			if (chunkId === "vendors-node_modules_react-query_devtools_index_js") return "e459c6c89c0c0899c850.bundle.js";
-/******/ 			if (chunkId === "kit-library") return "" + chunkId + ".6fbef525614a7b49f293.bundle.js";
+/******/ 			if (chunkId === "kit-library") return "" + chunkId + ".9c4bbee79edf32c6fcb3.bundle.js";
 /******/ 			if (chunkId === "vendors-node_modules_mixpanel-browser_dist_mixpanel_module_js") return "e4d209bf3a704ff88e1a.bundle.js";
 /******/ 			if (chunkId === "app_modules_onboarding_assets_js_utils_modules_post-onboarding-tracker_js") return "b423d91809cf7e0cb8b0.bundle.js";
 /******/ 			if (chunkId === "onboarding") return "" + chunkId + ".63cdf72a450944ebd5f7.bundle.js";

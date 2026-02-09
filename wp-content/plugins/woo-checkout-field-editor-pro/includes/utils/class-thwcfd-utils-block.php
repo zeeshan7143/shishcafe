@@ -22,7 +22,7 @@ class THWCFD_Utils_Block {
 	public static function get_block_sections(){
 		self::get_default_block_sections();
 	}
-
+	// phpcs:disable WordPress.WP.I18n.TextDomainMismatch
 	public static function get_default_block_fields(){
 
 		$core_fields         = array(
@@ -185,7 +185,7 @@ class THWCFD_Utils_Block {
 			// 	'order'   => [],
 			// ];
 
-		return $core_fields ;
+		return apply_filters( 'thwcfd_default_block_checkout_fields', $core_fields );
 	}
 	public static function get_default_block_section_fields($section_name){
 		$core_fields = self::get_default_block_fields();
@@ -304,7 +304,7 @@ class THWCFD_Utils_Block {
 		}
 		return $field_objects;
 	}
-
+	// phpcs:disable WordPress.WP.I18n.TextDomainMismatch
 	public static function get_core_fields() {
 		
 		return [

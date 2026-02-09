@@ -13,11 +13,16 @@ include_once( ABSPATH . 'wp-content/plugins/google-sitemap-generator/upgrade-plu
 include_once( ABSPATH . 'wp-includes/pluggable.php' );
 include_once( ABSPATH . 'wp-content/plugins/google-sitemap-generator/class-googlesitemapgeneratorloader.php' );
 
-if ( isset( $_GET['action'] ) ) {
-	if ( 'yes' === $_GET['action'] ) {
-		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( 'Forbidden', '', array( 'response' => 403 ) );
-		}
+		if ( isset( $_GET['action'] ) ) {
+			if ( 'yes' === sanitize_text_field( wp_unslash( $_GET['action'] ) ) ) {
+				if ( ! current_user_can( 'manage_options' ) ) {
+					wp_die( 'Forbidden', '', array( 'response' => 403 ) );
+				}
+
+				if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ), 'user_consent_yesno_nonce' ) ) {
+					wp_die( 'Forbidden', '', array( 'response' => 403 ) );
+				}
+			}
 
 		update_option( 'sm_user_consent', 'yes' );
 		$plugin_version = GoogleSitemapGeneratorLoader::get_version();
@@ -28,12 +33,18 @@ if ( isset( $_GET['action'] ) ) {
 		$user_name = $user->user_nicename;
 		$useremail = $user->user_email;
 		global $wpdb;
-		$result             = $wpdb->get_results( "select user_id,meta_value from wp_usermeta where meta_key='session_tokens' and user_id=" . $user_id ); // phpcs:ignore
-		$user_login_details = unserialize( $result[0]->meta_value );
+		$result             = $wpdb->get_results( $wpdb->prepare( "SELECT user_id, meta_value FROM {$wpdb->usermeta} WHERE meta_key = %s AND user_id = %d", 'session_tokens', (int) $user_id ) );
+		$user_login_details = array();
 		$last_login         = '';
-		foreach ( $user_login_details as $item ) {
-			$last_login = $item['login'];
+		if ( ! empty( $result ) && isset( $result[0]->meta_value ) ) {
+			$user_login_details = maybe_unserialize( $result[0]->meta_value );
 		}
+		if ( is_array( $user_login_details ) ) {
+			foreach ( $user_login_details as $item ) {
+				if ( isset( $item['login'] ) ) {
+					$last_login = $item['login'];
+				}
+			}
 		$data     = array(
 			'domain'         => $mydomain,
 			'userID'         => $user_id,

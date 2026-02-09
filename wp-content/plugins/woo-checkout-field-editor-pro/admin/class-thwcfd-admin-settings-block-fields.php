@@ -183,7 +183,7 @@ class THWCFD_Admin_Settings_Block_Fields extends THWCFD_Admin_Settings{
 								}
 								
 								if(isset($property['status']) && $property['status'] == 1){
-									$statusHtml = $pvalue == 1 ? '<span class="dashicons dashicons-yes tips" data-tip="'. esc_attr(__('Yes', 'woocommerce')).'"></span>' : '-';
+									$statusHtml = $pvalue == 1 ? '<span class="dashicons dashicons-yes tips" data-tip="'. esc_attr(__('Yes', 'woo-checkout-field-editor-pro')).'"></span>' : '-';
 									?>
 									<td class="td_<?php echo esc_attr($pname); ?> status"><?php echo wp_kses($statusHtml, array('span' => array('class' => true))); ?></td>
 									<?php
@@ -318,14 +318,18 @@ class THWCFD_Admin_Settings_Block_Fields extends THWCFD_Admin_Settings{
 		try {
 			if(THWCFD_Utils_Section::is_valid_section($section)){
 				$f_names = !empty( $_POST['f_name'] ) ? $_POST['f_name'] : array();	
+				$f_names = array_map('sanitize_key', $f_names);
 				if(empty($f_names)){
 					echo '<div class="error"><p> '. esc_html__('Your changes were not saved due to no fields found.', 'woo-checkout-field-editor-pro') .'</p></div>';
 					return;
 				}
 				
 				$f_order   = !empty( $_POST['f_order'] ) ? $_POST['f_order'] : array();	
+				$f_order = array_map('absint', $f_order);
 				$f_deleted = !empty( $_POST['f_deleted'] ) ? $_POST['f_deleted'] : array();
-				$f_enabled = !empty( $_POST['f_enabled'] ) ? $_POST['f_enabled'] : array();		
+				$f_deleted = array_map('absint', $f_deleted);
+				$f_enabled = !empty( $_POST['f_enabled'] ) ? $_POST['f_enabled'] : array();
+				$f_enabled = array_map('absint', $f_enabled);		
 				$sname = $section->get_property('name');
 				$field_set = THWCFD_Utils_Section::get_fields($section);
 				
@@ -514,9 +518,9 @@ class THWCFD_Admin_Settings_Block_Fields extends THWCFD_Admin_Settings{
 		$selected_checkout = $this->get_current_c_type();
 		$c_url = $this->get_admin_url($this->page_id, 'classic');
 		$b_url = $this->get_admin_url($this->page_id, 'block');
-		$tt_content = esc_html("You're on the Classic Checkout Field Editor right now. If your store is not using Classic Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woocommerce-checkout-field-editor-pro');
-		if ( !empty( $_GET['c_type'] ) && 'block' == $_GET['c_type'] ) {
-			$tt_content = esc_html("You're on the Block Checkout Field Editor right now. If your store is not using Block Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woocommerce-checkout-field-editor-pro');
+		$tt_content = esc_html("You're on the Classic Checkout Field Editor right now. If your store is not using Classic Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woo-checkout-field-editor-pro');
+		if ( !empty( $_GET['c_type'] ) && 'block' == sanitize_key($_GET['c_type'] )) {
+			$tt_content = esc_html("You're on the Block Checkout Field Editor right now. If your store is not using Block Checkout, fields you add here won’t appear on the checkout page. Unsure which checkout type your store is using?", 'woo-checkout-field-editor-pro');
 		}
 		?>
 		<div class="th-ct-wrap">
@@ -554,7 +558,7 @@ class THWCFD_Admin_Settings_Block_Fields extends THWCFD_Admin_Settings{
 	public function output_sections() {
 		
 		$result = false;
-		$s_action = isset($_POST['s_action']) ? $_POST['s_action'] : false;
+		$s_action = isset($_POST['s_action']) ? sanitize_text_field(wp_unslash($_POST['s_action'])) : false;
 
 		if($s_action == 'edit'){
 			$result = $this->edit_section();

@@ -69,7 +69,7 @@ class THWCFD_Admin {
 	public function plugin_action_links($links) {
 		$settings_link = '<a href="'.esc_url(admin_url('admin.php?page=checkout_form_designer')).'">'. __('Settings', 'woo-checkout-field-editor-pro') .'</a>';
 		array_unshift($links, $settings_link);
-		$pro_link = '<a style="color:green; font-weight:bold" target="_blank" href="https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=free&utm_medium=plugin_action_link&utm_campaign=wcfe_upgrade_link">'. __('Get Pro', 'woo-checkout-field-editor-pro') .'</a>';
+		$pro_link = '<a style="color:green; font-weight:bold" target="_blank" href="https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=wcfe_settings_upgrade_link">'. __('Get Pro', 'woo-checkout-field-editor-pro') .'</a>';
 		array_push($links,$pro_link);
 
 		if (array_key_exists('deactivate', $links)) {
@@ -85,7 +85,7 @@ class THWCFD_Admin {
 	public function plugin_row_meta( $plugin_meta, $plugin_file ) {
 		if ( 'woo-checkout-field-editor-pro/checkout-form-designer.php' === $plugin_file ) {
 			$plugin_meta[] = '<a href="https://www.facebook.com/groups/themehigh/" target="_blank">' . esc_html__( 'Join Community', 'woo-checkout-field-editor-pro' ) . '</a>';
-			$plugin_meta[] = '<a href="https://wordpress.org/support/plugin/woo-checkout-field-editor-pro/reviews/?filter=5" target="_blank">' . esc_html__( 'Review us', 'woo-checkout-field-editor-pro' ) . '</a>';
+			$plugin_meta[] = '<a href="https://wordpress.org/support/plugin/woo-checkout-field-editor-pro/reviews/" target="_blank">' . esc_html__( 'Review us', 'woo-checkout-field-editor-pro' ) . '</a>';
 		}
 		return $plugin_meta;
 	}
@@ -95,7 +95,7 @@ class THWCFD_Admin {
 		
 		echo '<h2>'. esc_html__('Checkout Form', 'woo-checkout-field-editor-pro') .'</h2>';
 		$tab = $this->get_current_tab();
-		$c_type = isset( $_GET['c_type'] ) ? esc_attr( $_GET['c_type'] ) : 'classic';
+		$c_type = isset( $_GET['c_type'] ) ? sanitize_key( $_GET['c_type'] ) : 'classic';
 
 		echo '<div class="thwcfd-wrap">';
 		//Block Compatibility Warning
@@ -137,10 +137,12 @@ class THWCFD_Admin {
              	
 					<span class="th-warning-message-panel__inner-text">
 					<?php
+						
 						printf(
+							/* translators: %s: Support team link */
 							esc_html__("Our Checkout Field Editor now supports WooCommerce Checkout Blocks! Currently, a few field types are available, and more will be added soon. 
 							If you're using Block Checkout, make sure to switch to the Block Checkout Fields tab, otherwise, your changes won’t be reflected. Have questions or need help? 
-							Reach out to our  %s .", 'woocommerce-checkout-field-editor-pro'),
+							Reach out to our  %s .", 'woo-checkout-field-editor-pro'),
 							'<a href="https://www.themehigh.com/docs/support/" target="_blank" class="quick-widget-support-link">' . esc_html__(' Support team', 'woo-checkout-field-editor-pro') . '</a>'
 						);
        				?>
@@ -512,7 +514,7 @@ class THWCFD_Admin {
 		$admin_url  = 'admin.php?page=checkout_form_designer';
         $dismiss_url = $admin_url . '&thwcfd_discount_popup_dismiss=true&thwcfd_discount_popup_nonce=' . wp_create_nonce( 'thwcfd_discount_popup_security');
 
-		$url = "https://www.themehigh.com/?edd_action=add_to_cart&download_id=12&cp=lyCDSy&utm_source=free&utm_medium=premium_tab&utm_campaign=wcfe_upgrade_link";
+		$url = "https://www.themehigh.com/?edd_action=add_to_cart&download_id=12&cp=lyCDSy&utm_source=wcfe_free&utm_medium=referral&utm_campaign=wcfe_premium_tab_upgrade_link";
 
 		$current_page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash($_GET['page']))  : '';
 		
@@ -614,7 +616,7 @@ class THWCFD_Admin {
 										<path d="M7.50435 12.0001C5.81732 12.0001 4.12559 12.0001 2.43856 12.0001C2.10491 12.0001 1.87935 11.8454 1.83235 11.5848C1.77596 11.2976 1.98743 11.0281 2.29758 10.9927C2.35397 10.9839 2.41506 10.9839 2.47145 10.9839C5.82671 10.9839 9.17728 10.9839 12.5325 10.9839C12.8991 10.9839 13.1246 11.1297 13.1763 11.3992C13.2327 11.6952 13.0119 11.9692 12.6923 11.9912C12.6218 11.9957 12.5513 11.9957 12.4809 11.9957C10.822 12.0001 9.16318 12.0001 7.50435 12.0001Z" fill="#FFB743"/>
 									</svg>
                     			</div>
-                    			<a href="https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=free&utm_medium=quicklinks&utm_campaign=wcfe_upgrade_link" target="_blank" class="quick-widget-doc-link">Upgrade to Premium</a></li>
+                    			<a href="https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=wcfe_settings_upgrade_link" target="_blank" class="quick-widget-doc-link">Upgrade to Premium</a></li>
                			 	<li>
 
                			 	<div class="list_icon" style="background-color: rgba(5, 15, 250, 0.15);">
@@ -724,6 +726,10 @@ class THWCFD_Admin {
 			return false;
 		}
 		return true;
+	}
+
+	public function remove_welcome_page_menu() {
+		remove_submenu_page( 'index.php', 'thwcfd-welcome' );
 	}
 }
 

@@ -151,8 +151,8 @@ class THWCFD_Utils {
 					'order_comments' => array(
 						'type'        => 'textarea',
 						'class'       => array('notes'),
-						'label'       => __('Order Notes', 'woocommerce'),
-						'placeholder' => _x('Notes about your order, e.g. special notes for delivery.', 'placeholder', 'woocommerce')
+						'label'       => __('Order Notes', 'woocommerce'), // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+						'placeholder' => _x('Notes about your order, e.g. special notes for delivery.', 'placeholder', 'woocommerce') // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
 					)
 				);
 			}
@@ -247,6 +247,7 @@ class THWCFD_Utils {
 
 			if(isset($options[$value]) && !empty($options[$value])){
 				$value = $options[$value];
+				$value = THWCFD_Utils::translate_dynamic_text($value, 'option');
 			}
 		}elseif($type === 'checkboxgroup' || $type === 'multiselect'){
 			$options = isset($field['options']) ? $field['options'] : array();
@@ -256,10 +257,11 @@ class THWCFD_Utils {
 			if(is_array($value_arr)){
 				$new_value = array();
 				foreach($value_arr as $single_value){
+					
 					if(isset($options[$single_value]) && !empty($options[$single_value])){
-						$new_value[] = $options[$single_value];
+						$new_value[] = THWCFD_Utils::translate_dynamic_text($options[$single_value], 'option') ;
 					}else{
-						$new_value[] = $single_value;
+						$new_value[] = THWCFD_Utils::translate_dynamic_text($single_value, 'option') ;
 					}
 				}
 				$value = implode(', ', $new_value);
@@ -268,7 +270,6 @@ class THWCFD_Utils {
 			}
 				
 		}
-
 		return $value;
 	}
 
@@ -383,25 +384,48 @@ class THWCFD_Utils {
 	/***********************************
 	 ----- i18n functions - START ------
 	 ***********************************/
+
+	/**
+	 * Legacy helper function.
+	 *
+	 * This method is no longer responsible for translation.
+	 * It is kept for backward compatibility, as it may still be
+	 * referenced by older code or third-party integrations.
+	 *
+	 * @param string $text Text to be escaped.
+	 * @return string Escaped text.
+	 */
 	public static function t($text){
-		if(!empty($text)){	
+
+		/*if(!empty($text)){	
 			$otext = $text;						
-			$text = __($text, 'woo-checkout-field-editor-pro');	
+			$text = esc_html($text);	
 			if($text === $otext){
 				$text = __($text, 'woocommerce');
 			}
 		}
-		return $text;
+		return $text;*/
+		return esc_html( $text);
 	}
 
+	/**
+	 * Legacy echo helper function.
+	 *
+	 * This method no longer performs translation.
+	 * It is retained for backward compatibility to avoid
+	 * breaking existing usages that expect this static method.
+	 *
+	 * @param string $text Text to be escaped and echoed.
+	 * @return void
+	 */
 	public static function et($text){
-		if(!empty($text)){	
-			$otext = $text;						
-			$text = __($text, 'woo-checkout-field-editor-pro');	
-			if($text === $otext){
-				$text = __($text, 'woocommerce');
-			}
-		}
+		// if(!empty($text)){	
+		// 	$otext = $text;						
+		// 	$text = __($text, 'woo-checkout-field-editor-pro');	
+		// 	if($text === $otext){
+		// 		$text = __($text, 'woocommerce');
+		// 	}
+		// }
 		echo esc_html($text);
 	}
 	/***********************************
@@ -491,6 +515,62 @@ class THWCFD_Utils {
 			$str = array_map('trim', explode($separator, $str));
 		}
 		return $str;
+	}
+
+	/**
+	 * Translate dynamic/admin-entered strings with proper fallbacks.
+	 *
+	 * Translation order:
+	 * 1. WPML (string translation)
+	 * 2. Plugin gettext (backward compatibility)
+	 * 3. WooCommerce core gettext
+	 *
+	 * @param string $text      Original text.
+	 * @param string $text_type Type of text: label|placeholder|option.
+	 * @return string Translated text.
+	 */
+	public static function translate_dynamic_text( $text, $text_type = 'label' ) {
+
+		if ( empty( $text ) ) {
+			return '';
+		}
+
+		// Build WPML string key (kept for backward compatibility)
+		$key = 'Field label - ' . $text;
+		if ( $text_type === 'placeholder' ) {
+			$key = 'Field placeholder - ' . $text;
+		} elseif ( $text_type === 'option' ) {
+			$key = 'Field option text - ' . $text;
+		}
+
+		// WPML – preferred for dynamic/admin strings
+		if ( has_filter( 'wpml_translate_single_string' ) ) {
+			$translated = apply_filters(
+				'wpml_translate_single_string',
+				$text,
+				'woo-checkout-field-editor-pro',
+				$key
+			);
+
+			if ( $translated !== $text ) {
+				return $translated;
+			}
+		}
+
+		// Plugin gettext fallback (backward compatibility)
+		// Supports existing .mo translations before WPML integration.
+		// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText
+		$plugin_translation = __( $text, 'woo-checkout-field-editor-pro' );
+
+		if ( $plugin_translation !== $text ) {
+			return $plugin_translation;
+		}
+
+		// WooCommerce core fallback
+		// Used only when WooCommerce already provides a translation
+		// in the current locale.
+		// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText, WordPress.WP.I18n.TextDomainMismatch
+		return __( $text, 'woocommerce' );
 	}
 }
 

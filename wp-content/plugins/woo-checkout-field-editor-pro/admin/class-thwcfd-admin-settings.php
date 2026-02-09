@@ -156,9 +156,9 @@ abstract class THWCFD_Admin_Settings{
 			), $atts );
 		
 			$ftype     = isset($field['type']) ? $field['type'] : 'text';
-			$flabel    = isset($field['label']) && !empty($field['label']) ? __($field['label'], 'woo-checkout-field-editor-pro') : '';
-			$sub_label = isset($field['sub_label']) && !empty($field['sub_label']) ? __($field['sub_label'], 'woo-checkout-field-editor-pro') : '';
-			$tooltip   = isset($field['hint_text']) && !empty($field['hint_text']) ? __($field['hint_text'], 'woo-checkout-field-editor-pro') : '';
+			$flabel    = isset($field['label']) && !empty($field['label']) ? $field['label'] : '';
+			$sub_label = isset($field['sub_label']) && !empty($field['sub_label']) ? $field['sub_label'] : '';
+			$tooltip   = isset($field['hint_text']) && !empty($field['hint_text']) ? $field['hint_text'] : '';
 			
 			$field_html = '';
 			
@@ -257,7 +257,7 @@ abstract class THWCFD_Admin_Settings{
 			), $atts );
 		
 			$fid 	= 'a_f'. $field['name'];
-			$flabel = isset($field['label']) && !empty($field['label']) ? __($field['label'], 'woo-checkout-field-editor-pro') : '';
+			$flabel = isset($field['label']) && !empty($field['label']) ? $field['label'] : '';
 			
 			$field_props  = $this->prepare_form_field_props($field, $atts);
 			$field_props .= isset($field['checked']) && $field['checked'] === 1 ? ' checked' : '';
