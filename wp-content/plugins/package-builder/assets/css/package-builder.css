@@ -79,3 +79,22 @@
     color: #d63638;
     /* RED */
 }
+
+
+/* main package grid  */
+.pb-package-list {
+    display: grid;
+    gap: 20px;
+     grid-template-columns: repeat(2, 1fr);
+}
+
+/* Inline tab error */
+.pb-tab-error {
+    color: #d63638;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.pb-tabs li.pb-tab-error-active {
+    outline: 2px solid rgba(214,54,56,0.15);
+}

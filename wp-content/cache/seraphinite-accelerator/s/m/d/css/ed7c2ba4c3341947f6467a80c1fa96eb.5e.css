@@ -1,0 +1,4 @@
+/* CookieYes */
+.cky-consent-container.cky-hide ~ .cky-consent-container {
+	display: none;
+}

@@ -1,0 +1,5 @@
+/* Avia Slideshow */
+.avia-slideshow.av-default-height-applied .avia-slideshow-inner > li:first-child {
+	opacity: 1 !important;
+	visibility: visible !important;
+}

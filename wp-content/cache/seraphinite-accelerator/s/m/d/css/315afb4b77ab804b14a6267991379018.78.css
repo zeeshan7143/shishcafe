@@ -1,0 +1,6 @@
+/* Generic HTML */
+html, body {
+	display: block !important;
+	opacity: 1 !important;
+	visibility: unset !important;
+}

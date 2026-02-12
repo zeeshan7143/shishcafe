@@ -1,0 +1,18 @@
+/* Fusion Menu */
+.fusion-menu-element-wrapper.loading {
+	opacity: 1;
+}
+
+@media (max-width: 1024px) {
+	.fusion-menu-element-wrapper.loading .fusion-menu {
+		display: none;
+	}
+
+	.fusion-menu-element-wrapper.loading button {
+		display: block !important;
+	}
+
+	.fusion-menu-element-wrapper.loading {
+		display: flex;
+	}
+}

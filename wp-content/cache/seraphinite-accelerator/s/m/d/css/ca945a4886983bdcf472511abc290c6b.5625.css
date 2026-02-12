@@ -1,0 +1,311 @@
+/* Mona Sans  */
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Light.svg#Mona-Sans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Regular.svg#Mona-Sans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Medium.svg#Mona-Sans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-SemiBold.svg#Mona-Sans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Bold.svg#Mona-Sans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Mona-Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./MonaSans/Mona-Sans-Black.svg#Mona-Sans-Black') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Monteserat  */
+
+/* @font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Montserrat';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Monteserat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+    font-family: 'Mona-Sans';
+}
+
+/* Plus Jakarta Sans */
+
+/* @font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Light.svg#./Plus_Jakarta_Sans/PlusJakartaSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Regular.svg#./Plus_Jakarta_Sans/PlusJakartaSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Medium.svg#./Plus_Jakarta_Sans/PlusJakartaSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.svg#./Plus_Jakarta_Sans/PlusJakartaSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-Bold.svg#./Plus_Jakarta_Sans/PlusJakartaSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Plus Jakarta Sans';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.svg#./Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+} */
+/* 
+@font-face {
+font-display:swap;
+    font-family: 'Ubuntu';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+font-display:swap;
+    font-family: 'Ubuntu';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Ubuntu';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+font-display:swap;
+    font-family: 'Ubuntu';
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.eot');
+    src: url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.woff') format('woff'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.ttf') format('truetype'),
+        url('::bhkdyqcetujyi::/shish-cafe/wp-content/themes/shishcafe/assets/fonts/./ubuntu/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+} */

@@ -15,9 +15,12 @@ function custom_shop_shortcode()
             <select id="category-select">
                 <option value="">Select a category</option>
                 <?php
+                $exclude_term_ids = get_excluded_package_deal_term_ids();
+                $exclude_term_ids[] = get_option('default_product_cat'); // Exclude "Uncategorized"
+
                 $categories = get_terms('product_cat', array(
                     'hide_empty' => true,
-                    'exclude'    => get_option('default_product_cat') // Exclude "Uncategorized"
+                    'exclude'    => array_filter(array_unique($exclude_term_ids))
                 ));
 
                 foreach ($categories as $category) {
@@ -52,6 +55,22 @@ function custom_shop_shortcode()
 }
 add_shortcode('custom_shop', 'custom_shop_shortcode');
 
+// Exclude Package Deals category and its children
+function get_excluded_package_deal_term_ids()
+{
+    $term_ids = [];
+    $package_deals_term = get_term_by('slug', 'package-deals', 'product_cat');
+    if ($package_deals_term && !is_wp_error($package_deals_term)) {
+        $term_ids[] = (int) $package_deals_term->term_id;
+        $children = get_term_children($package_deals_term->term_id, 'product_cat');
+        if (!is_wp_error($children) && !empty($children)) {
+            $term_ids = array_merge($term_ids, array_map('intval', $children));
+        }
+    }
+
+    return $term_ids;
+}
+
 
 // Category Filter and Location Filter
 function load_more_products()
@@ -64,6 +83,8 @@ function load_more_products()
     // Get selected location from AJAX request
     $selected_location = isset($_POST['selected_location']) ? sanitize_text_field($_POST['selected_location']) : '';
 
+    $exclude_term_ids = get_excluded_package_deal_term_ids();
+
     // Base query args
     $args = array(
         'post_type'      => 'product',
@@ -73,16 +94,23 @@ function load_more_products()
         'orderby'        => 'ID', // Order by post ID
         'order'          => 'ASC',
         'meta_query'     => array('relation' => 'AND'), // Start with AND relation
+        'tax_query'      => array(
+            array(
+                'taxonomy'         => 'product_cat',
+                'field'            => 'term_id',
+                'terms'            => array_filter(array_unique($exclude_term_ids)),
+                'operator'         => 'NOT IN',
+                'include_children' => true,
+            ),
+        ),
     );
 
     // Filter by selected categories
     if (!empty($categories)) {
-        $args['tax_query'] = array(
-            array(
-                'taxonomy' => 'product_cat',
-                'field'    => 'slug',
-                'terms'    => $categories,
-            ),
+        $args['tax_query'][] = array(
+            'taxonomy' => 'product_cat',
+            'field'    => 'slug',
+            'terms'    => $categories,
         );
     }
 
@@ -136,7 +164,11 @@ function load_more_products()
     }
     // For Prouct category count Start 
     $category_counts = [];
-    $categories = get_terms('product_cat', ['hide_empty' => true]);
+    $exclude_term_ids = get_excluded_package_deal_term_ids();
+    $categories = get_terms('product_cat', [
+        'hide_empty' => true,
+        'exclude'    => array_filter(array_unique($exclude_term_ids)),
+    ]);
     foreach ($categories as $cat) {
         $count_args = [
             'post_type'      => 'product',
