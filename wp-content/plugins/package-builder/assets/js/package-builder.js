@@ -1239,6 +1239,13 @@ jQuery(function ($) {
     if ($packageSelector.length) {
         $packageSelector.on('change', 'input[name="pb_package"]', function () {
             $('#pb-next-package').prop('disabled', false);
+            $('#pb-clear-package').prop('disabled', false).show();
+        });
+
+        $('#pb-clear-package').on('click', function () {
+            $packageSelector.find('input[name="pb_package"]').prop('checked', false);
+            $('#pb-next-package').prop('disabled', true);
+            $('#pb-clear-package').prop('disabled', true).hide();
         });
 
         $('#pb-next-package').on('click', function () {

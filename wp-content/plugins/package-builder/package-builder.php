@@ -165,19 +165,37 @@ class Woo_Package_Builder
         <div id="pb-package-selector">
             <div class="pb-package-list">
                 <?php foreach ($packages as $p): ?>
+                    <?php
+                    $package_tag_slugs = wp_get_post_terms($p->get_id(), 'product_tag', ['fields' => 'slugs']);
+                    $is_ramzan_package = (!is_wp_error($package_tag_slugs) && in_array('ramzan-deals', $package_tag_slugs, true));
+                    ?>
                     <label class="pb-package-option">
                         <input type="radio" name="pb_package" value="<?= esc_attr($p->get_id()); ?>">
                         <span class="pb-package-title"><?= esc_html($p->get_name()); ?></span>
                         <?php if ($p->get_short_description()): ?>
                             <span class="pb-package-desc"><?= wp_kses_post($p->get_short_description()); ?></span>
                         <?php endif; ?>
+                        <?php if (!$is_ramzan_package): ?>
+                            <span class="pb-persons-label">Select No. of Persons to Serve</span>
+                            <select class="pb-persons-select" data-package-id="<?= esc_attr($p->get_id()); ?>">
+                                <option value="">Select Persons</option>
+                                <?php for ($i = 1; $i <= 25; $i++): ?>
+                                    <option value="<?= esc_attr($i); ?>"><?= esc_html($i); ?></option>
+                                <?php endfor; ?>
+                            </select>
+                        <?php endif; ?>
                     </label>
                 <?php endforeach; ?>
             </div>
 
-            <button type="button" id="pb-next-package" class="pb-next-btn" disabled>
-                Next
-            </button>
+            <div class="pb-package-actions">
+                <button type="button" id="pb-clear-package" class="pb-clear-btn" style="display: none;" disabled>
+                    Clear Selection
+                </button>
+                <button type="button" id="pb-next-package" class="pb-next-btn" disabled>
+                    Next
+                </button>
+            </div>
         </div>
 
         <div id="pb-builder-container"></div>
