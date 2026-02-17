@@ -133,6 +133,8 @@ class Woo_Package_Builder
         $packages = wc_get_products([
             'limit' => -1,
             'status' => 'publish',
+            'orderby' => 'ID',
+            'order' => 'ASC',
             'tax_query' => [
                 [
                     'taxonomy' => 'product_cat',
@@ -168,21 +170,43 @@ class Woo_Package_Builder
                     <?php
                     $package_tag_slugs = wp_get_post_terms($p->get_id(), 'product_tag', ['fields' => 'slugs']);
                     $is_ramzan_package = (!is_wp_error($package_tag_slugs) && in_array('ramzan-deals', $package_tag_slugs, true));
+                    $package_price = $p->get_price();
+                    $price_map = [];
+                    if ($p->is_type('variable')) {
+                        foreach ($p->get_available_variations() as $variation) {
+                            foreach ($variation['attributes'] as $attr_key => $attr_value) {
+                                if (strpos($attr_key, 'location') !== false && $attr_value) {
+                                    $price_map[sanitize_title($attr_value)] = (float) $variation['display_price'];
+                                    break;
+                                }
+                            }
+                        }
+                    }
                     ?>
-                    <label class="pb-package-option">
-                        <input type="radio" name="pb_package" value="<?= esc_attr($p->get_id()); ?>">
-                        <span class="pb-package-title"><?= esc_html($p->get_name()); ?></span>
+                    <?php $requires_persons = !$is_ramzan_package; ?>
+                    <label class="pb-package-option" data-requires-persons="<?= $requires_persons ? '1' : '0'; ?>">
+                        <input type="radio" name="pb_package" class="pb-p-select" value="<?= esc_attr($p->get_id()); ?>" data-requires-persons="<?= $requires_persons ? '1' : '0'; ?>">
+                        <h2 class="pb-package-title"><?= esc_html($p->get_name()); ?></h2>
                         <?php if ($p->get_short_description()): ?>
-                            <span class="pb-package-desc"><?= wp_kses_post($p->get_short_description()); ?></span>
+                            <p class="pb-package-desc"><?= wp_kses_post($p->get_short_description()); ?></p>
                         <?php endif; ?>
                         <?php if (!$is_ramzan_package): ?>
-                            <span class="pb-persons-label">Select No. of Persons to Serve</span>
-                            <select class="pb-persons-select" data-package-id="<?= esc_attr($p->get_id()); ?>">
-                                <option value="">Select Persons</option>
-                                <?php for ($i = 1; $i <= 25; $i++): ?>
-                                    <option value="<?= esc_attr($i); ?>"><?= esc_html($i); ?></option>
-                                <?php endfor; ?>
-                            </select>
+                            <div class="pb-persons-slect-box">
+                                <label class="pb-persons-label">Select No. of Persons to Serve</label>
+                                <select class="pb-persons-select"
+                                    data-package-id="<?= esc_attr($p->get_id()); ?>"
+                                    data-package-price="<?= esc_attr($package_price); ?>"
+                                    data-package-price-map="<?= esc_attr(wp_json_encode($price_map)); ?>"
+                                    required>
+                                    <option value="" disabled>Select Persons</option>
+                                    <?php for ($i = 1; $i <= 25; $i++): ?>
+                                        <option value="<?= esc_attr($i); ?>" <?= $i === 1 ? 'selected' : ''; ?>><?= esc_html($i); ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </div>
+                            <h4 class="pb-package-price" style="display: none;"></h4>
+                        <?php else: ?>
+                            <h4 class="pb-package-price">Package Price £<?= esc_html(number_format($package_price, 2)); ?></h4>
                         <?php endif; ?>
                     </label>
                 <?php endforeach; ?>
@@ -585,17 +609,17 @@ class Woo_Package_Builder
                     data-mix="<?= $category_mix ? '1' : '0'; ?>"
                     data-mix-free="<?= esc_attr($mix_qty); ?>"
                     data-mix-groups="<?= esc_attr(implode(',', $mix_groups)); ?>">
-                    <p class="pb-info">
+                    <p class="pb-info" style="display: none;">
                         Qty: <?= esc_html($cat['qty']); ?>
                     </p>
-                    <?php if (!empty($cat['desc'])): ?>
+                    <?php if (!empty($cat['desc']) && empty($category_mix) && !($cat['slug'] === 'mains' && empty($mix_groups))): ?>
                         <div class="pb-info-desc">
                             <?= wp_kses_post($cat['desc']); ?>
                         </div>
                     <?php endif; ?>
-                    <p class="pb-info">
+                    <!-- <p class="pb-info">
                         Additional items can be added with extra payment.
-                    </p>
+                    </p> -->
 
                     <?php if (!empty($group_products)): ?>
 
@@ -610,7 +634,7 @@ class Woo_Package_Builder
 
                         <?php if ($category_mix): ?>
                             <div class="pb-mix-block">
-                                <h4 class="pb-subgroup-title">Chicken &amp; Lamb Mix</h4>
+                                <!-- <h4 class="pb-subgroup-title">Chicken &amp; Lamb Mix</h4> -->
                                 <?php if (!empty($mix_desc)): ?>
                                     <div class="pb-info-desc">
                                         <?= wp_kses_post($mix_desc); ?>
@@ -631,52 +655,80 @@ class Woo_Package_Builder
                             <?php if (!empty($group['render']) && $group['render'] === 'subsection'): ?>
                                 <div class="pb-subsection" data-group="<?= esc_attr($group_key); ?>">
                                     <h4 class="pb-subgroup-title"><?= esc_html($group['label']); ?></h4>
-                                    <?php foreach ($group_products[$group_key] as $p): ?>
-                                        <div class="pb-item" data-id="<?= $p->get_id(); ?>">
-                                            <input type="checkbox">
-                                            <strong><?= esc_html($p->get_name()); ?></strong>
+                                    <div class="pb-subsection-items-group">
+                                        <?php foreach ($group_products[$group_key] as $p): ?>
+                                            <?php
+                                            $item_type = '';
+                                            $item_terms = get_the_terms($p->get_id(), 'product_cat');
+                                            if ($item_terms && !is_wp_error($item_terms)) {
+                                                foreach ($item_terms as $t) {
+                                                    if (in_array($t->slug, ['chicken', 'lamb', 'vegetarian'], true)) {
+                                                        $item_type = $t->slug;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            ?>
+                                            <label class="pb-item" data-id="<?= $p->get_id(); ?>" data-type="<?= esc_attr($item_type); ?>">
+                                                <div class="selcedbox">
+                                                    <input type="checkbox">
+                                                    <h5 class="pb-price"></h5>
+                                                </div>
+                                                <h3><?= esc_html($p->get_name()); ?></h3>
 
-                                            <div class="pb-desc">
-                                                <?= wp_kses_post($p->get_short_description()); ?>
-                                            </div>
+                                                <h4 class="pb-desc">
+                                                    <?= wp_kses_post($p->get_short_description()); ?>
+                                                </h4>
 
-                                            <div class="pb-price"></div>
-                                        </div>
-                                    <?php endforeach; ?>
+
+                                            </label>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             <?php elseif ($category_mode === 'combined'): ?>
                                 <div class="pb-subsection" data-group="<?= esc_attr($group_key); ?>">
                                     <h4 class="pb-subgroup-title"><?= esc_html($group['label']); ?></h4>
-                                    <?php foreach ($group_products[$group_key] as $p): ?>
-                                        <div class="pb-item" data-id="<?= $p->get_id(); ?>">
-                                            <input type="checkbox">
-                                            <strong><?= esc_html($p->get_name()); ?></strong>
+                                    <div class="pb-subsection-items-group">
+                                        <?php foreach ($group_products[$group_key] as $p): ?>
+                                            <?php
+                                            $item_type = '';
+                                            $item_terms = get_the_terms($p->get_id(), 'product_cat');
+                                            if ($item_terms && !is_wp_error($item_terms)) {
+                                                foreach ($item_terms as $t) {
+                                                    if (in_array($t->slug, ['chicken', 'lamb', 'vegetarian'], true)) {
+                                                        $item_type = $t->slug;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            ?>
+                                            <label class="pb-item" data-id="<?= $p->get_id(); ?>" data-type="<?= esc_attr($item_type); ?>">
+                                                <div class="selcedbox">
+                                                    <input type="checkbox">
+                                                    <h5 class="pb-price"></h5>
+                                                </div>
+                                                <h3><?= esc_html($p->get_name()); ?></h3>
 
-                                            <div class="pb-desc">
-                                                <?= wp_kses_post($p->get_short_description()); ?>
-                                            </div>
+                                                <h4 class="pb-desc">
+                                                    <?= wp_kses_post($p->get_short_description()); ?>
+                                                </h4>
 
-                                            <div class="pb-price"></div>
-                                        </div>
-                                    <?php endforeach; ?>
+
+                                            </label>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             <?php else: ?>
                                 <div class="pb-subgroup"
                                     data-group="<?= esc_attr($group_key); ?>"
                                     data-free="<?= esc_attr($group['qty']); ?>">
-                                    <h4 class="pb-subgroup-title">
-                                        <?= esc_html($group['label']); ?>
-                                        <?php if (!empty($group['qty'])): ?>
-                                            <span class="pb-subgroup-qty">(<?= esc_html($group['qty']); ?>)</span>
-                                        <?php endif; ?>
-                                    </h4>
                                     <?php if (!empty($group['desc'])): ?>
                                         <div class="pb-info-desc">
                                             <?= wp_kses_post($group['desc']); ?>
                                         </div>
                                     <?php endif; ?>
 
-                                    <div class="pb-info">
+                                    <div class="pb-info" style="display: none;">
                                         Qty: <?= esc_html($group['qty']); ?>
                                     </div>
 
@@ -686,19 +738,39 @@ class Woo_Package_Builder
                                         </div>
                                         <span class="pb-extra-tab"></span>
                                     </div>
+                                    <h4 class="pb-subgroup-title">
+                                        <?php if (!empty($group['qty'])): ?>
+                                            <span class="pb-subgroup-qty d-p-none">(<?= esc_html($group['qty']); ?> item required)</span>
+                                        <?php endif; ?>
+                                        <?= esc_html($group['label']); ?>
+                                    </h4>
+                                    <div class="pb-subsection-items-group">
+                                        <?php foreach ($group_products[$group_key] as $p): ?>
+                                            <?php
+                                            $item_type = '';
+                                            $item_terms = get_the_terms($p->get_id(), 'product_cat');
+                                            if ($item_terms && !is_wp_error($item_terms)) {
+                                                foreach ($item_terms as $t) {
+                                                    if (in_array($t->slug, ['chicken', 'lamb', 'vegetarian'], true)) {
+                                                        $item_type = $t->slug;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            ?>
+                                            <label class="pb-item" data-id="<?= $p->get_id(); ?>" data-type="<?= esc_attr($item_type); ?>">
+                                                <div class="selcedbox">
+                                                    <input type="checkbox">
+                                                    <h5 class="pb-price"></h5>
+                                                </div>
+                                                <h3><?= esc_html($p->get_name()); ?></h3>
 
-                                    <?php foreach ($group_products[$group_key] as $p): ?>
-                                        <div class="pb-item" data-id="<?= $p->get_id(); ?>">
-                                            <input type="checkbox">
-                                            <strong><?= esc_html($p->get_name()); ?></strong>
-
-                                            <div class="pb-desc">
-                                                <?= wp_kses_post($p->get_short_description()); ?>
-                                            </div>
-
-                                            <div class="pb-price"></div>
-                                        </div>
-                                    <?php endforeach; ?>
+                                                <h4 class="pb-desc">
+                                                    <?= wp_kses_post($p->get_short_description()); ?>
+                                                </h4>
+                                            </label>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             <?php endif; ?>
                         <?php endforeach; ?>
@@ -710,11 +782,17 @@ class Woo_Package_Builder
 
 
             <?php endforeach; ?>
+            <div class="pb-summary">
+                Package total: £<span class="pb-package-total">0.00</span>
+            </div>
             <div class="pb-footer">
 
-                <div class="pb-summary">
+                <!-- <div class="pb-summary d-p-none">
                     Extra total: £<span class="pb-extra-total">0.00</span>
                 </div>
+                <div class="pb-summary">
+                    Package total: £<span class="pb-package-total">0.00</span>
+                </div> -->
 
                 <button type="button" id="pb-add-cart" class="pb-add-cart-btn">
                     Add Package to Cart
@@ -746,6 +824,12 @@ class Woo_Package_Builder
             }
         }
 
+        $package_pricing = [
+            'chicken' => (float) ($acf_fields['chicken_pricing'] ?? 0),
+            'lamb' => (float) ($acf_fields['lamb_pricing'] ?? 0),
+            'vegetarian' => (float) ($acf_fields['vegetarian_pricing'] ?? 0),
+        ];
+
         return [
             'html' => $html,
             'data' => [
@@ -753,6 +837,7 @@ class Woo_Package_Builder
                 'package_deals_children' => $package_deals_children,
                 'child_prices' => $child_prices,
                 'main_variations' => $main_variations,
+                'package_pricing' => $package_pricing,
             ],
         ];
     }
@@ -760,6 +845,10 @@ class Woo_Package_Builder
     private function build_ramzan_package($product_id, $acf_fields, $main_variations)
     {
         error_log('Ramzan ACF fields: ' . print_r($acf_fields, true));
+
+        // Get the main product for pricing
+        $main_product = wc_get_product($product_id);
+        $package_price = $main_product ? $main_product->get_price() : 0;
 
         $qty_persons_raw = $acf_fields['qty_persons'] ?? [];
         error_log('qty_persons raw: ' . print_r($qty_persons_raw, true));
@@ -932,47 +1021,45 @@ class Woo_Package_Builder
                             <?= wp_kses_post($pdata['detail']); ?>
                         </div>
                     <?php endif; ?>
-
                     <?php if (!empty($products_by_persons[$key])): ?>
-                        <div class="pb-ramzan-items-header">
-                            <h4>Included Items (Pre-selected)</h4>
-                        </div>
-                        <?php foreach ($products_by_persons[$key] as $entry):
-                            $prod = $entry['product'];
-                            $prod_acf = $entry['acf'];
-                            $detail_key = ($key == '2') ? 'detail_for_2' : 'detail_for_8';
-                            $detail_text = $prod_acf[$detail_key] ?? '';
-                        ?>
-                            <div class="pb-item pb-ramzan-item selected" data-id="<?= $prod->get_id(); ?>" data-selected="1">
-                                <label class="pb-item-select">
-                                    <input type="checkbox" class="pb-ramzan-checkbox" value="<?= $prod->get_id(); ?>" checked disabled>
-                                </label>
+                        <h4 class="pb-ramzan-items-header">Included Items</h4>
+                        <div class="pb-subsection-items-group">
+                            <?php foreach ($products_by_persons[$key] as $entry):
+                                $prod = $entry['product'];
+                                $prod_acf = $entry['acf'];
+                                $detail_key = ($key == '2') ? 'detail_for_2' : 'detail_for_8';
+                                $detail_text = $prod_acf[$detail_key] ?? '';
+                            ?>
+                                <div class="pb-item pb-ramzan-item selected" data-id="<?= $prod->get_id(); ?>" data-selected="1">
+                                    <div class="selcedbox">
+                                        <label class="pb-item-select">
+                                            <input type="checkbox" class="pb-ramzan-checkbox" value="<?= $prod->get_id(); ?>" checked disabled>
+                                        </label>
+                                        <span class="pb-included-badge">Included</span>
+                                    </div>
+                                    <h3><?= esc_html($prod->get_name()); ?></h3>
 
-                                <div class="pb-item-header">
-                                    <strong><?= esc_html($prod->get_name()); ?></strong>
-                                    <span class="pb-included-badge">Included</span>
+                                    <?php if ($detail_text): ?>
+                                        <h4 class="pb-desc">
+                                            <?= wp_kses_post($detail_text); ?>
+                                        </h4>
+                                    <?php elseif ($prod->get_short_description()): ?>
+                                        <h4 class="pb-desc">
+                                            <?= wp_kses_post($prod->get_short_description()); ?>
+                                        </h4>
+                                    <?php endif; ?>
                                 </div>
-
-                                <?php if ($detail_text): ?>
-                                    <div class="pb-desc">
-                                        <?= wp_kses_post($detail_text); ?>
-                                    </div>
-                                <?php elseif ($prod->get_short_description()): ?>
-                                    <div class="pb-desc">
-                                        <?= wp_kses_post($prod->get_short_description()); ?>
-                                    </div>
-                                <?php endif; ?>
-
-                                <div class="pb-price"></div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <p>No products found for this option.</p>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <p>No products found for this option.</p>
+                        </div>
                     <?php endif; ?>
 
                 </div>
             <?php endforeach; ?>
-
+            <div class="pb-summary">
+                Package total: £<span class="pb-package-total"><?= esc_html(number_format($package_price, 2)); ?></span>
+            </div>
             <div class="pb-footer">
                 <button type="button" id="pb-add-cart" class="pb-add-cart-btn">
                     Add Package to Cart
@@ -1015,6 +1102,7 @@ class Woo_Package_Builder
                 'child_prices' => $child_prices,
                 'main_variations' => $main_variations,
                 'is_ramzan' => true,
+                'package_pricing' => [],
                 'console_log' => $console_data,
             ],
         ];
@@ -1037,35 +1125,21 @@ class Woo_Package_Builder
         wp_send_json_success($payload);
     }
 
-
-    // public function add_to_cart()
-    // {
-    //     if (!isset($_POST['variation_id'])) {
-    //         wp_send_json_error('Missing variation');
-    //     }
-
-    //     $variation_id  = (int) $_POST['variation_id'];
-    //     $extra_price   = (float) $_POST['extra_price'];
-    //     $selected_items = $_POST['items'] ?? [];
-
-    //     WC()->cart->add_to_cart(
-    //         wp_get_post_parent_id($variation_id), // parent product
-    //         1,
-    //         $variation_id,
-    //         [],
-    //         [
-    //             'pb_extra_price' => $extra_price,
-    //             'pb_items'       => $selected_items
-    //         ]
-    //     );
-
-    //     wp_send_json_success();
-    // }
     public function add_to_cart()
     {
         $variation_id = absint($_POST['variation_id'] ?? 0);
         $extra_price  = floatval($_POST['extra_price'] ?? 0);
+        $package_price = floatval($_POST['package_price'] ?? 0);
+        $persons = absint($_POST['persons'] ?? 0);
         $items        = $_POST['items'] ?? [];
+
+        error_log('=== ADD TO CART RECEIVED ===');
+        error_log('Variation ID: ' . $variation_id);
+        error_log('Package Price: ' . $package_price);
+        error_log('Extra Price: ' . $extra_price);
+        error_log('Persons: ' . $persons);
+        error_log('Items count: ' . count($items));
+        error_log('============================');
 
         if (!$variation_id) {
             wp_send_json_error('Invalid variation');
@@ -1114,11 +1188,15 @@ class Woo_Package_Builder
             $variation_id,
             [],
             [
+                'pb_package_price' => $package_price,
+                'pb_persons' => $persons,
                 'pb_extra_price' => $extra_price,
                 'pb_items'       => $item_ids,
                 'pb_item_entries' => $entries,
             ]
         );
+
+        error_log('Cart meta set: pb_package_price=' . $package_price . ', pb_persons=' . $persons);
 
         wp_send_json_success();
     }
@@ -1127,9 +1205,23 @@ class Woo_Package_Builder
         if (is_admin() && !defined('DOING_AJAX')) return;
 
         foreach ($cart->get_cart() as $cart_item) {
+            if (isset($cart_item['pb_package_price'])) {
+                $package_price = (float) $cart_item['pb_package_price'];
+                $extra = isset($cart_item['pb_extra_price']) ? (float) $cart_item['pb_extra_price'] : 0;
+                $total_price = $package_price + $extra;
+                
+                error_log('=== UPDATE CART PRICE ===');
+                error_log('Package Price from meta: ' . $package_price);
+                error_log('Extra Price from meta: ' . $extra);
+                error_log('Total Price to set: ' . $total_price);
+                error_log('Product ID: ' . $cart_item['data']->get_id());
+                error_log('=========================');
+                
+                $cart_item['data']->set_price($total_price);
+                continue;
+            }
 
             if (isset($cart_item['pb_extra_price'])) {
-
                 $base_price = $cart_item['data']->get_price();
                 $cart_item['data']->set_price(
                     $base_price + (float) $cart_item['pb_extra_price']
@@ -1141,6 +1233,10 @@ class Woo_Package_Builder
 
     public function save_selected_items($item, $cart_key, $values, $order)
     {
+        if (!empty($values['pb_persons'])) {
+            $item->add_meta_data('Persons to Serve (per head)', absint($values['pb_persons']), true);
+        }
+
         if (!empty($values['pb_item_entries']) && is_array($values['pb_item_entries'])) {
             // Group hierarchically by tab and subgroup
             $grouped = [];
@@ -1209,6 +1305,13 @@ class Woo_Package_Builder
 
     public function display_selected_items($item_data, $cart_item)
     {
+        if (!empty($cart_item['pb_persons'])) {
+            $item_data[] = [
+                'name'  => 'Persons to Serve (per head)',
+                'value' => absint($cart_item['pb_persons'])
+            ];
+        }
+
         if (!empty($cart_item['pb_item_entries']) && is_array($cart_item['pb_item_entries'])) {
             // Group hierarchically by tab and subgroup
             $grouped = [];
@@ -1267,6 +1370,12 @@ add_action('woocommerce_before_calculate_totals', function ($cart) {
     if (is_admin() && !defined('DOING_AJAX')) return;
 
     foreach ($cart->get_cart() as $cart_item) {
+        if (isset($cart_item['pb_package_price'])) {
+            $package_price = (float) $cart_item['pb_package_price'];
+            $extra = isset($cart_item['pb_extra_price']) ? (float) $cart_item['pb_extra_price'] : 0;
+            $cart_item['data']->set_price($package_price + $extra);
+            continue;
+        }
         if (isset($cart_item['pb_extra_price'])) {
             $cart_item['data']->set_price(
                 $cart_item['data']->get_price() + $cart_item['pb_extra_price']
