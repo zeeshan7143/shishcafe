@@ -138849,3 +138849,937 @@ Stack trace:
 [17-Feb-2026 15:28:59 UTC] [custom_add_delivery_fee] Triggered!
 [17-Feb-2026 15:28:59 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 165.94
 [17-Feb-2026 15:28:59 UTC] [SESSION] delivery_pickup_option: delivery
+[17-Feb-2026 15:31:02 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[17-Feb-2026 15:31:02 UTC] Found 4 products with ramzan-deals category
+[17-Feb-2026 15:31:02 UTC]   - Product: Chicken Biryani (ID: 6482)
+[17-Feb-2026 15:31:02 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:31:02 UTC]     Tags: 
+[17-Feb-2026 15:31:02 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[17-Feb-2026 15:31:02 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:31:02 UTC]   - Product: Roti/ Naan (ID: 6477)
+[17-Feb-2026 15:31:02 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:31:02 UTC]     Tags: 
+[17-Feb-2026 15:31:02 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[17-Feb-2026 15:31:02 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:31:02 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[17-Feb-2026 15:31:02 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:31:02 UTC]     Tags: 
+[17-Feb-2026 15:31:02 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[17-Feb-2026 15:31:02 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:31:02 UTC]   - Product: Fish Pakora (ID: 6467)
+[17-Feb-2026 15:31:02 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:31:02 UTC]     Tags: 
+[17-Feb-2026 15:31:02 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[17-Feb-2026 15:31:02 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:31:02 UTC] === END RAMZAN CHECK ===
+[17-Feb-2026 15:31:23 UTC] Product tags: Array
+(
+)
+
+[17-Feb-2026 15:32:11 UTC] Product tags: Array
+(
+    [0] => ramzan-deals
+)
+
+[17-Feb-2026 15:32:11 UTC] Ramzan package detected for product ID: 6370
+[17-Feb-2026 15:32:11 UTC] Ramzan ACF fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [chicken_qty_mains] => 
+    [lamb_qty_mains] => 
+    [vegetarian_qty_mains] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [text_description_mains_chicken] => 
+    [text_description_mains_lamb] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+        )
+
+    [detail_for_2] => 
+    [chicken_pricing] => 
+    [lamb_pricing] => 
+    [vegetarian_pricing] => 
+)
+
+[17-Feb-2026 15:32:11 UTC] qty_persons raw: Array
+(
+    [0] => Array
+        (
+            [value] => for 2
+            [label] => for 2
+        )
+
+)
+
+[17-Feb-2026 15:32:11 UTC] Parsed qty_persons: Array
+(
+    [0] => 2
+)
+
+[17-Feb-2026 15:32:11 UTC] detail_for_2: 
+[17-Feb-2026 15:32:11 UTC] detail_for_8: 
+[17-Feb-2026 15:32:11 UTC] persons_data: Array
+(
+    [2] => Array
+        (
+            [label] => For 2 Persons
+            [detail] => 
+        )
+
+)
+
+[17-Feb-2026 15:32:11 UTC] === RAMZAN PRODUCTS QUERY ===
+[17-Feb-2026 15:32:11 UTC] Query args: Array
+(
+    [post_type] => product
+    [posts_per_page] => -1
+    [post_status] => publish
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => product_cat
+                    [field] => slug
+                    [terms] => ramzan-deals
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:32:11 UTC] Product: Chicken Biryani - Categories: Array
+(
+    [0] => Package Deals
+    [1] => Ramzan Deals
+)
+
+[17-Feb-2026 15:32:11 UTC] Product: Roti/ Naan - Categories: Array
+(
+    [0] => Package Deals
+    [1] => Ramzan Deals
+)
+
+[17-Feb-2026 15:32:11 UTC] Product: Vegetable Pakora - Categories: Array
+(
+    [0] => Package Deals
+    [1] => Ramzan Deals
+)
+
+[17-Feb-2026 15:32:11 UTC] Product: Fish Pakora - Categories: Array
+(
+    [0] => Package Deals
+    [1] => Ramzan Deals
+)
+
+[17-Feb-2026 15:32:11 UTC] Total found: 4 products with ramzan-deals category
+[17-Feb-2026 15:32:11 UTC] === END RAMZAN QUERY ===
+[17-Feb-2026 15:32:11 UTC] Checking product: Chicken Biryani (ID: 6482) - ACF: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[17-Feb-2026 15:32:11 UTC] Adding to for-2 (by ACF): Chicken Biryani
+[17-Feb-2026 15:32:11 UTC] Checking product: Roti/ Naan (ID: 6477) - ACF: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[17-Feb-2026 15:32:11 UTC] Adding to for-2 (by ACF): Roti/ Naan
+[17-Feb-2026 15:32:11 UTC] Checking product: Vegetable Pakora (ID: 6472) - ACF: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[17-Feb-2026 15:32:11 UTC] Adding to for-2 (by ACF): Vegetable Pakora
+[17-Feb-2026 15:32:11 UTC] Checking product: Fish Pakora (ID: 6467) - ACF: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[17-Feb-2026 15:48:45 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[17-Feb-2026 15:48:45 UTC] Found 4 products with ramzan-deals category
+[17-Feb-2026 15:48:45 UTC]   - Product: Chicken Biryani (ID: 6482)
+[17-Feb-2026 15:48:45 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:45 UTC]     Tags: 
+[17-Feb-2026 15:48:45 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[17-Feb-2026 15:48:45 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:45 UTC]   - Product: Roti/ Naan (ID: 6477)
+[17-Feb-2026 15:48:45 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:45 UTC]     Tags: 
+[17-Feb-2026 15:48:45 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[17-Feb-2026 15:48:45 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:45 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[17-Feb-2026 15:48:45 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:45 UTC]     Tags: 
+[17-Feb-2026 15:48:45 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[17-Feb-2026 15:48:45 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:45 UTC]   - Product: Fish Pakora (ID: 6467)
+[17-Feb-2026 15:48:45 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:45 UTC]     Tags: 
+[17-Feb-2026 15:48:45 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[17-Feb-2026 15:48:45 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:45 UTC] === END RAMZAN CHECK ===
+[17-Feb-2026 15:48:47 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[17-Feb-2026 15:48:47 UTC] Found 4 products with ramzan-deals category
+[17-Feb-2026 15:48:47 UTC]   - Product: Chicken Biryani (ID: 6482)
+[17-Feb-2026 15:48:47 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:47 UTC]     Tags: 
+[17-Feb-2026 15:48:47 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[17-Feb-2026 15:48:47 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:47 UTC]   - Product: Roti/ Naan (ID: 6477)
+[17-Feb-2026 15:48:47 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:47 UTC]     Tags: 
+[17-Feb-2026 15:48:47 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[17-Feb-2026 15:48:47 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:47 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[17-Feb-2026 15:48:47 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:47 UTC]     Tags: 
+[17-Feb-2026 15:48:47 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[17-Feb-2026 15:48:47 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:47 UTC]   - Product: Fish Pakora (ID: 6467)
+[17-Feb-2026 15:48:47 UTC]     Categories: Package Deals, Ramzan Deals
+[17-Feb-2026 15:48:47 UTC]     Tags: 
+[17-Feb-2026 15:48:47 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[17-Feb-2026 15:48:47 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[17-Feb-2026 15:48:47 UTC] === END RAMZAN CHECK ===
+[17-Feb-2026 18:53:35 UTC] Automatic updates starting...
+[17-Feb-2026 18:53:37 UTC]   Automatic plugin updates starting...
+[17-Feb-2026 18:53:37 UTC]   Automatic plugin updates complete.
+[17-Feb-2026 18:53:39 UTC] Automatic updates complete.
+[18-Feb-2026 07:04:14 UTC] Automatic updates starting...
+[18-Feb-2026 07:04:14 UTC]   Automatic plugin updates starting...
+[18-Feb-2026 07:04:14 UTC]   Automatic plugin updates complete.
+[18-Feb-2026 07:04:14 UTC] Automatic updates complete.
+[18-Feb-2026 09:59:50 UTC] Product tags: Array
+(
+)
+
