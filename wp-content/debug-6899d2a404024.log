@@ -139783,3 +139783,3433 @@ Stack trace:
 (
 )
 
+[19-Feb-2026 06:39:50 UTC] Automatic updates starting...
+[19-Feb-2026 06:39:52 UTC]   Automatic plugin updates starting...
+[19-Feb-2026 06:39:52 UTC]   Automatic plugin updates complete.
+[19-Feb-2026 06:39:53 UTC] Automatic updates complete.
+[19-Feb-2026 06:40:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:48 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:48 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:48 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:48 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:49 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:49 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:51 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:51 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:51 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:51 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:51 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:51 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:40:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:40:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:40:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:40:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:10 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:10 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:45:10 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:10 UTC] [Package Builder] DEBUG: Processing Ramzan package for product ID: 6370 | Data: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [chicken_qty_mains] => 
+    [lamb_qty_mains] => 
+    [vegetarian_qty_mains] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [text_description_mains_chicken] => 
+    [text_description_mains_lamb] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+        )
+
+    [detail_for_2] => 
+    [chicken_pricing] => 
+    [lamb_pricing] => 
+    [vegetarian_pricing] => 
+)
+
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 49.96
+[19-Feb-2026 06:45:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:14 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:14 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:14 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:14 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:14 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:14 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:14 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:14 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:45:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:45:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:45:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:45:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:36 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:36 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:36 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:51:40 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:51:40 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:51:40 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:51:40 UTC] [Package Builder] DEBUG: Processing Ramzan package for product ID: 6302 | Data: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [chicken_qty_mains] => 
+    [lamb_qty_mains] => 
+    [vegetarian_qty_mains] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [text_description_mains_chicken] => 
+    [text_description_mains_lamb] => 
+    [text_description_mains_vegetarian] => 
+    [detail_for_8] => 
+    [chicken_pricing] => 
+    [lamb_pricing] => 
+    [vegetarian_pricing] => 
+)
+
+[19-Feb-2026 06:52:20 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:20 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:20 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 69.95
+[19-Feb-2026 06:52:20 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:21 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:21 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:21 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:21 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:22 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:22 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:22 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:22 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:22 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:22 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:22 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:22 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:22 UTC] Automatic updates starting...
+[19-Feb-2026 06:52:22 UTC]   Automatic plugin updates starting...
+[19-Feb-2026 06:52:22 UTC]   Automatic plugin updates complete.
+[19-Feb-2026 06:52:22 UTC] Automatic updates complete.
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:23 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:23 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:23 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:23 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:23 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:23 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:23 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:24 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:24 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:24 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:25 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:25 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:25 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:25 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:25 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:25 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:25 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:25 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:26 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:26 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:26 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:26 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:26 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:26 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:26 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:26 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:32 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:32 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:36 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:36 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:36 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 169.94
+[19-Feb-2026 06:52:57 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:57 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:57 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:57 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:59 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:59 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:59 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:52:59 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:52:59 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:52:59 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:00 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:00 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:01 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:01 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:01 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:01 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:28 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:28 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:28 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:28 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:28 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:28 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:28 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:28 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:29 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:29 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:30 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:30 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:31 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:31 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:31 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:33 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:33 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 234.9
+[19-Feb-2026 06:53:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:53:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:53:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:53:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:02 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:02 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:02 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:04 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:04 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:05 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:05 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:05 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:05 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:05 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:06 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:06 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:06 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:06 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:06 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:06 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:07 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:07 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:07 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:07 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:07 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:07 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:40 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:40 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:40 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 06:54:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 06:54:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 06:54:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 06:54:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:08 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:08 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:08 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:10 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:10 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:10 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:10 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:10 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:10 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:13 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:01:20 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:01:20 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:01:20 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:01:20 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:34 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:34 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:34 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:34 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:34 UTC] Product ID: 6395
+[19-Feb-2026 07:04:34 UTC] =========================
+[19-Feb-2026 07:04:34 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:34 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:34 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:34 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:34 UTC] Product ID: 6371
+[19-Feb-2026 07:04:34 UTC] =========================
+[19-Feb-2026 07:04:34 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:34 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:34 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:34 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:34 UTC] Product ID: 6304
+[19-Feb-2026 07:04:34 UTC] =========================
+[19-Feb-2026 07:04:34 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:34 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:34 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:34 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:34 UTC] Product ID: 6402
+[19-Feb-2026 07:04:34 UTC] =========================
+[19-Feb-2026 07:04:34 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:34 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:34 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:34 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:34 UTC] Product ID: 6410
+[19-Feb-2026 07:04:34 UTC] =========================
+[19-Feb-2026 07:04:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:34 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:34 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:34 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[19-Feb-2026 07:04:34 UTC] Found 4 products with ramzan-deals category
+[19-Feb-2026 07:04:34 UTC]   - Product: Chicken Biryani (ID: 6482)
+[19-Feb-2026 07:04:34 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:04:34 UTC]     Tags: 
+[19-Feb-2026 07:04:34 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[19-Feb-2026 07:04:34 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:04:34 UTC]   - Product: Roti/ Naan (ID: 6477)
+[19-Feb-2026 07:04:34 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:04:34 UTC]     Tags: 
+[19-Feb-2026 07:04:34 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[19-Feb-2026 07:04:34 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:04:34 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[19-Feb-2026 07:04:34 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:04:34 UTC]     Tags: 
+[19-Feb-2026 07:04:34 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[19-Feb-2026 07:04:34 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:04:34 UTC]   - Product: Fish Pakora (ID: 6467)
+[19-Feb-2026 07:04:34 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:04:34 UTC]     Tags: 
+[19-Feb-2026 07:04:34 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[19-Feb-2026 07:04:34 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:04:34 UTC] === END RAMZAN CHECK ===
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6395
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6371
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6304
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6402
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:35 UTC] Product ID: 6410
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6395
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6371
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6304
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6402
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:35 UTC] Product ID: 6410
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6395
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6371
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6304
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6402
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:35 UTC] Product ID: 6410
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6395
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6371
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:35 UTC] Product ID: 6304
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:35 UTC] Product ID: 6402
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:35 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:35 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:35 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:35 UTC] Product ID: 6410
+[19-Feb-2026 07:04:35 UTC] =========================
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:35 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:35 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:35 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:36 UTC] Product ID: 6395
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:36 UTC] Product ID: 6371
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:36 UTC] Product ID: 6304
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:36 UTC] Product ID: 6402
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:36 UTC] Product ID: 6410
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:36 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:36 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:36 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:36 UTC] Product ID: 6395
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:36 UTC] Product ID: 6371
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:36 UTC] Product ID: 6304
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:36 UTC] Product ID: 6402
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:36 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:36 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:36 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:36 UTC] Product ID: 6410
+[19-Feb-2026 07:04:36 UTC] =========================
+[19-Feb-2026 07:04:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:36 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:36 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:36 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6395
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6371
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6304
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6402
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:37 UTC] Product ID: 6410
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6395
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6371
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6304
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6402
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:37 UTC] Product ID: 6410
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6395
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6371
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6304
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6402
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:37 UTC] Product ID: 6410
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6395
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6371
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6304
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6402
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:37 UTC] Product ID: 6410
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6395
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6371
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:37 UTC] Product ID: 6304
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:37 UTC] Product ID: 6402
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:37 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:37 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:37 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:37 UTC] Product ID: 6410
+[19-Feb-2026 07:04:37 UTC] =========================
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:37 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:37 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:37 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6395
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6371
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6304
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6402
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:38 UTC] Product ID: 6410
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:38 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6395
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6371
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6304
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6402
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:38 UTC] Product ID: 6410
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:38 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6395
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6371
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:38 UTC] Product ID: 6304
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:38 UTC] Product ID: 6402
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:38 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:38 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:38 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:38 UTC] Product ID: 6410
+[19-Feb-2026 07:04:38 UTC] =========================
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:38 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:38 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:38 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:39 UTC] Product ID: 6395
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:39 UTC] Product ID: 6371
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:39 UTC] Product ID: 6304
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:39 UTC] Product ID: 6402
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:39 UTC] Product ID: 6410
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:39 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:39 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:04:39 UTC] Product ID: 6395
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:04:39 UTC] Product ID: 6371
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:04:39 UTC] Product ID: 6304
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:04:39 UTC] Product ID: 6402
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:04:39 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:04:39 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:04:39 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:04:39 UTC] Product ID: 6410
+[19-Feb-2026 07:04:39 UTC] =========================
+[19-Feb-2026 07:04:39 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:04:39 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:04:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:04:39 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:11 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:11 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:11 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:11 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:11 UTC] Product ID: 6395
+[19-Feb-2026 07:05:11 UTC] =========================
+[19-Feb-2026 07:05:11 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:11 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:11 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:11 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:11 UTC] Product ID: 6371
+[19-Feb-2026 07:05:11 UTC] =========================
+[19-Feb-2026 07:05:11 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:11 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:11 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:11 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:11 UTC] Product ID: 6304
+[19-Feb-2026 07:05:11 UTC] =========================
+[19-Feb-2026 07:05:11 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:11 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:11 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:11 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:11 UTC] Product ID: 6402
+[19-Feb-2026 07:05:11 UTC] =========================
+[19-Feb-2026 07:05:11 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:11 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:11 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:11 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:11 UTC] Product ID: 6410
+[19-Feb-2026 07:05:11 UTC] =========================
+[19-Feb-2026 07:05:11 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:11 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:11 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:11 UTC] Product tags: Array
+(
+)
+
+[19-Feb-2026 07:05:15 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:15 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:15 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:15 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:15 UTC] Product ID: 6395
+[19-Feb-2026 07:05:15 UTC] =========================
+[19-Feb-2026 07:05:15 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:15 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:15 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:15 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:15 UTC] Product ID: 6371
+[19-Feb-2026 07:05:15 UTC] =========================
+[19-Feb-2026 07:05:15 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:15 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:15 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:15 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:15 UTC] Product ID: 6304
+[19-Feb-2026 07:05:15 UTC] =========================
+[19-Feb-2026 07:05:15 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:15 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:15 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:15 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:15 UTC] Product ID: 6402
+[19-Feb-2026 07:05:15 UTC] =========================
+[19-Feb-2026 07:05:15 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:15 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:15 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:15 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:15 UTC] Product ID: 6410
+[19-Feb-2026 07:05:15 UTC] =========================
+[19-Feb-2026 07:05:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:15 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:15 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:15 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[19-Feb-2026 07:05:15 UTC] Found 4 products with ramzan-deals category
+[19-Feb-2026 07:05:15 UTC]   - Product: Chicken Biryani (ID: 6482)
+[19-Feb-2026 07:05:15 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:05:15 UTC]     Tags: 
+[19-Feb-2026 07:05:15 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[19-Feb-2026 07:05:15 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:05:15 UTC]   - Product: Roti/ Naan (ID: 6477)
+[19-Feb-2026 07:05:15 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:05:15 UTC]     Tags: 
+[19-Feb-2026 07:05:15 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[19-Feb-2026 07:05:15 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:05:15 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[19-Feb-2026 07:05:15 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:05:15 UTC]     Tags: 
+[19-Feb-2026 07:05:15 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[19-Feb-2026 07:05:15 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:05:15 UTC]   - Product: Fish Pakora (ID: 6467)
+[19-Feb-2026 07:05:15 UTC]     Categories: Package Deals, Ramzan Deals
+[19-Feb-2026 07:05:15 UTC]     Tags: 
+[19-Feb-2026 07:05:15 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[19-Feb-2026 07:05:15 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[19-Feb-2026 07:05:15 UTC] === END RAMZAN CHECK ===
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:16 UTC] Product ID: 6395
+[19-Feb-2026 07:05:16 UTC] Product ID: 6395
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Product ID: 6371
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:16 UTC] Product ID: 6371
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Product ID: 6304
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Product ID: 6304
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Product ID: 6402
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Product ID: 6402
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:16 UTC] Product ID: 6410
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:16 UTC] Product ID: 6410
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:16 UTC] Product ID: 6395
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:16 UTC] Product ID: 6371
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:16 UTC] Product ID: 6304
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:16 UTC] Product ID: 6402
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:16 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:16 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:16 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:16 UTC] Product ID: 6410
+[19-Feb-2026 07:05:16 UTC] =========================
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:16 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:16 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6395
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6371
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6304
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6402
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:17 UTC] Product ID: 6410
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6395
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6371
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6304
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6402
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:17 UTC] Product ID: 6410
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6395
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6371
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6304
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6402
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:17 UTC] Product ID: 6410
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6395
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6371
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6304
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6402
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:17 UTC] Product ID: 6410
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6395
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6371
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:17 UTC] Product ID: 6304
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:17 UTC] Product ID: 6402
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:17 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:17 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:17 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:17 UTC] Product ID: 6410
+[19-Feb-2026 07:05:17 UTC] =========================
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:17 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:17 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6395
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6371
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:19 UTC] Product ID: 6304
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:19 UTC] Product ID: 6402
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:19 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:19 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:19 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:19 UTC] Product ID: 6410
+[19-Feb-2026 07:05:19 UTC] =========================
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:19 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:19 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:21 UTC] Product ID: 6395
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:21 UTC] Product ID: 6371
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:21 UTC] Product ID: 6304
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:21 UTC] Product ID: 6402
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:21 UTC] Product ID: 6410
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:21 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:21 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:21 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:05:21 UTC] Product ID: 6395
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:05:21 UTC] Product ID: 6371
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:05:21 UTC] Product ID: 6304
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:05:21 UTC] Product ID: 6402
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:05:21 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:05:21 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:05:21 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:05:21 UTC] Product ID: 6410
+[19-Feb-2026 07:05:21 UTC] =========================
+[19-Feb-2026 07:05:21 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:05:21 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:05:21 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:05:21 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:40 UTC] Product ID: 6395
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:40 UTC] Product ID: 6371
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:40 UTC] Product ID: 6304
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:40 UTC] Product ID: 6402
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:40 UTC] Product ID: 6410
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:40 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:40 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:40 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:40 UTC] Product ID: 6395
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:40 UTC] Product ID: 6371
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:40 UTC] Product ID: 6304
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:40 UTC] Product ID: 6402
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:40 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:40 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:40 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:40 UTC] Product ID: 6410
+[19-Feb-2026 07:09:40 UTC] =========================
+[19-Feb-2026 07:09:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:40 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:40 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:40 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:41 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:41 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:41 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:41 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:41 UTC] Product ID: 6395
+[19-Feb-2026 07:09:41 UTC] =========================
+[19-Feb-2026 07:09:41 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:41 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:41 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:41 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:41 UTC] Product ID: 6371
+[19-Feb-2026 07:09:41 UTC] =========================
+[19-Feb-2026 07:09:41 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:41 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:41 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:41 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:41 UTC] Product ID: 6304
+[19-Feb-2026 07:09:41 UTC] =========================
+[19-Feb-2026 07:09:41 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:41 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:41 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:41 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:41 UTC] Product ID: 6402
+[19-Feb-2026 07:09:41 UTC] =========================
+[19-Feb-2026 07:09:41 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:41 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:41 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:41 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:41 UTC] Product ID: 6410
+[19-Feb-2026 07:09:41 UTC] =========================
+[19-Feb-2026 07:09:41 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:41 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:41 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:41 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:43 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:43 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:43 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:43 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:43 UTC] Product ID: 6395
+[19-Feb-2026 07:09:43 UTC] =========================
+[19-Feb-2026 07:09:43 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:43 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:43 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:43 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:43 UTC] Product ID: 6371
+[19-Feb-2026 07:09:43 UTC] =========================
+[19-Feb-2026 07:09:43 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:43 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:43 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:43 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:43 UTC] Product ID: 6304
+[19-Feb-2026 07:09:43 UTC] =========================
+[19-Feb-2026 07:09:43 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:43 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:43 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:43 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:43 UTC] Product ID: 6402
+[19-Feb-2026 07:09:43 UTC] =========================
+[19-Feb-2026 07:09:43 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:43 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:43 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:43 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:43 UTC] Product ID: 6410
+[19-Feb-2026 07:09:43 UTC] =========================
+[19-Feb-2026 07:09:43 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:43 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:43 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:43 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:50 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:50 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:50 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:50 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:50 UTC] Product ID: 6395
+[19-Feb-2026 07:09:50 UTC] =========================
+[19-Feb-2026 07:09:50 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:50 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:50 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:50 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:50 UTC] Product ID: 6371
+[19-Feb-2026 07:09:50 UTC] =========================
+[19-Feb-2026 07:09:50 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:50 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:50 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:50 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:50 UTC] Product ID: 6304
+[19-Feb-2026 07:09:50 UTC] =========================
+[19-Feb-2026 07:09:50 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:50 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:50 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:50 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:50 UTC] Product ID: 6402
+[19-Feb-2026 07:09:50 UTC] =========================
+[19-Feb-2026 07:09:50 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:50 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:50 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:50 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:50 UTC] Product ID: 6410
+[19-Feb-2026 07:09:50 UTC] =========================
+[19-Feb-2026 07:09:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:50 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:50 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:09:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:52 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:09:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:52 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:09:52 UTC] Product ID: 6395
+[19-Feb-2026 07:09:52 UTC] =========================
+[19-Feb-2026 07:09:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:52 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:09:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:52 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:09:52 UTC] Product ID: 6371
+[19-Feb-2026 07:09:52 UTC] =========================
+[19-Feb-2026 07:09:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:52 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:09:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:52 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:09:52 UTC] Product ID: 6304
+[19-Feb-2026 07:09:52 UTC] =========================
+[19-Feb-2026 07:09:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:52 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:09:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:52 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:09:52 UTC] Product ID: 6402
+[19-Feb-2026 07:09:52 UTC] =========================
+[19-Feb-2026 07:09:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:09:52 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:09:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:09:52 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:09:52 UTC] Product ID: 6410
+[19-Feb-2026 07:09:52 UTC] =========================
+[19-Feb-2026 07:09:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:09:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:09:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:09:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:11:51 UTC] Product ID: 6395
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:11:51 UTC] Product ID: 6371
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:11:51 UTC] Product ID: 6304
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:11:51 UTC] Product ID: 6402
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:11:51 UTC] Product ID: 6410
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:11:51 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:11:51 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:11:51 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:11:51 UTC] Product ID: 6395
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:11:51 UTC] Product ID: 6371
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:11:51 UTC] Product ID: 6304
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:11:51 UTC] Product ID: 6402
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:51 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:11:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:51 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:11:51 UTC] Product ID: 6410
+[19-Feb-2026 07:11:51 UTC] =========================
+[19-Feb-2026 07:11:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:11:51 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:11:51 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:11:51 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:11:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:53 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:11:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:53 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:11:53 UTC] Product ID: 6395
+[19-Feb-2026 07:11:53 UTC] =========================
+[19-Feb-2026 07:11:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:53 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:11:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:53 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:11:53 UTC] Product ID: 6371
+[19-Feb-2026 07:11:53 UTC] =========================
+[19-Feb-2026 07:11:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:53 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:11:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:53 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:11:53 UTC] Product ID: 6304
+[19-Feb-2026 07:11:53 UTC] =========================
+[19-Feb-2026 07:11:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:53 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:11:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:53 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:11:53 UTC] Product ID: 6402
+[19-Feb-2026 07:11:53 UTC] =========================
+[19-Feb-2026 07:11:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:11:53 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:11:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:11:53 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:11:53 UTC] Product ID: 6410
+[19-Feb-2026 07:11:53 UTC] =========================
+[19-Feb-2026 07:11:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:11:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:11:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:11:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:13:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:51 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:13:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:51 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:13:51 UTC] Product ID: 6395
+[19-Feb-2026 07:13:51 UTC] =========================
+[19-Feb-2026 07:13:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:51 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:13:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:51 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:13:51 UTC] Product ID: 6371
+[19-Feb-2026 07:13:51 UTC] =========================
+[19-Feb-2026 07:13:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:51 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:13:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:51 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:13:51 UTC] Product ID: 6304
+[19-Feb-2026 07:13:51 UTC] =========================
+[19-Feb-2026 07:13:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:51 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:13:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:51 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:13:51 UTC] Product ID: 6402
+[19-Feb-2026 07:13:51 UTC] =========================
+[19-Feb-2026 07:13:51 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:51 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:13:51 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:51 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:13:51 UTC] Product ID: 6410
+[19-Feb-2026 07:13:51 UTC] =========================
+[19-Feb-2026 07:13:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:13:51 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:13:51 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:13:51 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:13:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:54 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:13:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:54 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:13:54 UTC] Product ID: 6395
+[19-Feb-2026 07:13:54 UTC] =========================
+[19-Feb-2026 07:13:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:54 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:13:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:54 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:13:54 UTC] Product ID: 6371
+[19-Feb-2026 07:13:54 UTC] =========================
+[19-Feb-2026 07:13:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:54 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:13:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:54 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:13:54 UTC] Product ID: 6304
+[19-Feb-2026 07:13:54 UTC] =========================
+[19-Feb-2026 07:13:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:54 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:13:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:54 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:13:54 UTC] Product ID: 6402
+[19-Feb-2026 07:13:54 UTC] =========================
+[19-Feb-2026 07:13:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:13:54 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:13:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:13:54 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:13:54 UTC] Product ID: 6410
+[19-Feb-2026 07:13:54 UTC] =========================
+[19-Feb-2026 07:13:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:13:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:13:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:13:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:15:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:52 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:15:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:52 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:15:52 UTC] Product ID: 6395
+[19-Feb-2026 07:15:52 UTC] =========================
+[19-Feb-2026 07:15:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:52 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:15:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:52 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:15:52 UTC] Product ID: 6371
+[19-Feb-2026 07:15:52 UTC] =========================
+[19-Feb-2026 07:15:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:52 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:15:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:52 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:15:52 UTC] Product ID: 6304
+[19-Feb-2026 07:15:52 UTC] =========================
+[19-Feb-2026 07:15:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:52 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:15:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:52 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:15:52 UTC] Product ID: 6402
+[19-Feb-2026 07:15:52 UTC] =========================
+[19-Feb-2026 07:15:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:52 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:15:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:52 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:15:52 UTC] Product ID: 6410
+[19-Feb-2026 07:15:52 UTC] =========================
+[19-Feb-2026 07:15:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:15:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:15:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:15:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:15:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:55 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:15:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:55 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:15:55 UTC] Product ID: 6395
+[19-Feb-2026 07:15:55 UTC] =========================
+[19-Feb-2026 07:15:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:55 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:15:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:55 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:15:55 UTC] Product ID: 6371
+[19-Feb-2026 07:15:55 UTC] =========================
+[19-Feb-2026 07:15:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:55 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:15:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:55 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:15:55 UTC] Product ID: 6304
+[19-Feb-2026 07:15:55 UTC] =========================
+[19-Feb-2026 07:15:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:55 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:15:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:55 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:15:55 UTC] Product ID: 6402
+[19-Feb-2026 07:15:55 UTC] =========================
+[19-Feb-2026 07:15:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:15:55 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:15:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:15:55 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:15:55 UTC] Product ID: 6410
+[19-Feb-2026 07:15:55 UTC] =========================
+[19-Feb-2026 07:15:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:15:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:15:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:15:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:17:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:52 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:17:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:52 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:17:52 UTC] Product ID: 6395
+[19-Feb-2026 07:17:52 UTC] =========================
+[19-Feb-2026 07:17:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:52 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:17:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:52 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:17:52 UTC] Product ID: 6371
+[19-Feb-2026 07:17:52 UTC] =========================
+[19-Feb-2026 07:17:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:52 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:17:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:52 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:17:52 UTC] Product ID: 6304
+[19-Feb-2026 07:17:52 UTC] =========================
+[19-Feb-2026 07:17:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:52 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:17:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:52 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:17:52 UTC] Product ID: 6402
+[19-Feb-2026 07:17:52 UTC] =========================
+[19-Feb-2026 07:17:52 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:52 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:17:52 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:52 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:17:52 UTC] Product ID: 6410
+[19-Feb-2026 07:17:52 UTC] =========================
+[19-Feb-2026 07:17:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:17:52 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:17:52 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:17:52 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:17:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:56 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:17:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:56 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:17:56 UTC] Product ID: 6395
+[19-Feb-2026 07:17:56 UTC] =========================
+[19-Feb-2026 07:17:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:56 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:17:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:56 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:17:56 UTC] Product ID: 6371
+[19-Feb-2026 07:17:56 UTC] =========================
+[19-Feb-2026 07:17:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:56 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:17:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:56 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:17:56 UTC] Product ID: 6304
+[19-Feb-2026 07:17:56 UTC] =========================
+[19-Feb-2026 07:17:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:56 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:17:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:56 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:17:56 UTC] Product ID: 6402
+[19-Feb-2026 07:17:56 UTC] =========================
+[19-Feb-2026 07:17:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:17:56 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:17:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:17:56 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:17:56 UTC] Product ID: 6410
+[19-Feb-2026 07:17:56 UTC] =========================
+[19-Feb-2026 07:17:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:17:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:17:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:17:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:19:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:53 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:19:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:53 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:19:53 UTC] Product ID: 6395
+[19-Feb-2026 07:19:53 UTC] =========================
+[19-Feb-2026 07:19:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:53 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:19:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:53 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:19:53 UTC] Product ID: 6371
+[19-Feb-2026 07:19:53 UTC] =========================
+[19-Feb-2026 07:19:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:53 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:19:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:53 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:19:53 UTC] Product ID: 6304
+[19-Feb-2026 07:19:53 UTC] =========================
+[19-Feb-2026 07:19:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:53 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:19:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:53 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:19:53 UTC] Product ID: 6402
+[19-Feb-2026 07:19:53 UTC] =========================
+[19-Feb-2026 07:19:53 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:53 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:19:53 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:53 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:19:53 UTC] Product ID: 6410
+[19-Feb-2026 07:19:53 UTC] =========================
+[19-Feb-2026 07:19:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:19:53 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:19:53 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:19:53 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:19:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:57 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:19:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:57 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:19:57 UTC] Product ID: 6395
+[19-Feb-2026 07:19:57 UTC] =========================
+[19-Feb-2026 07:19:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:57 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:19:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:57 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:19:57 UTC] Product ID: 6371
+[19-Feb-2026 07:19:57 UTC] =========================
+[19-Feb-2026 07:19:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:57 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:19:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:57 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:19:57 UTC] Product ID: 6304
+[19-Feb-2026 07:19:57 UTC] =========================
+[19-Feb-2026 07:19:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:57 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:19:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:57 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:19:57 UTC] Product ID: 6402
+[19-Feb-2026 07:19:57 UTC] =========================
+[19-Feb-2026 07:19:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:19:57 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:19:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:19:57 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:19:57 UTC] Product ID: 6410
+[19-Feb-2026 07:19:57 UTC] =========================
+[19-Feb-2026 07:19:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:19:57 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:19:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:19:57 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:58:55 UTC] Product ID: 6395
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:58:55 UTC] Product ID: 6371
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:58:55 UTC] Product ID: 6304
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:58:55 UTC] Product ID: 6402
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:58:55 UTC] Product ID: 6410
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:58:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:58:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:58:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 49.96
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 49.96
+[19-Feb-2026 07:58:55 UTC] Product ID: 6395
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 19.99
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 19.99
+[19-Feb-2026 07:58:55 UTC] Product ID: 6371
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 99.99
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 99.99
+[19-Feb-2026 07:58:55 UTC] Product ID: 6304
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 64.96
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 64.96
+[19-Feb-2026 07:58:55 UTC] Product ID: 6402
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 07:58:55 UTC] Package Price from meta: 165.94
+[19-Feb-2026 07:58:55 UTC] Extra Price from meta: 0
+[19-Feb-2026 07:58:55 UTC] Total Price to set: 165.94
+[19-Feb-2026 07:58:55 UTC] Product ID: 6410
+[19-Feb-2026 07:58:55 UTC] =========================
+[19-Feb-2026 07:58:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 07:58:55 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 07:58:55 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 07:58:55 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 08:00:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:00:54 UTC] Package Price from meta: 49.96
+[19-Feb-2026 08:00:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:00:54 UTC] Total Price to set: 49.96
+[19-Feb-2026 08:00:54 UTC] Product ID: 6395
+[19-Feb-2026 08:00:54 UTC] =========================
+[19-Feb-2026 08:00:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:00:54 UTC] Package Price from meta: 19.99
+[19-Feb-2026 08:00:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:00:54 UTC] Total Price to set: 19.99
+[19-Feb-2026 08:00:54 UTC] Product ID: 6371
+[19-Feb-2026 08:00:54 UTC] =========================
+[19-Feb-2026 08:00:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:00:54 UTC] Package Price from meta: 99.99
+[19-Feb-2026 08:00:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:00:54 UTC] Total Price to set: 99.99
+[19-Feb-2026 08:00:54 UTC] Product ID: 6304
+[19-Feb-2026 08:00:54 UTC] =========================
+[19-Feb-2026 08:00:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:00:54 UTC] Package Price from meta: 64.96
+[19-Feb-2026 08:00:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:00:54 UTC] Total Price to set: 64.96
+[19-Feb-2026 08:00:54 UTC] Product ID: 6402
+[19-Feb-2026 08:00:54 UTC] =========================
+[19-Feb-2026 08:00:54 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:00:54 UTC] Package Price from meta: 165.94
+[19-Feb-2026 08:00:54 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:00:54 UTC] Total Price to set: 165.94
+[19-Feb-2026 08:00:54 UTC] Product ID: 6410
+[19-Feb-2026 08:00:54 UTC] =========================
+[19-Feb-2026 08:00:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 08:00:54 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 08:00:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 08:00:54 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 08:02:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:02:56 UTC] Package Price from meta: 49.96
+[19-Feb-2026 08:02:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:02:56 UTC] Total Price to set: 49.96
+[19-Feb-2026 08:02:56 UTC] Product ID: 6395
+[19-Feb-2026 08:02:56 UTC] =========================
+[19-Feb-2026 08:02:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:02:56 UTC] Package Price from meta: 19.99
+[19-Feb-2026 08:02:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:02:56 UTC] Total Price to set: 19.99
+[19-Feb-2026 08:02:56 UTC] Product ID: 6371
+[19-Feb-2026 08:02:56 UTC] =========================
+[19-Feb-2026 08:02:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:02:56 UTC] Package Price from meta: 99.99
+[19-Feb-2026 08:02:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:02:56 UTC] Total Price to set: 99.99
+[19-Feb-2026 08:02:56 UTC] Product ID: 6304
+[19-Feb-2026 08:02:56 UTC] =========================
+[19-Feb-2026 08:02:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:02:56 UTC] Package Price from meta: 64.96
+[19-Feb-2026 08:02:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:02:56 UTC] Total Price to set: 64.96
+[19-Feb-2026 08:02:56 UTC] Product ID: 6402
+[19-Feb-2026 08:02:56 UTC] =========================
+[19-Feb-2026 08:02:56 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:02:56 UTC] Package Price from meta: 165.94
+[19-Feb-2026 08:02:56 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:02:56 UTC] Total Price to set: 165.94
+[19-Feb-2026 08:02:56 UTC] Product ID: 6410
+[19-Feb-2026 08:02:56 UTC] =========================
+[19-Feb-2026 08:02:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 08:02:56 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 08:02:56 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 08:02:56 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 08:04:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:04:57 UTC] Package Price from meta: 49.96
+[19-Feb-2026 08:04:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:04:57 UTC] Total Price to set: 49.96
+[19-Feb-2026 08:04:57 UTC] Product ID: 6395
+[19-Feb-2026 08:04:57 UTC] =========================
+[19-Feb-2026 08:04:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:04:57 UTC] Package Price from meta: 19.99
+[19-Feb-2026 08:04:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:04:57 UTC] Total Price to set: 19.99
+[19-Feb-2026 08:04:57 UTC] Product ID: 6371
+[19-Feb-2026 08:04:57 UTC] =========================
+[19-Feb-2026 08:04:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:04:57 UTC] Package Price from meta: 99.99
+[19-Feb-2026 08:04:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:04:57 UTC] Total Price to set: 99.99
+[19-Feb-2026 08:04:57 UTC] Product ID: 6304
+[19-Feb-2026 08:04:57 UTC] =========================
+[19-Feb-2026 08:04:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:04:57 UTC] Package Price from meta: 64.96
+[19-Feb-2026 08:04:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:04:57 UTC] Total Price to set: 64.96
+[19-Feb-2026 08:04:57 UTC] Product ID: 6402
+[19-Feb-2026 08:04:57 UTC] =========================
+[19-Feb-2026 08:04:57 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:04:57 UTC] Package Price from meta: 165.94
+[19-Feb-2026 08:04:57 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:04:57 UTC] Total Price to set: 165.94
+[19-Feb-2026 08:04:57 UTC] Product ID: 6410
+[19-Feb-2026 08:04:57 UTC] =========================
+[19-Feb-2026 08:04:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 08:04:57 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 08:04:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 08:04:57 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 08:06:58 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:06:58 UTC] Package Price from meta: 49.96
+[19-Feb-2026 08:06:58 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:06:58 UTC] Total Price to set: 49.96
+[19-Feb-2026 08:06:58 UTC] Product ID: 6395
+[19-Feb-2026 08:06:58 UTC] =========================
+[19-Feb-2026 08:06:58 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:06:58 UTC] Package Price from meta: 19.99
+[19-Feb-2026 08:06:58 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:06:58 UTC] Total Price to set: 19.99
+[19-Feb-2026 08:06:58 UTC] Product ID: 6371
+[19-Feb-2026 08:06:58 UTC] =========================
+[19-Feb-2026 08:06:58 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:06:58 UTC] Package Price from meta: 99.99
+[19-Feb-2026 08:06:58 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:06:58 UTC] Total Price to set: 99.99
+[19-Feb-2026 08:06:58 UTC] Product ID: 6304
+[19-Feb-2026 08:06:58 UTC] =========================
+[19-Feb-2026 08:06:58 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:06:58 UTC] Package Price from meta: 64.96
+[19-Feb-2026 08:06:58 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:06:58 UTC] Total Price to set: 64.96
+[19-Feb-2026 08:06:58 UTC] Product ID: 6402
+[19-Feb-2026 08:06:58 UTC] =========================
+[19-Feb-2026 08:06:58 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 08:06:58 UTC] Package Price from meta: 165.94
+[19-Feb-2026 08:06:58 UTC] Extra Price from meta: 0
+[19-Feb-2026 08:06:58 UTC] Total Price to set: 165.94
+[19-Feb-2026 08:06:58 UTC] Product ID: 6410
+[19-Feb-2026 08:06:58 UTC] =========================
+[19-Feb-2026 08:06:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 08:06:58 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 08:06:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 08:06:58 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 49.96
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 49.96
+[19-Feb-2026 11:35:12 UTC] Product ID: 6395
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 19.99
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 19.99
+[19-Feb-2026 11:35:12 UTC] Product ID: 6371
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 99.99
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 99.99
+[19-Feb-2026 11:35:12 UTC] Product ID: 6304
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 64.96
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 64.96
+[19-Feb-2026 11:35:12 UTC] Product ID: 6402
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 165.94
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 165.94
+[19-Feb-2026 11:35:12 UTC] Product ID: 6410
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 11:35:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 11:35:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 11:35:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 49.96
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 49.96
+[19-Feb-2026 11:35:12 UTC] Product ID: 6395
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 19.99
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 19.99
+[19-Feb-2026 11:35:12 UTC] Product ID: 6371
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 99.99
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 99.99
+[19-Feb-2026 11:35:12 UTC] Product ID: 6304
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 64.96
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 64.96
+[19-Feb-2026 11:35:12 UTC] Product ID: 6402
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:12 UTC] Package Price from meta: 165.94
+[19-Feb-2026 11:35:12 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:12 UTC] Total Price to set: 165.94
+[19-Feb-2026 11:35:12 UTC] Product ID: 6410
+[19-Feb-2026 11:35:12 UTC] =========================
+[19-Feb-2026 11:35:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 11:35:12 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 11:35:12 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 11:35:12 UTC] [SESSION] delivery_pickup_option: 
+[19-Feb-2026 11:35:13 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:13 UTC] Package Price from meta: 49.96
+[19-Feb-2026 11:35:13 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:13 UTC] Total Price to set: 49.96
+[19-Feb-2026 11:35:13 UTC] Product ID: 6395
+[19-Feb-2026 11:35:13 UTC] =========================
+[19-Feb-2026 11:35:13 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:13 UTC] Package Price from meta: 19.99
+[19-Feb-2026 11:35:13 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:13 UTC] Total Price to set: 19.99
+[19-Feb-2026 11:35:13 UTC] Product ID: 6371
+[19-Feb-2026 11:35:13 UTC] =========================
+[19-Feb-2026 11:35:13 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:13 UTC] Package Price from meta: 99.99
+[19-Feb-2026 11:35:13 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:13 UTC] Total Price to set: 99.99
+[19-Feb-2026 11:35:13 UTC] Product ID: 6304
+[19-Feb-2026 11:35:13 UTC] =========================
+[19-Feb-2026 11:35:13 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:13 UTC] Package Price from meta: 64.96
+[19-Feb-2026 11:35:13 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:13 UTC] Total Price to set: 64.96
+[19-Feb-2026 11:35:13 UTC] Product ID: 6402
+[19-Feb-2026 11:35:13 UTC] =========================
+[19-Feb-2026 11:35:13 UTC] === UPDATE CART PRICE ===
+[19-Feb-2026 11:35:13 UTC] Package Price from meta: 165.94
+[19-Feb-2026 11:35:13 UTC] Extra Price from meta: 0
+[19-Feb-2026 11:35:13 UTC] Total Price to set: 165.94
+[19-Feb-2026 11:35:13 UTC] Product ID: 6410
+[19-Feb-2026 11:35:13 UTC] =========================
+[19-Feb-2026 11:35:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[19-Feb-2026 11:35:13 UTC] [custom_add_delivery_fee] Triggered!
+[19-Feb-2026 11:35:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 400.84
+[19-Feb-2026 11:35:13 UTC] [SESSION] delivery_pickup_option: 

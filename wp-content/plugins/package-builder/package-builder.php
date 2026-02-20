@@ -4,6 +4,7 @@
  * Plugin Name: Woo Package Builder (ACF Free)
  * Description: Dynamic package builder using WooCommerce + ACF Free
  * Author: Enigmatix Global
+ * Author URI: https://enigmatixglobal.com/
  * Version: 1.1
  */
 

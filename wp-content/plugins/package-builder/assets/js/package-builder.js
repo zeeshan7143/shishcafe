@@ -288,13 +288,33 @@
 
 jQuery(function ($) {
 
-    console.log('==============================');
-    console.log('PB JS Loaded');
-    console.log('==============================');
+    // Debug logging control
+    const PB_DEBUG = false; // Set to true for detailed debugging
+    
+    const log = function(message, data) {
+        if (!PB_DEBUG) return;
+        if (data !== undefined) {
+            console.log('[PB]', message, data);
+        } else {
+            console.log('[PB]', message);
+        }
+    };
 
-    if (PB_CONFIG?.category_tree) {
-        console.log('Package-deals category tree:', PB_CONFIG.category_tree);
-    }
+    const logWarning = function(message, data) {
+        if (data !== undefined) {
+            console.warn('[PB WARNING]', message, data);
+        } else {
+            console.warn('[PB WARNING]', message);
+        }
+    };
+
+    const logError = function(message, data) {
+        if (data !== undefined) {
+            console.error('[PB ERROR]', message, data);
+        } else {
+            console.error('[PB ERROR]', message);
+        }
+    };
 
     const $packageSelector = $('#pb-package-selector');
     const $builderContainer = $('#pb-builder-container');
@@ -312,36 +332,26 @@ jQuery(function ($) {
     function initPackageBuilder(PB_DATA) {
 
         const location = localStorage.getItem('selectedLocation');
-        console.log('Selected location from localStorage:', location);
+        log('Selected location from localStorage:', location);
 
         if (!location) {
-            console.warn('❌ No location found in localStorage');
+            logWarning('No location found in localStorage');
             return;
         }
 
         window.PB_MAIN_VARIATION_ID = PB_DATA?.main_variations?.[location] || null;
-        console.log('PB_DATA keys:', Object.keys(PB_DATA || {}));
-        console.log('ACF fields:', PB_DATA?.acf_fields || {});
-        console.log('Package-deals child categories:', PB_DATA?.package_deals_children || []);
-        console.log('Child price categories:', Object.keys(PB_DATA?.child_prices || {}));
+        log('Main variation ID set', window.PB_MAIN_VARIATION_ID);
 
         if (!window.PB_MAIN_VARIATION_ID) {
-            console.warn('No main variation found for location:', location);
+            logWarning('No main variation found for location', location);
         }
 
         /* ===========================
          * RAMZAN PACKAGES
          * =========================== */
         if (PB_DATA?.is_ramzan) {
-            console.log('=== RAMZAN PACKAGE DATA ===');
-            console.log('Full PB_DATA:', PB_DATA);
-            if (PB_DATA.console_log) {
-                console.log('ACF qty_persons raw:', PB_DATA.console_log.qty_persons_raw);
-                console.log('ACF qty_persons parsed:', PB_DATA.console_log.qty_persons_parsed);
-                console.log('Persons structure:', PB_DATA.console_log.persons_structure);
-                console.log('Products by persons:', PB_DATA.console_log.products_by_persons);
-            }
-            console.log('=== END RAMZAN DATA ===');
+            log('Processing Ramzan package');
+            logWarning('Ramzan package console_log data:', PB_DATA.console_log, 'debug');
 
             const $builder = $('#package-builder.pb-ramzan');
             if (!$builder.length) return;
@@ -349,8 +359,7 @@ jQuery(function ($) {
             $builder.find('.pb-ramzan-person').each(function () {
                 const $category = $(this);
                 const categoryKey = $category.data('category');
-                console.log('Ramzan categoryKey:', categoryKey);
-                console.log('Child prices for ramzan:', PB_DATA.child_prices);
+                log('Processing Ramzan person option:', categoryKey);
 
                 $category.find('.pb-ramzan-item').each(function () {
                     const $item = $(this);
@@ -360,8 +369,6 @@ jQuery(function ($) {
                         PB_DATA.child_prices?.[categoryKey]?.[pid]?.[location]
                         ?? PB_DATA.child_prices?.[categoryKey]?.[pid]?.['all']
                         ?? null;
-
-                    console.log('Checking ramzan item', { categoryKey: categoryKey, pid: pid, location: location, price: price });
 
                     if (price === null) {
                         // don't hide — show as N/A so user can still select
@@ -484,6 +491,7 @@ jQuery(function ($) {
 
             $builder.find('#pb-add-cart').on('click', function () {
                 if (!window.PB_MAIN_VARIATION_ID) {
+                    logError('Variation ID not set');
                     alert('❌ Variation ID not set. Location → variation mapping missing.');
                     return;
                 }
@@ -498,11 +506,7 @@ jQuery(function ($) {
                 const packagePrice = window.PB_RAMZAN_BASE_PRICE || 0;
                 const personsCount = window.PB_PERSONS_COUNT || 2;
 
-                console.log('=== RAMZAN ADD TO CART ===');
-                console.log('Package Price:', packagePrice);
-                console.log('Persons:', personsCount);
-                console.log('Items:', selected);
-                console.log('==========================');
+                log('Ramzan add to cart', { packagePrice, personsCount, itemsCount: selected.length });
 
                 $.post(PB_CONFIG.ajax_url, {
                     action: 'pb_add_to_cart',
@@ -515,6 +519,7 @@ jQuery(function ($) {
                     if (res.success) {
                         window.location.href = PB_CONFIG.cart_url;
                     } else {
+                        logError('Add to cart failed', res.data);
                         alert(res.data || 'Add to cart failed');
                     }
                 });
@@ -649,10 +654,13 @@ jQuery(function ($) {
                 if (!$content || !$content.length) return 0;
                 const free = parseInt($content.data('free'), 10);
                 if (!isNaN(free) && free > 0) return free;
-                const mixFree = parseInt($content.data('mix-free'), 10);
-                if (!isNaN(mixFree) && mixFree > 0) return mixFree;
-                // sum subgroup requirements
+                // For mix: add mix qty + subgroup qty (not just one or the other)
                 let sum = 0;
+                const mixFree = parseInt($content.data('mix-free'), 10);
+                if (!isNaN(mixFree) && mixFree > 0) {
+                    sum += mixFree;
+                }
+                // sum subgroup requirements
                 $content.find('.pb-subgroup').each(function () {
                     const v = parseInt($(this).data('free'), 10) || 0;
                     sum += v;
@@ -825,9 +833,7 @@ jQuery(function ($) {
             const categoryKey = $category.data('category');
             const freeLimit = parseInt($category.data('free'), 10) || 0;
 
-            console.group(`Combined category: ${categoryKey}`);
-            console.log('Required selections:', freeLimit);
-            console.log('Items:', $category.find('.pb-item').length);
+            log(`Combined category initialized: ${categoryKey}, required: ${freeLimit}`);
 
             let selectedCount = 0;
             let paidCount = 0;
@@ -959,8 +965,6 @@ jQuery(function ($) {
                     recalcBlockAddToCart();
                 });
             });
-
-            console.groupEnd();
         });
 
         $builder.find('.pb-content[data-mix="1"]').each(function () {
@@ -1121,9 +1125,7 @@ jQuery(function ($) {
                 }
             }
 
-            console.group(`Subgroup: ${$group.data('group')} (category ${categoryKey})`);
-            console.log('Required selections:', freeLimit);
-            console.log('Items:', $group.find('.pb-item').length);
+            log(`Subgroup initialized: ${$group.data('group')}, required: ${freeLimit}`);
 
             let selectedCount = 0;
             let paidCount = 0;
@@ -1262,8 +1264,6 @@ jQuery(function ($) {
                 });
 
             });
-
-            console.groupEnd();
         });
 
         /* ===========================
@@ -1316,6 +1316,7 @@ jQuery(function ($) {
         $builder.find('#pb-add-cart').on('click', function () {
 
             if (!window.PB_MAIN_VARIATION_ID) {
+                logError('Variation ID not set');
                 alert('❌ Variation ID not set. Location → variation mapping missing.');
                 return;
             }
@@ -1334,19 +1335,19 @@ jQuery(function ($) {
                 items: window.PB_SELECTED_ITEMS
             };
 
-            console.log('=== ADD TO CART DATA ===');
-            console.log('Variation ID:', cartData.variation_id);
-            console.log('Package Price:', cartData.package_price);
-            console.log('Extra Price:', cartData.extra_price);
-            console.log('Persons:', cartData.persons);
-            console.log('Items:', cartData.items);
-            console.log('========================');
+            log('Add to cart triggered', { 
+                packagePrice: cartData.package_price, 
+                extraPrice: cartData.extra_price,
+                persons: cartData.persons,
+                itemsCount: cartData.items.length
+            });
 
             $.post(PB_CONFIG.ajax_url, cartData, function (res) {
 
                 if (res.success) {
                     window.location.href = PB_CONFIG.cart_url;
                 } else {
+                    logError('Add to cart failed', res.data);
                     alert(res.data || 'Add to cart failed');
                 }
             });
@@ -1376,7 +1377,7 @@ jQuery(function ($) {
                         price = map[location];
                     }
                 } catch (e) {
-                    console.warn('Invalid price map JSON', e);
+                    logWarning('Invalid price map JSON', e);
                 }
             }
 
@@ -1459,11 +1460,13 @@ jQuery(function ($) {
                 window.PB_RAMZAN_BASE_PRICE = packagePrice;
                 window.PB_PERSONS_COUNT = 1; // Will be updated when tab is selected (2 or 8)
                 
-                console.log('Ramzan package selected, price:', packagePrice);
+                log('Ramzan package selected', { price: packagePrice });
             } else {
                 // For regular packages, get persons count
                 const personsVal = parseInt($selectedOption.find('.pb-persons-select').val(), 10);
                 window.PB_PERSONS_COUNT = !isNaN(personsVal) && personsVal > 0 ? personsVal : 1;
+                
+                log('Regular package selected', { persons: window.PB_PERSONS_COUNT });
             }
 
             const $btn = $(this);
@@ -1482,6 +1485,7 @@ jQuery(function ($) {
                 $btn.prop('disabled', false).text('Next');
 
                 if (!res || !res.success) {
+                    logError('Failed to load package', res?.data);
                     alert(res?.data || 'Unable to load package');
                     // restore package selector on failure
                     $('#pb-package-selector').show();
@@ -1489,6 +1493,7 @@ jQuery(function ($) {
                     return;
                 }
 
+                log('Package builder loaded successfully');
                 $builderContainer.html(res.data.html);
                 initPackageBuilder(res.data.data);
 
