@@ -150,6 +150,11 @@
                             $clauses['orderby'] =   'ORDER BY t.term_order';
                         }
                         
+                    if ( $options['adminsort'] == "1"   &&  defined( 'REST_REQUEST' ) && REST_REQUEST )
+                        {
+                            $clauses['orderby'] =   'ORDER BY t.term_order'; 
+                        } 
+                        
                     return $clauses; 
                 }
                 

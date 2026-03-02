@@ -1,291 +1,3 @@
-// jQuery(function ($) {
-
-//     console.log('PB JS loaded');
-
-//     /* ===========================
-//      * DEBUG: CHECK TABS & CONTENT
-//      * =========================== */
-
-//     console.log('Tabs:', $('.pb-tabs li').length);
-//     console.log('Contents:', $('.pb-content').length);
-
-//     $('.pb-content').hide();
-
-//     $('.pb-tabs li').on('click', function () {
-
-//         const tab = $(this).data('tab');
-//         console.log('Tab clicked:', tab);
-
-//         $('.pb-tabs li').removeClass('active');
-//         $(this).addClass('active');
-
-//         $('.pb-content').hide();
-//         $('#pb-' + tab).show();
-//     });
-
-//     /* SHOW FIRST TAB */
-//     $('.pb-tabs li:first').trigger('click');
-
-// });
-
-// jQuery(function ($) {
-
-//     console.log('PB Phase 2 loaded');
-//     console.log('PB DATA:', PB_DATA);
-//     console.log('PB CHILD PRICES:', PB_DATA.child_prices);
-//     /* ===========================
-//      * LOCATION
-//      * =========================== */
-//     const location = localStorage.getItem('selectedLocation');
-//     console.log('Selected location:', location);
-
-//     if (!location) {
-//         console.warn('PB: No location selected');
-//         return;
-//     }
-
-//     console.log('PB child prices:', PB_DATA.child_prices);
-
-//     /* ===========================
-//      * SHOW PRICES PER PRODUCT
-//      * =========================== */
-
-//     $('.pb-content').each(function () {
-
-//         const category = $(this).attr('id').replace('pb-', '');
-
-//         $(this).find('.pb-item').each(function () {
-
-//             const $item = $(this);
-//             const pid = $item.data('id');
-
-//             const price =
-//                 PB_DATA.child_prices?.[category]?.[pid]?.[location]
-//                 ?? PB_DATA.child_prices?.[category]?.[pid]?.['all']
-//                 ?? null;
-
-//             if (price === null) {
-//                 $item.find('.pb-price')
-//                     .text('Not available for this location')
-//                     .css('color', 'red');
-//                 console.warn(`No price for product ${pid} @ ${location}`);
-//             } else {
-//                 $item.find('.pb-price')
-//                     .text('£' + parseFloat(price).toFixed(2));
-//                 console.log(`Price OK: ${pid} = £${price}`);
-//             }
-//         });
-//     });
-
-//     /* ===========================
-//      * TABS (SAFE)
-//      * =========================== */
-
-//     $('.pb-content').hide();
-
-//     $('.pb-tabs li').on('click', function () {
-
-//         const tab = $(this).data('tab');
-
-//         $('.pb-tabs li').removeClass('active');
-//         $(this).addClass('active');
-
-//         $('.pb-content').hide();
-//         $('#pb-' + tab).show();
-
-//         console.log('Tab opened:', tab);
-//     });
-
-//     $('.pb-tabs li:first').trigger('click');
-// });
-
-
-
-
-// jQuery(function ($) {
-
-//     console.log('PB Phase 3 updated loaded');
-//     console.log('PB DATA:', PB_DATA);
-//     console.log('PB CHILD PRICES:', PB_DATA.child_prices);
-//     const location = localStorage.getItem('selectedLocation');
-//     if (!location) {
-//         alert('Location not selected');
-//         return;
-//     }
-//     window.PB_MAIN_VARIATION_ID = PB.main_variations?.[location] || null;
-
-//     if (!window.PB_MAIN_VARIATION_ID) {
-//         console.warn('No main variation found for location:', location);
-//     }
-//     let globalExtraTotal = 0;
-
-//     /* ===========================
-//      * CATEGORY LOOP
-//      * =========================== */
-//     $('.pb-content').each(function () {
-
-//         const $category = $(this);
-//         const categoryKey = $category.data('category');
-//         const freeLimit = parseInt($category.data('free'), 10);
-
-//         let selectedCount = 0;
-//         let paidCount = 0;
-//         let categoryExtra = 0;
-
-//         $category.find('.pb-item').each(function () {
-
-//             const $item = $(this);
-//             const pid = $item.data('id');
-
-//             const price =
-//                 PB_DATA.child_prices?.[categoryKey]?.[pid]?.[location]
-//                 ?? PB_DATA.child_prices?.[categoryKey]?.[pid]?.['all']
-//                 ?? null;
-
-//             if (price === null) {
-//                 $item.hide();
-//                 return;
-//             }
-
-//             const numericPrice = parseFloat(price);
-//             $item.data('price', numericPrice);
-
-//             $item.find('input[type="checkbox"]').on('change', function () {
-
-//                 if (this.checked) {
-//                     selectedCount++;
-//                     if (selectedCount <= freeLimit) {
-//                         $item.removeClass('pb-paid').addClass('pb-free')
-//                             .find('.pb-price').text('Included').show();
-//                     } else {
-//                         $item.removeClass('pb-free').addClass('pb-paid')
-//                             .find('.pb-price').text('+£' + numericPrice.toFixed(2)).show();
-//                         paidCount++;
-//                         categoryExtra += numericPrice;
-//                         globalExtraTotal += numericPrice;
-//                     }
-//                 } else {
-//                     selectedCount--;
-//                     if ($item.hasClass('pb-paid')) {
-//                         paidCount--;
-//                         categoryExtra -= numericPrice;
-//                         globalExtraTotal -= numericPrice;
-//                     }
-//                     $item.removeClass('pb-free pb-paid')
-//                         .find('.pb-price').hide().text('');
-//                 }
-
-//                 // Update per-tab extra
-//                 $category.find('.pb-extra-tab').text('£' + categoryExtra.toFixed(2));
-
-//                 // Update per-tab counter
-//                 $category.find('.pb-counter')
-//                     .text(`${selectedCount} selected (${paidCount} paid) + £${categoryExtra.toFixed(2)}`);
-
-//                 // Update global total
-//                 $('.pb-extra-total').text(globalExtraTotal.toFixed(2));
-
-//                 console.log(`Category ${categoryKey}: selected=${selectedCount}, paid=${paidCount}, categoryExtra=${categoryExtra}, globalExtra=${globalExtraTotal}`);
-//                 // ============================
-//                 // COUNTER & MESSAGE UPDATE
-//                 // ============================
-
-//                 let counterText = '';
-//                 let counterClass = '';
-//                 let extraText = '';
-//                 const $extraTab = $category.find('.pb-extra-tab');
-
-//                 if (selectedCount === 0) {
-//                     counterText = 'No selections required';
-//                     counterClass = 'pb-neutral';
-//                     $extraTab.hide();
-//                 }
-//                 else if (selectedCount < freeLimit) {
-//                     const remaining = freeLimit - selectedCount;
-//                     counterText = `${remaining} more required`;
-//                     counterClass = 'pb-required';
-//                     $extraTab.hide();
-//                 }
-//                 else if (selectedCount === freeLimit) {
-//                     counterText = `${selectedCount} items selected`;
-//                     counterClass = 'pb-complete';
-//                     $extraTab.hide();
-//                 }
-//                 else {
-//                     categoryExtra = parseFloat(categoryExtra) || 0;
-
-//                     if (paidCount === 1) {
-//                         counterText = `${selectedCount} items selected (with ${paidCount} extra)`;
-//                     }
-//                     else {
-//                         counterText = `${selectedCount} items selected (with ${paidCount} extras)`;
-//                     }
-//                     counterClass = 'pb-extra';
-//                     // Show extra price ONLY when extra exists
-//                     $category.find('.pb-counter-text').text(counterText);
-//                     let extraText = `(for ${paidCount} extra items)`;
-//                     $extraTab
-//                         .text('+£' + categoryExtra.toFixed(2) + ' ' + extraText)
-//                         .show();
-//                 }
-//                 // Apply counter text + color
-//                 $category.find('.pb-counter')
-//                     .removeClass('pb-neutral pb-required pb-complete')
-//                     .addClass(counterClass)
-//                     .text(counterText);
-//                 // end counter 
-
-//             });
-
-//         });
-//     });
-
-//     /* ===========================
-//      * TABS
-//      * =========================== */
-//     $('.pb-content').hide();
-//     $('.pb-tabs li').on('click', function () {
-//         const tab = $(this).data('tab');
-//         $('.pb-tabs li').removeClass('active');
-//         $(this).addClass('active');
-//         $('.pb-content').hide();
-//         $('#pb-' + tab).show();
-//     });
-//     $('.pb-tabs li:first').trigger('click');
-//     // Add to Cart 
-//     $('#pb-add-cart').on('click', function () {
-//         console.log('Add to cart clicked', window.PB_MAIN_VARIATION_ID);
-//         if (!window.PB_MAIN_VARIATION_ID) {
-//             alert('Please select location first');
-//             return;
-//         }
-
-//         if (window.PB_BLOCK_ADD_TO_CART === true) {
-//             alert('Please complete required selections');
-//             return;
-//         }
-
-//         $.post(PB_DATA.ajax_url, {
-//             action: 'pb_add_to_cart',
-//             variation_id: PB_MAIN_VARIATION_ID,
-//             extra_price: window.PB_GLOBAL_EXTRA || 0,
-//             items: window.PB_SELECTED_ITEMS || []
-//         }, function (res) {
-
-//             if (res.success) {
-//                 window.location.href = PB_DATA.cart_url;
-//             } else {
-//                 alert(res.data || 'Add to cart failed');
-//             }
-
-//         });
-
-//     });
-
-
-// });
-
-
 jQuery(function ($) {
 
     // Debug logging control
@@ -428,6 +140,15 @@ jQuery(function ($) {
                 $builder.find('.pb-content').hide();
                 $builder.find('#' + tabId).show();
 
+                // Show package total only on last tab (same place where add-to-cart is available)
+                const $tabs = $builder.find('.pb-tabs li');
+                const currentIdx = $tabs.index($(this));
+                if (currentIdx === $tabs.length - 1) {
+                    $builder.find('.pb-summary').show();
+                } else {
+                    $builder.find('.pb-summary').hide();
+                }
+
                 // For Ramzan packages, extract persons count from tab (ramzan-2 or ramzan-8)
                 if (PB_DATA?.is_ramzan) {
                     const tabIdStr = String(tabId);
@@ -492,13 +213,13 @@ jQuery(function ($) {
             $builder.find('#pb-add-cart').on('click', function () {
                 if (!window.PB_MAIN_VARIATION_ID) {
                     logError('Variation ID not set');
-                    alert('❌ Variation ID not set. Location → variation mapping missing.');
+                    // alert('❌ Variation ID not set. Location → variation mapping missing.');
                     return;
                 }
 
                 const selected = getActivePersonItems();
                 if (!selected.length) {
-                    alert('Please select at least one item for this package.');
+                    logError('Please select at least one item for this package.');
                     return;
                 }
 
@@ -520,7 +241,7 @@ jQuery(function ($) {
                         window.location.href = PB_CONFIG.cart_url;
                     } else {
                         logError('Add to cart failed', res.data);
-                        alert(res.data || 'Add to cart failed');
+                        // alert(res.data || 'Add to cart failed');
                     }
                 });
             });
@@ -584,18 +305,40 @@ jQuery(function ($) {
                 return;
             }
 
-            // For regular packages, calculate from selected items
+            // For regular packages, use one per-head price based on Starter + Main combo.
+            // Rules:
+            // Chicken starter + Chicken main => chicken price
+            // Chicken starter + Lamb main    => chicken price
+            // Lamb starter    + Chicken main => chicken price
+            // Lamb starter    + Lamb main    => lamb price
+            // Price must be applied only once, then multiplied by persons.
             const persons = parseInt(window.PB_PERSONS_COUNT, 10) || 1;
             const pricing = PB_DATA?.package_pricing || {};
-            let base = 0;
 
-            $builder.find('.pb-item input[type="checkbox"]:checked').each(function () {
-                const type = $(this).closest('.pb-item').data('type');
-                if (type && pricing[type] !== undefined) {
-                    base += parseFloat(pricing[type]) || 0;
-                }
-            });
+            function selectedTypeForCategory(categoryId) {
+                const $category = $builder.find('#' + categoryId);
+                if (!$category.length) return '';
 
+                let detected = '';
+                $category.find('.pb-item input[type="checkbox"]:checked').each(function () {
+                    const type = String($(this).closest('.pb-item').data('type') || '').toLowerCase();
+                    if (type === 'chicken' || type === 'lamb') {
+                        detected = type;
+                        return false;
+                    }
+                });
+                return detected;
+            }
+
+            const starterType = selectedTypeForCategory('pb-starter') || selectedTypeForCategory('pb-starters');
+            const mainType = selectedTypeForCategory('pb-mains');
+
+            let priceKey = 'chicken';
+            if (starterType === 'lamb' && mainType === 'lamb') {
+                priceKey = 'lamb';
+            }
+
+            const base = parseFloat(pricing[priceKey]) || 0;
             const total = base * persons;
             window.PB_PACKAGE_TOTAL = total;
             $builder.find('.pb-package-total').text(total.toFixed(2));
@@ -713,9 +456,11 @@ jQuery(function ($) {
                 if (idx === $allTabs.length - 1) {
                     $next.hide();
                     $builder.find('#pb-step-nav').find('.pb-add-cart-btn').show();
+                    $builder.find('.pb-summary').show();
                 } else {
                     $next.show();
                     $builder.find('#pb-step-nav').find('.pb-add-cart-btn').hide();
+                    $builder.find('.pb-summary').hide();
                 }
             }
 
@@ -1317,12 +1062,13 @@ jQuery(function ($) {
 
             if (!window.PB_MAIN_VARIATION_ID) {
                 logError('Variation ID not set');
-                alert('❌ Variation ID not set. Location → variation mapping missing.');
+                // alert('❌ Variation ID not set. Location → variation mapping missing.');
                 return;
             }
 
             if (window.PB_BLOCK_ADD_TO_CART) {
-                alert('❌ Please complete required selections');
+                logError('Please complete required selections');
+                // alert('❌ Please complete required selections');
                 return;
             }
 
@@ -1348,7 +1094,7 @@ jQuery(function ($) {
                     window.location.href = PB_CONFIG.cart_url;
                 } else {
                     logError('Add to cart failed', res.data);
-                    alert(res.data || 'Add to cart failed');
+                    // alert(res.data || 'Add to cart failed');
                 }
             });
         });
@@ -1369,31 +1115,18 @@ jQuery(function ($) {
             const location = localStorage.getItem('selectedLocation');
             let price = null;
 
-            const rawMap = $select.attr('data-package-price-map');
-            if (rawMap) {
-                try {
-                    const map = JSON.parse(rawMap);
-                    if (location && map && map[location] !== undefined) {
-                        price = map[location];
-                    }
-                } catch (e) {
-                    logWarning('Invalid price map JSON', e);
-                }
-            }
-
-            if (price === null || price === undefined) {
-                const basePrice = parseFloat($select.attr('data-package-price'));
-                if (!isNaN(basePrice)) {
-                    price = basePrice;
-                }
-            }
-
-            if (price === null || price === undefined) {
+            // Always show chicken price from ACF (data-chicken-price on package option)
+            const $option = $select.closest('.pb-package-option');
+            let chickenPrice = $option.data('chicken-price');
+            if (chickenPrice === undefined || chickenPrice === null || chickenPrice === '' || isNaN(chickenPrice)) {
                 $priceEl.text('Price unavailable').show();
                 return;
             }
-
-            $priceEl.text('Price for 1 Person: £' + parseFloat(price).toFixed(2)).show();
+            chickenPrice = parseFloat(chickenPrice);
+            let persons = parseInt($select.val(), 10);
+            if (isNaN(persons) || persons < 1) persons = 1;
+            const totalPrice = chickenPrice * persons;
+            $priceEl.text('Total: £' + totalPrice.toFixed(2) + ' for ' + persons + ' person' + (persons > 1 ? 's' : '')).show();
         }
 
         $packageSelector.find('.pb-persons-select').each(function () {
@@ -1486,7 +1219,7 @@ jQuery(function ($) {
 
                 if (!res || !res.success) {
                     logError('Failed to load package', res?.data);
-                    alert(res?.data || 'Unable to load package');
+                    // alert(res?.data || 'Unable to load package');
                     // restore package selector on failure
                     $('#pb-package-selector').show();
                     $builderContainer.empty();

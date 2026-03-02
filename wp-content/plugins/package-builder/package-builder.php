@@ -106,7 +106,6 @@ class Woo_Package_Builder
                 if (function_exists('get_fields')) {
                     $acf_all = get_fields($pid);
                     error_log('    ACF Fields: ' . print_r($acf_all, true));
-
                     $acf_subset = [
                         'detail_for_2' => $acf_all['detail_for_2'] ?? '',
                         'detail_for_8' => $acf_all['detail_for_8'] ?? '',
@@ -185,7 +184,16 @@ class Woo_Package_Builder
                     }
                     ?>
                     <?php $requires_persons = !$is_ramzan_package; ?>
-                    <label class="pb-package-option" data-requires-persons="<?= $requires_persons ? '1' : '0'; ?>">
+                    <label class="pb-package-option" data-requires-persons="<?= $requires_persons ? '1' : '0'; ?>"
+                        <?php if (!$is_ramzan_package): ?>
+                            <?php
+                            // Get chicken price from ACF for this product
+                            $acf_fields = function_exists('get_fields') ? get_fields($p->get_id()) : [];
+                            $chicken_price = isset($acf_fields['chicken_pricing']) ? (float)$acf_fields['chicken_pricing'] : 0;
+                            ?>
+                            data-chicken-price="<?= esc_attr($chicken_price); ?>"
+                        <?php endif; ?>
+                    >
                         <input type="radio" name="pb_package" class="pb-p-select" value="<?= esc_attr($p->get_id()); ?>" data-requires-persons="<?= $requires_persons ? '1' : '0'; ?>">
                         <h2 class="pb-package-title"><?= esc_html($p->get_name()); ?></h2>
                         <?php if ($p->get_short_description()): ?>
@@ -740,9 +748,6 @@ class Woo_Package_Builder
                                         <span class="pb-extra-tab"></span>
                                     </div>
                                     <h4 class="pb-subgroup-title">
-                                        <?php if (!empty($group['qty'])): ?>
-                                            <span class="pb-subgroup-qty d-p-none">(<?= esc_html($group['qty']); ?> item required)</span>
-                                        <?php endif; ?>
                                         <?= esc_html($group['label']); ?>
                                     </h4>
                                     <div class="pb-subsection-items-group">
@@ -1256,7 +1261,7 @@ class Woo_Package_Builder
                 $grouped[$tab][$subgroup][] = $name;
             }
 
-            // Format hierarchical HTML in a box container (without "Selected Items" heading - that's the label)
+            // Format hierarchical HTML in a box container - WITHOUT required text
             $display_html = '<div style="background-color: #f5f5f5; padding: 12px; border-radius: 4px; margin-top: 6px; line-height: 1.8;">';
             foreach ($grouped as $tab => $subgroups) {
                 if ($tab) {
@@ -1331,7 +1336,7 @@ class Woo_Package_Builder
                 $grouped[$tab][$subgroup][] = $name;
             }
 
-            // Format hierarchical HTML in a box container (matching order display)
+            // Format hierarchical HTML in a box container - WITHOUT required text
             $display_html = '<div style="background-color: #f5f5f5; padding: 12px; border-radius: 4px; margin-top: 6px; line-height: 1.8;">';
             foreach ($grouped as $tab => $subgroups) {
                 if ($tab) {

@@ -5,7 +5,7 @@
  * Description: Custom REST API endpoints for fetching and printing WooCommerce order data.
  * Version: 1.2
  * Author: Enigmatix Global
- * License: GPLv2 or later
+ * Author URI: https://enigmatixglobal.com/
  * Text Domain: shinsh-cafe-api
  */
 
@@ -408,6 +408,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
         $variations = [];
         $ppom_options_display = [];
         $ppom_total = 0;
+        $meta_display = [];
 
         foreach ($item->get_formatted_meta_data() as $meta) {
             if ($meta->display_key === 'Location') {
@@ -437,6 +438,20 @@ function shinsh_cafe_generate_order_html($order_or_id)
             // PPOM
             if (strpos($meta->display_value, '<p>') !== false) {
                 $label = $meta->display_key;
+
+                // Skip "Package Description" entries - these are product descriptions
+                if ($label === 'Package Description') {
+                    continue;
+                }
+
+                // Skip "Persons to Serve" - it will be shown in meta section
+                if (strpos($label, 'Person') !== false) {
+                    $meta_display[] = [
+                        'label' => $meta->display_key,
+                        'value' => $meta->display_value,
+                    ];
+                    continue;
+                }
 
                 $dom = new DOMDocument();
                 libxml_use_internal_errors(true);
@@ -474,6 +489,12 @@ function shinsh_cafe_generate_order_html($order_or_id)
                 }
                 continue;
             }
+
+            // Store other meta data (like "Selected Items")
+            $meta_display[] = [
+                'label' => $meta->display_key,
+                'value' => $meta->display_value,
+            ];
         }
 
         $final_ppom_total = $ppom_total * $quantity;
@@ -500,6 +521,8 @@ function shinsh_cafe_generate_order_html($order_or_id)
             'base_price'   => '£' . number_format($base_price, 2),
             'ppom_total'   => '£' . number_format($final_ppom_total, 2),
             'total'        => $total,
+            'short_description' => $short_description,
+            'meta'         => $meta_display,
             'variations'   => $variations,
             'ppom_options' => $ppom_options_display,
         ];
@@ -598,16 +621,24 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                 $filtered_variations = $prod['variations'] ?? [];
                             }
                             ?>
-                            <td style="border:0px solid #000;padding:4px;text-align:left;vertical-align:top; display: flex;">
-                                <span style="font-weight: 600; margin-right: 3px;">
-                                    <?php echo esc_html($prod['quantity']); ?> x
-                                    <?php echo esc_html($prod['product_name']); ?>
-                                </span>
-                                <span style="font-weight: 600; width: 30px; text-align: right;">
-                                    <?php if ($size_value): ?>
-                                        <?php echo esc_html($size_value); ?> "
-                                    <?php endif; ?>
-                                </span>
+                            <td style="border:0px solid #000;padding:4px;text-align:left;vertical-align:top;">
+                                <div style="display: flex;">
+                                    <span style="font-weight: 600; margin-right: 3px;">
+                                        <?php echo esc_html($prod['quantity']); ?> x
+                                        <?php echo esc_html($prod['product_name']); ?>
+                                    </span>
+                                    <span style="font-weight: 600; width: 30px; text-align: right;">
+                                        <?php if ($size_value): ?>
+                                            <?php echo esc_html($size_value); ?> "
+                                        <?php endif; ?>
+                                    </span>
+                                </div>
+                                <!-- Product Description -->
+                                <?php if (!empty($prod['short_description'])): ?>
+                                    <span style="display: block; padding:4px 4px 4px 8px; font-size: 11px; color: #555; line-height: 1.4;">
+                                        <?php echo wp_kses_post(wp_strip_all_tags($prod['short_description'], true)); ?>
+                                    </span>
+                                <?php endif; ?>
                             </td>
                             <td style="border:0px solid #000;padding:4px;text-align:right;vertical-align:top;">
                                 <?php echo esc_html($prod['unit_price'] ?? '£0.00'); ?>
@@ -616,7 +647,21 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                 <?php echo esc_html($prod['base_price'] ?? '£0.00'); ?>
                             </td>
                         </tr>
-
+                        <tr>
+                            <td colspan="3">
+                                <!-- Meta Data (Selected Items, etc.) -->
+                                <?php if (!empty($prod['meta']) && is_array($prod['meta'])): ?>
+                                    <?php foreach ($prod['meta'] as $meta_item): ?>
+                                        <div style="padding:6px 4px 4px 8px; font-size: 11px; color: #333; line-height: 1.4; border-top: 1px solid #f0f0f0; margin-top: 4px;">
+                                            <strong><?php echo esc_html($meta_item['label']); ?>:</strong>
+                                            <span style="margin-left: 4px;">
+                                                <?php echo wp_kses_post($meta_item['value']); ?>
+                                            </span>
+                                        </div>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
                         <!-- Variations -->
                         <?php if (!empty($filtered_variations)): ?>
                             <?php foreach ($filtered_variations as $var): ?>
@@ -825,6 +870,16 @@ function shinsh_cafe_get_order_print_data($data)
             // PPOM data contains <p> tags
             if (strpos($meta->display_value, '<p>') !== false) {
                 $label = $meta->display_key;
+
+                // Skip "Package Description" entries - these are product descriptions
+                if ($label === 'Package Description') {
+                    continue;
+                }
+
+                // Skip "Persons to Serve" - it will be shown in meta section
+                if (strpos($label, 'Person') !== false) {
+                    continue;
+                }
 
                 $dom = new DOMDocument();
                 libxml_use_internal_errors(true);

@@ -53,4 +53,3 @@ function custom_price_range_display($price, $product)
 	}
 	return $price;
 }
-?>

@@ -232,6 +232,3 @@ function custom_products_with_location_pricing($atts)
 }
 
 add_shortcode('custom_products', 'custom_products_with_location_pricing');
-
-
-?>
