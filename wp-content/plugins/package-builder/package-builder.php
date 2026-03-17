@@ -208,8 +208,8 @@ class Woo_Package_Builder
                                     data-package-price-map="<?= esc_attr(wp_json_encode($price_map)); ?>"
                                     required>
                                     <option value="" disabled>Select Persons</option>
-                                    <?php for ($i = 1; $i <= 25; $i++): ?>
-                                        <option value="<?= esc_attr($i); ?>" <?= $i === 1 ? 'selected' : ''; ?>><?= esc_html($i); ?></option>
+                                    <?php for ($i = 10; $i <= 25; $i++): ?>
+                                        <option value="<?= esc_attr($i); ?>" <?= $i === 10 ? 'selected' : ''; ?>><?= esc_html($i); ?></option>
                                     <?php endfor; ?>
                                 </select>
                             </div>
@@ -368,9 +368,23 @@ class Woo_Package_Builder
             }
         }
 
-        // Order tabs: Starters, Mains, Desserts
+        // Bread selection (only for non-ramzan packages)
+        $categories['bread'] = [
+            'slug' => 'bread',
+            'label' => 'Bread',
+            'qty' => 1,
+            'desc' => 'Select one bread option',
+            'is_bread' => true,
+            'bread_options' => [
+                'roti' => 'Roti',
+                'naan' => 'Naan',
+                'roti-naan' => 'Roti & Naan',
+            ],
+        ];
+
+        // Order tabs: Starters, Mains, Bread, Desserts
         $ordered = [];
-        foreach (['Starters', 'Mains', 'Desserts'] as $label) {
+        foreach (['Starters', 'Mains', 'Bread', 'Desserts'] as $label) {
             foreach ($categories as $k => $cat) {
                 if ($cat['label'] === $label) {
                     $ordered[$k] = $cat;
@@ -608,16 +622,19 @@ class Woo_Package_Builder
                         ];
                         $group_products['vegetarian'] = $products_by_slug['vegetarian'] ?? [];
                     }
+                } elseif ($cat['label'] === 'Bread') {
+                    $category_mode = 'bread';
                 }
                 ?>
 
-                <div class="pb-content<?= $category_mode === 'combined' ? ' pb-combined' : ''; ?>"
+                <div class="pb-content<?= $category_mode === 'combined' ? ' pb-combined' : ''; ?><?= $category_mode === 'bread' ? ' pb-bread' : ''; ?>"
                     id="pb-<?= esc_attr($key); ?>"
                     data-category="<?= esc_attr($key); ?>"
                     data-free="<?= esc_attr($category_mode === 'combined' ? $combined_qty : 0); ?>"
                     data-mix="<?= $category_mix ? '1' : '0'; ?>"
                     data-mix-free="<?= esc_attr($mix_qty); ?>"
-                    data-mix-groups="<?= esc_attr(implode(',', $mix_groups)); ?>">
+                    data-mix-groups="<?= esc_attr(implode(',', $mix_groups)); ?>"
+                    data-bread-required="<?= $cat['label'] === 'Bread' ? '1' : '0'; ?>">
                     <p class="pb-info" style="display: none;">
                         Qty: <?= esc_html($cat['qty']); ?>
                     </p>
@@ -780,6 +797,26 @@ class Woo_Package_Builder
                                 </div>
                             <?php endif; ?>
                         <?php endforeach; ?>
+                    <?php elseif ($category_mode === 'bread'): ?>
+                        <!-- Bread Selection -->
+                        <div class="pb-bread-options">
+                            <div class="extra-pricing-line pb-bread-counter">
+                                <div class="pb-counter">
+                                    <span class="pb-counter-text">1 selection required</span>
+                                </div>
+                                <span class="pb-extra-tab"></span>
+                            </div>
+                            <div class="pb-subsection-items-group">
+                                <?php foreach ($cat['bread_options'] as $bread_key => $bread_label): ?>
+                                    <label class="pb-item pb-bread-item" data-id="<?= esc_attr($bread_key); ?>" data-bread-type="<?= esc_attr($bread_key); ?>">
+                                        <div class="selcedbox">
+                                            <input type="checkbox" class="pb-bread-checkbox" value="<?= esc_attr($bread_key); ?>">
+                                        </div>
+                                        <h3><?= esc_html($bread_label); ?></h3>
+                                    </label>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
                     <?php else: ?>
                         <p>No products found</p>
                     <?php endif; ?>
@@ -1155,31 +1192,55 @@ class Woo_Package_Builder
         if (is_array($items)) {
             foreach ($items as $item) {
                 $pid = 0;
+                $raw_id = '';
                 $tab = '';
                 $subgroup = '';
+                $custom_name = '';
 
                 if (is_array($item)) {
-                    $pid = absint($item['id'] ?? 0);
+                    $raw_id = sanitize_text_field($item['id'] ?? '');
+                    $pid = absint($raw_id);
                     $tab = sanitize_text_field($item['tab'] ?? '');
                     $subgroup = sanitize_text_field($item['subgroup'] ?? '');
+                    $custom_name = sanitize_text_field($item['name'] ?? '');
                 } else {
-                    $pid = absint($item);
+                    $raw_id = sanitize_text_field($item);
+                    $pid = absint($raw_id);
                 }
 
-                if (!$pid) {
+                if ($pid) {
+                    $prod = wc_get_product($pid);
+                    if (!$prod) {
+                        continue;
+                    }
+
+                    $entries[] = [
+                        'id' => $pid,
+                        'tab' => $tab,
+                        'subgroup' => $subgroup,
+                        'name' => $prod->get_name(),
+                    ];
                     continue;
                 }
 
-                $prod = wc_get_product($pid);
-                if (!$prod) {
+                if ($custom_name === '' && $tab === 'Bread') {
+                    $bread_map = [
+                        'roti' => 'Roti',
+                        'naan' => 'Naan',
+                        'roti-naan' => 'Roti & Naan',
+                    ];
+                    $custom_name = $bread_map[$raw_id] ?? '';
+                }
+
+                if ($custom_name === '') {
                     continue;
                 }
 
                 $entries[] = [
-                    'id' => $pid,
-                    'tab' => $tab,
+                    'id' => $raw_id,
+                    'tab' => $tab ?: 'Selected Items',
                     'subgroup' => $subgroup,
-                    'name' => $prod->get_name(),
+                    'name' => $custom_name,
                 ];
             }
         }

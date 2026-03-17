@@ -44,3 +44,4 @@ add_action( 'manage_woocommerce_page_wc-orders_custom_column', function( $column
         }
     }
 }, 10, 2 );
+?>

@@ -35,16 +35,27 @@ require_once plugin_dir_path(__FILE__) . '/includes/shinsh-cafe-extra.php';
 // add_filter('woocommerce_payment_complete_order_status', function ($status, $order_id, $order) {
 //     return 'on-hold';
 // }, 999, 3);
-add_action('woocommerce_order_status_processing', function ($order_id) {
-    $order = wc_get_order($order_id);
+add_action('woocommerce_order_status_processing', function ($order_id, $order = null) {
+    if (!$order instanceof WC_Order) {
+        $order = wc_get_order($order_id);
+    }
 
-    if ($order) {
+    if (!$order) {
+        return;
+    }
+
+    $status_action = $order->get_meta('_order_status_action');
+    if ($status_action === 'processing') {
+        return;
+    }
+
+    if ($order->get_status() !== 'on-hold') {
         $order->update_status(
             'on-hold',
             'Payment received, moved to on-hold for manual confirmation.'
         );
     }
-}, 20);
+}, 20, 2);
 
 
 /**
@@ -142,12 +153,17 @@ function custom_update_order_status(WP_REST_Request $request)
 
     // ✅ Update status logic
     if ($status === 'accepted' || $status === 'processing') {
-        $order->update_status('processing', 'Order accepted via app.');
         $order->update_meta_data('_order_status_action', 'processing');
         if ($time) {
             $order->update_meta_data('_order_prep_time', sanitize_text_field($time));
         }
         $order->delete_meta_data('_order_reject_reason');
+
+        $order->save();
+
+        if ($order->get_status() !== 'processing') {
+            $order->update_status('processing', 'Order accepted via app.');
+        }
     } elseif ($status === 'rejected' || $status === 'cancelled') {
         $order->update_status('cancelled', 'Order rejected via app.');
         $order->update_meta_data('_order_status_action', 'cancelled');
@@ -746,7 +762,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
             </div>
 
             <div style="text-align:center;font-size:11px;margin-top:10px;">
-                Thank you for your order!
+                Thank You For Ordering From Shish Cafe!
             </div>
 
         </div>

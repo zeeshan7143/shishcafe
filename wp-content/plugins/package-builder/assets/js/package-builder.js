@@ -225,7 +225,7 @@ jQuery(function ($) {
 
                 // For Ramzan packages, use the base price (no calculation needed)
                 const packagePrice = window.PB_RAMZAN_BASE_PRICE || 0;
-                const personsCount = window.PB_PERSONS_COUNT || 2;
+                const personsCount = window.PB_PERSONS_COUNT || 10;
 
                 log('Ramzan add to cart', { packagePrice, personsCount, itemsCount: selected.length });
 
@@ -278,7 +278,12 @@ jQuery(function ($) {
         }
 
         function addSelectedItem(pid, heading) {
-            window.PB_SELECTED_ITEMS.push({ id: pid, tab: heading.tab || '', subgroup: heading.subgroup || '' });
+            window.PB_SELECTED_ITEMS.push({
+                id: pid,
+                tab: heading.tab || '',
+                subgroup: heading.subgroup || '',
+                name: heading.name || ''
+            });
         }
 
         function removeSelectedItem(pid) {
@@ -297,7 +302,7 @@ jQuery(function ($) {
             // For Ramzan packages, use the base package price without calculation
             if (PB_DATA?.is_ramzan) {
                 // Ramzan packages use a fixed price per person count
-                const persons = parseInt(window.PB_PERSONS_COUNT, 10) || 1;
+                const persons = parseInt(window.PB_PERSONS_COUNT, 10) || 10;
                 const basePrice = window.PB_RAMZAN_BASE_PRICE || 0;
                 const total = basePrice;
                 window.PB_PACKAGE_TOTAL = total;
@@ -312,7 +317,7 @@ jQuery(function ($) {
             // Lamb starter    + Chicken main => chicken price
             // Lamb starter    + Lamb main    => lamb price
             // Price must be applied only once, then multiplied by persons.
-            const persons = parseInt(window.PB_PERSONS_COUNT, 10) || 1;
+            const persons = parseInt(window.PB_PERSONS_COUNT, 10) || 10;
             const pricing = PB_DATA?.package_pricing || {};
 
             function selectedTypeForCategory(categoryId) {
@@ -395,6 +400,12 @@ jQuery(function ($) {
 
             function computeRequired($content) {
                 if (!$content || !$content.length) return 0;
+
+                const breadRequired = parseInt($content.data('bread-required'), 10);
+                if (!isNaN(breadRequired) && breadRequired > 0) {
+                    return breadRequired;
+                }
+
                 const free = parseInt($content.data('free'), 10);
                 if (!isNaN(free) && free > 0) return free;
                 // For mix: add mix qty + subgroup qty (not just one or the other)
@@ -567,6 +578,17 @@ jQuery(function ($) {
                         return false;
                     }
                 });
+            }
+
+            // Check bread requirement
+            if (!block) {
+                const $breadContent = $builder.find('.pb-content.pb-bread');
+                if ($breadContent.length) {
+                    const breadSelected = $breadContent.find('input.pb-bread-checkbox:checked').length;
+                    if (breadSelected === 0) {
+                        block = true;
+                    }
+                }
             }
 
             window.PB_BLOCK_ADD_TO_CART = block;
@@ -1029,10 +1051,13 @@ jQuery(function ($) {
                 const $currContent = $builder.find('#' + currId);
                 let req = 0;
                 if ($currContent.length) {
+                    const breadRequired = parseInt($currContent.data('bread-required'), 10);
+                    if (!isNaN(breadRequired) && breadRequired > 0) req = breadRequired;
+
                     const free = parseInt($currContent.data('free'), 10);
-                    if (!isNaN(free) && free > 0) req = free;
+                    if (req === 0 && !isNaN(free) && free > 0) req = free;
                     const mixFree = parseInt($currContent.data('mix-free'), 10);
-                    if (!isNaN(mixFree) && mixFree > 0) req = mixFree;
+                    if (req === 0 && !isNaN(mixFree) && mixFree > 0) req = mixFree;
                     if (req === 0) {
                         $currContent.find('.pb-subgroup').each(function () {
                             req += parseInt($(this).data('free'), 10) || 0;
@@ -1053,6 +1078,66 @@ jQuery(function ($) {
             $builder.find('.pb-content').hide();
             $builder.find('#pb-' + tab).show();
         });
+
+        /* ===========================
+         * BREAD SELECTION (Single required, others disabled)
+         * =========================== */
+        $builder.find('.pb-bread-item').each(function () {
+            const $breadItem = $(this);
+            const $breadCheckbox = $breadItem.find('input.pb-bread-checkbox');
+            const breadId = $breadItem.data('bread-type');
+            const breadLabel = $breadItem.find('h3').first().text().trim();
+            const $breadContent = $breadItem.closest('.pb-content.pb-bread');
+            const $breadCounter = $breadContent.find('.pb-bread-counter .pb-counter-text');
+
+            $breadCheckbox.on('change', function () {
+                const isChecked = this.checked;
+
+                if (isChecked) {
+                    // Uncheck all other bread options
+                    $breadContent.find('input.pb-bread-checkbox').not(this).each(function () {
+                        const otherBreadId = $(this).val();
+                        removeSelectedItem(otherBreadId);
+                        $(this).prop('checked', false);
+                    });
+
+                    // Add to selected items
+                    addSelectedItem(breadId, { tab: 'Bread', subgroup: '', name: breadLabel });
+
+                    // Update counter
+                    if ($breadCounter.length) {
+                        $breadCounter.text('1 selection selected');
+                    }
+
+                    // Disable other options
+                    $breadContent.find('.pb-bread-item').each(function () {
+                        const $currentCheckbox = $(this).find('input.pb-bread-checkbox');
+                        if (!$currentCheckbox.is(':checked')) {
+                            $currentCheckbox.prop('disabled', true);
+                            $(this).addClass('pb-disabled');
+                        }
+                    });
+                } else {
+                    // Remove from selected items
+                    removeSelectedItem(breadId);
+
+                    // Update counter
+                    if ($breadCounter.length) {
+                        $breadCounter.text('1 selection required');
+                    }
+
+                    // Enable all options again
+                    $breadContent.find('.pb-bread-item').each(function () {
+                        $(this).find('input.pb-bread-checkbox').prop('disabled', false);
+                        $(this).removeClass('pb-disabled');
+                    });
+                }
+
+                calculatePackageTotal();
+                recalcBlockAddToCart();
+            });
+        });
+
         $builder.find('.pb-tabs li:first').trigger('click');
 
         /* ===========================
@@ -1077,7 +1162,7 @@ jQuery(function ($) {
                 variation_id: window.PB_MAIN_VARIATION_ID,
                 extra_price: window.PB_GLOBAL_EXTRA,
                 package_price: window.PB_PACKAGE_TOTAL || 0,
-                persons: window.PB_PERSONS_COUNT || 1,
+                persons: window.PB_PERSONS_COUNT || 10,
                 items: window.PB_SELECTED_ITEMS
             };
 
@@ -1170,7 +1255,7 @@ jQuery(function ($) {
 
         $('#pb-clear-package').on('click', function () {
             $packageSelector.find('input[name="pb_package"]').prop('checked', false);
-            $packageSelector.find('.pb-persons-select').val('1');
+            $packageSelector.find('.pb-persons-select').val('10');
             $('#pb-next-package').prop('disabled', true);
             $('#pb-clear-package').prop('disabled', true).hide();
         });
@@ -1191,13 +1276,13 @@ jQuery(function ($) {
                 const priceMatch = priceText.match(/£?([\d.]+)/);
                 const packagePrice = priceMatch ? parseFloat(priceMatch[1]) : 0;
                 window.PB_RAMZAN_BASE_PRICE = packagePrice;
-                window.PB_PERSONS_COUNT = 1; // Will be updated when tab is selected (2 or 8)
+                window.PB_PERSONS_COUNT = 10; // Will be updated when tab is selected (2 or 8)
                 
                 log('Ramzan package selected', { price: packagePrice });
             } else {
                 // For regular packages, get persons count
                 const personsVal = parseInt($selectedOption.find('.pb-persons-select').val(), 10);
-                window.PB_PERSONS_COUNT = !isNaN(personsVal) && personsVal > 0 ? personsVal : 1;
+                window.PB_PERSONS_COUNT = !isNaN(personsVal) && personsVal > 0 ? personsVal : 10;
                 
                 log('Regular package selected', { persons: window.PB_PERSONS_COUNT });
             }
