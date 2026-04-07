@@ -74,7 +74,7 @@ class THWCFD_Block_Order_Data {
 				<?php
 					do_action( 'thwcfe_order_details_before_custom_fields', $order );
 					//echo $html;
-					echo wp_kses($html, THWCFD_Utils::get_allowed_html());
+					echo wp_kses($html, THWCFD_Utils::get_allowed_html_order_output());
 					do_action( 'thwcfe_order_details_after_custom_fields', $order ); 
 				?>
 			</table>
@@ -111,7 +111,7 @@ class THWCFD_Block_Order_Data {
 
 		if($html){
 			echo '<p style="clear: both; margin: 0 !important;"></p>';
-			echo wp_kses($html, THWCFD_Utils::get_allowed_html());
+			echo wp_kses($html, THWCFD_Utils::get_allowed_html_order_output());
 		}
 	}
 	private function prepare_args_admin_order_view(){
@@ -218,7 +218,7 @@ class THWCFD_Block_Order_Data {
 		}
 		if($html){
 			//echo $html;
-			echo wp_kses($html, THWCFD_Utils::get_allowed_html());
+			echo wp_kses($html, THWCFD_Utils::get_allowed_html_order_output());
 		}	
 	}
     private function prepare_args_order_email($sent_to_admin){
@@ -437,9 +437,9 @@ class THWCFD_Block_Order_Data {
 						$value = esc_html($value);
 					}
 				}
-				if($type === 'checkboxgroup' || $type === 'radio'){
-					$value = html_entity_decode($value);
-				}
+				// if($type === 'checkboxgroup' || $type === 'radio'){
+				// 	$value = html_entity_decode($value);
+				// }
 				
 				$field_data['label'] = $title;
 				//$field_data['sublabel'] = $subtitle;

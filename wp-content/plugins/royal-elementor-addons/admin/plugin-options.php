@@ -80,6 +80,8 @@ function wpr_register_addons_settings() {
     register_setting( 'wpr-settings', 'wpr_recaptcha_v3_site_key' );
     register_setting( 'wpr-settings', 'wpr_recaptcha_v3_secret_key' );
     register_setting( 'wpr-settings', 'wpr_recaptcha_v3_score' );
+    register_setting( 'wpr-settings', 'wpr_recaptcha_v2_site_key' );
+    register_setting( 'wpr-settings', 'wpr_recaptcha_v2_secret_key' );
 
     // Lightbox
     register_setting( 'wpr-settings', 'wpr_lb_bg_color' );
@@ -117,6 +119,7 @@ function wpr_register_addons_settings() {
     register_setting('wpr-extension-settings', 'wpr-parallax-background');
     register_setting('wpr-extension-settings', 'wpr-parallax-multi-layer');
     register_setting('wpr-extension-settings', 'wpr-custom-css');
+    register_setting('wpr-extension-settings', 'wpr-display-conditions');
     register_setting('wpr-extension-settings', 'wpr-sticky-section');
 
     // Element Toggle
@@ -126,6 +129,17 @@ function wpr_register_addons_settings() {
     foreach ( Utilities::get_registered_modules() as $title => $data ) {
         $slug = $data[0];
         register_setting( 'wpr-elements-settings', 'wpr-element-'. $slug, [ 'default' => 'on' ] );
+    }
+
+    // Pro widgets that appear in Elements tab (so their toggles are saved)
+    if ( defined( 'WPR_ADDONS_PRO_VERSION' ) && wpr_fs()->can_use_premium_code() ) {
+        $pro_element_slugs = [ 'breadcrumbs-pro' ];
+        if ( wpr_fs()->is_plan( 'expert' ) ) {
+            $pro_element_slugs = array_merge( $pro_element_slugs, [ 'category-grid-pro', 'advanced-filters-pro' ] );
+        }
+        foreach ( $pro_element_slugs as $slug ) {
+            register_setting( 'wpr-elements-settings', 'wpr-element-' . $slug, [ 'default' => 'on' ] );
+        }
     }
 
     // Theme Builder
@@ -213,7 +227,7 @@ function wpr_addons_settings_page() {
 
     // Render Backup Plugin Popup
     WPR_Templates_Loop::render_backup_plugin_popup();
-
+    
     ?>
 
     <!-- Tabs -->
@@ -818,6 +832,26 @@ function wpr_addons_settings_page() {
                 </h4>
 
                 <input type="number" name="wpr_recaptcha_v3_score" id="wpr_recaptcha_v3_score" placeholder="0.5" step="0.1" min="0" max="1" value="<?php echo esc_attr(get_option('wpr_recaptcha_v3_score')); ?>">
+            </div>
+
+            <div class="wpr-setting">
+                <h4>
+                    <span><?php esc_html_e( 'reCAPTCHA v2 (Checkbox) Site Key', 'wpr-addons' ); ?></span>
+                    <br>
+                    <a href="https://www.google.com/recaptcha/intro/v3.html" target="_blank"><?php esc_html_e( 'How to get reCAPTCHA keys?', 'wpr-addons' ); ?></a>
+                    <p class="wpr-settings-group-description"><?php esc_html_e( 'Use reCAPTCHA v2 checkbox in Form Builder. Create a "reCAPTCHA v2" type key in Google reCAPTCHA admin.', 'wpr-addons' ); ?></p>
+                </h4>
+
+                <input type="text" name="wpr_recaptcha_v2_site_key" id="wpr_recaptcha_v2_site_key" value="<?php echo esc_attr(get_option('wpr_recaptcha_v2_site_key')); ?>">
+            </div>
+
+            <div class="wpr-setting">
+                <h4>
+                    <span><?php esc_html_e( 'reCAPTCHA v2 Secret Key', 'wpr-addons' ); ?></span>
+                    <br>
+                </h4>
+
+                <input type="text" name="wpr_recaptcha_v2_secret_key" id="wpr_recaptcha_v2_secret_key" value="<?php echo esc_attr(get_option('wpr_recaptcha_v2_secret_key')); ?>">
             </div>
             
         </div>
@@ -1545,9 +1579,9 @@ function wpr_addons_settings_page() {
         // array of option names
         $option_names = $new_allowed_options[ 'wpr-extension-settings' ];
 
-        echo '<div class="wpr-elements">';
+        echo '<div class="wpr-elements wpr-elements-extensions">';
 
-        foreach ($option_names as $option_name) {  
+        foreach ($option_names as $option_name) {
             $option_title = ucwords( preg_replace( '/-/i', ' ', preg_replace('/wpr-||-toggle/i', '', $option_name ) ));
 
             echo '<div class="wpr-element">';
@@ -1594,6 +1628,8 @@ function wpr_addons_settings_page() {
                         }
                     } elseif ( 'wpr-custom-css' === $option_name ) {
                         echo '<br><span>Tip: Edit any Section > Navigate to Advanced tab</span>';
+                    } elseif ( 'wpr-display-conditions' === $option_name ) {
+                        echo '<br><span>Tip: Edit any Element > Navigate to Visibility tab</span>';
                     }
 
                     // echo '<a href="https://royal-elementor-addons.com/elementor-particle-effects/?ref=rea-plugin-backend-extentions-prev">'. esc_html('View Extension Demo', 'wpr-addons') .'</a>';

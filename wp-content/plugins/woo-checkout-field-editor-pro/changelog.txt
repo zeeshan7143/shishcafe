@@ -1,4 +1,11 @@
 == Changelog ==
+= 2.1.8 =
+* Security: Fixed a Stored XSS vulnerability affecting custom  fields submitted through the WooCommerce Store API checkout endpoint reported by Dmitrii Ignatyev.
+* Added WooCommerce 10.5 compatibility.
+
+= 2.1.7 =
+* Fixed incorrect use of translation function in paragraph field.
+
 = 2.1.6 =
 * Added compatiblity for Archiva for WooCommerce.
 * Improved dynamic string translation for WPML.

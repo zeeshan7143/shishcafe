@@ -510,6 +510,64 @@ class THWCFD_Utils {
 		return $allowed_html;
 	}
 
+	static function get_allowed_html_order_output() {
+		$allowed_html = array(
+			'input' => array(
+				'type'    => array(),
+				'id'      => array(),
+				'name'    => array(),
+				'value'   => array(),
+				'style'   => array(),
+				'checked' => array(),
+				'class'   => array(),
+				// No event handlers (onclick, onchange, etc.)
+			),
+			'label' => array(
+				'for'   => array(),
+				'style' => array(),
+			),
+			'textarea' => array(
+				'name'  => array(),
+				'rows'  => array(),
+				'cols'  => array(),
+				'style' => array(),
+				// No event handlers
+			),
+			'select' => array(
+				'name'        => array(),
+				'style'       => array(),
+				'class'       => array(),
+				'multiple'    => array(),
+				'placeholder' => array(),
+				// onchange intentionally excluded — user-supplied values rendered here
+			),
+			'option' => array(
+				'value' => array(),
+			),
+			'th' => array(
+				'colspan' => array(),
+				'rowspan' => array(),
+				'style'   => array(),
+				'class'   => array(),
+			),
+			'tr' => array(
+				'style' => array(),
+				'class' => array(),
+			),
+			'td' => array(
+				'colspan' => array(),
+				'rowspan' => array(),
+				'style'   => array(),
+				'class'   => array(),
+			),
+			'h3'     => array(),
+			'p'      => array(),
+			'strong' => array(),
+			'br'     => array(),
+		);
+		return $allowed_html;
+	}
+
 	public static function convert_string_to_array($str, $separator = ','){
 		if(!is_array($str)){
 			$str = array_map('trim', explode($separator, $str));

@@ -1089,6 +1089,21 @@ jQuery(function ($) {
             const breadLabel = $breadItem.find('h3').first().text().trim();
             const $breadContent = $breadItem.closest('.pb-content.pb-bread');
             const $breadCounter = $breadContent.find('.pb-bread-counter .pb-counter-text');
+            const $breadCounterWrap = $breadContent.find('.pb-bread-counter .pb-counter');
+
+            function updateBreadCounterState() {
+                const selected = $breadContent.find('input.pb-bread-checkbox:checked').length;
+                if ($breadCounter.length) {
+                    $breadCounter.text(selected > 0 ? '1 selection selected' : '1 selection required');
+                }
+                if ($breadCounterWrap.length) {
+                    $breadCounterWrap
+                        .removeClass('pb-required pb-complete')
+                        .addClass(selected > 0 ? 'pb-complete' : 'pb-required');
+                }
+            }
+
+            updateBreadCounterState();
 
             $breadCheckbox.on('change', function () {
                 const isChecked = this.checked;
@@ -1104,10 +1119,7 @@ jQuery(function ($) {
                     // Add to selected items
                     addSelectedItem(breadId, { tab: 'Bread', subgroup: '', name: breadLabel });
 
-                    // Update counter
-                    if ($breadCounter.length) {
-                        $breadCounter.text('1 selection selected');
-                    }
+                    updateBreadCounterState();
 
                     // Disable other options
                     $breadContent.find('.pb-bread-item').each(function () {
@@ -1121,10 +1133,7 @@ jQuery(function ($) {
                     // Remove from selected items
                     removeSelectedItem(breadId);
 
-                    // Update counter
-                    if ($breadCounter.length) {
-                        $breadCounter.text('1 selection required');
-                    }
+                    updateBreadCounterState();
 
                     // Enable all options again
                     $breadContent.find('.pb-bread-item').each(function () {
@@ -1133,6 +1142,7 @@ jQuery(function ($) {
                     });
                 }
 
+                updateBreadCounterState();
                 calculatePackageTotal();
                 recalcBlockAddToCart();
             });

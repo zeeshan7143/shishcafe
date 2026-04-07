@@ -173,6 +173,68 @@ if ( ! defined( 'ABSPATH' ) ) {
 		}
 	}
 
+	/**
+	 * Check if the current user is allowed to query the post type(s) in grid settings.
+	 * Prevents unauthenticated disclosure of non-public post types (e.g. flamingo_inbound, shop_coupon).
+	 *
+	 * @param array $settings Grid settings (e.g. $_POST['grid_settings']).
+	 * @return bool True if allowed, false otherwise.
+	 */
+	public static function is_allowed_grid_query_post_type( $settings ) {
+		if ( empty( $settings ) || ! is_array( $settings ) ) {
+			return false;
+		}
+
+		$query_source = isset( $settings['query_source'] ) ? $settings['query_source'] : '';
+
+		// Resolve effective post type(s) to validate
+		if ( 'current' === $query_source && ! empty( $settings['current_query_source'] ) ) {
+			$post_types = (array) $settings['current_query_source'];
+		} elseif ( 'related' !== $query_source && '' !== $query_source ) {
+			$post_types = (array) $query_source;
+		} else {
+			// 'related' uses get_post_type(get_the_ID()) in get_main_query_args; no user-controlled type
+			return true;
+		}
+
+		$is_logged_in = is_user_logged_in();
+
+		// For unauthenticated requests, only allow post types that are publicly queryable
+		if ( ! $is_logged_in ) {
+			$allowed_types = get_post_types( array( 'publicly_queryable' => true ), 'names' );
+			foreach ( $post_types as $post_type ) {
+				$post_type = sanitize_key( $post_type );
+				if ( '' === $post_type ) {
+					continue;
+				}
+				if ( ! in_array( $post_type, $allowed_types, true ) ) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		// Logged-in: allow if publicly_queryable OR user has capability to read that post type
+		foreach ( $post_types as $post_type ) {
+			$post_type = sanitize_key( $post_type );
+			if ( '' === $post_type ) {
+				continue;
+			}
+			$obj = get_post_type_object( $post_type );
+			if ( ! $obj ) {
+				return false;
+			}
+			if ( $obj->publicly_queryable ) {
+				continue;
+			}
+			$cap = isset( $obj->cap->read_private_posts ) ? $obj->cap->read_private_posts : 'read';
+			if ( ! current_user_can( $cap ) ) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	// Main Query Args
 	public static function get_main_query_args($settings, $params) {
 		$author = ! empty( $settings[ 'query_author' ] ) ? implode( ',', $settings[ 'query_author' ] ) : '';
@@ -846,7 +908,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 					if ( 'word_count' === $settings['element_trim_text_by'] ) {
 						echo esc_html(wp_trim_words( get_the_title(), $settings['element_word_count'] ));
 					} else {
-						echo substr(html_entity_decode(get_the_title()), 0, $settings['element_letter_count']) .'...';
+						$letter_count = isset( $settings['element_letter_count'] ) ? absint( $settings['element_letter_count'] ) : 0;
+						echo esc_html( substr( html_entity_decode( get_the_title(), ENT_QUOTES, 'UTF-8' ), 0, $letter_count ) ) . '...';
 					}
 				echo '</a>';
 			echo '</div>';
@@ -1464,6 +1527,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				// Taxonomies
 				foreach ( $terms as $term ) {
+					if ( ! $term || ! isset( $term->term_id, $term->name ) ) {
+						continue;
+					}
+					$term_link = get_term_link( $term->term_id );
+					if ( is_wp_error( $term_link ) ) {
+						continue;
+					}
 
 					// Custom Colors
 					$enable_custom_colors = ! wpr_fs()->can_use_premium_code() ? '' : $general_settings['tax1_custom_color_switcher'];
@@ -1479,7 +1549,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						echo '<style>'. esc_html($custom_tax_styles) .'</style>'; // TODO: take out of loop if possible
 					}
 
-					echo '<a class="'. $pointer_item_class .' wpr-tax-id-'. esc_attr($term->term_id) .'" href="'. esc_url(get_term_link( $term->term_id )) .'">'. esc_html( $term->name );
+					echo '<a class="'. $pointer_item_class .' wpr-tax-id-'. esc_attr($term->term_id) .'" href="'. esc_url( $term_link ) .'">'. esc_html( $term->name );
 						if ( ++$count !== count( $terms ) ) {
 							echo '<span class="tax-sep">'. esc_html($settings['element_tax_sep']) .'</span>';
 						}
@@ -1883,6 +1953,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			));
 		}
 
+		if ( ! empty( $_POST['grid_settings'] ) && ! WPR_Grid_Helpers::is_allowed_grid_query_post_type( $_POST['grid_settings'] ) ) {
+			wp_send_json_error(array(
+				'message' => esc_html__('Security check failed.', 'wpr-addons'),
+			));
+		}
+
 		if ( isset($_POST['wpr_url_params']) ) {
 			$results = [];
 		
@@ -1923,9 +1999,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 			));
 		}
 
+		$settings = isset( $_POST['grid_settings'] ) && is_array( $_POST['grid_settings'] ) ? $_POST['grid_settings'] : array();
+		if ( ! WPR_Grid_Helpers::is_allowed_grid_query_post_type( $settings ) ) {
+			wp_send_json_error(array(
+				'message' => esc_html__('Security check failed.', 'wpr-addons'),
+			));
+		}
+
 		$start = microtime(true);
 		// Get Settings
-		$settings = $_POST['grid_settings'];
 	
 		// Create a unique cache key based on the settings
 		$cache_key = 'wpr_grid_filters_' . md5(serialize(WPR_Grid_Helpers::get_main_query_args($settings, [])));

@@ -184,7 +184,7 @@ class THWCFD_Block {
                         //$field['optionalLabel'] = $field_set[$key]['label']? $field_set[$key]['label'].' (optional)' : $field['optionalLabel'];
                         $field['optionalLabel'] = !empty($field_set[$key]['label']) ? sprintf(
                             /* translators: %s Field label. */
-                            __( '%s (optional)', 'woo-checkout-field-editor-pro' ),
+                            __( '%s (optional)', 'woocommerce' ), //phpcs:disable WordPress.WP.I18n.TextDomainMismatch
                             $field_set[$key]['label']
                         ) : $field['optionalLabel'];
                     }
@@ -365,11 +365,22 @@ class THWCFD_Block {
                     continue;
                 }
                 $field = $section->fields[$field_key];
-                
-                
-                if(is_array($field_value)){
+                $field_type = $field->property_set['type'] ?  $field->property_set['type'] : 'text';
+
+                if (is_array($field_value)) {
+                    $field_value = array_map('sanitize_text_field', $field_value);
                     $field_value = implode(', ', $field_value);
+                } else {
+                    // Sanitize based on field type
+                    if ($field_type === 'textarea') {
+                        $field_value = sanitize_textarea_field($field_value);
+                    } else {
+                        $field_value = sanitize_text_field($field_value);
+                    }
                 }
+                // if(is_array($field_value)){
+                //     $field_value = implode(', ', $field_value);
+                // }
                 if (($field->property_set['order_meta'])) {
                     $order_meta_updates[$field_key] = $field_value;
                     $order_meta_fields[$field_key] = $field_value;

@@ -20,6 +20,9 @@
                     
                     add_action( 'wp_ajax_update-taxonomy-order',    array ( $this, 'saveAjaxOrder' ) );
                     
+                    add_filter( 'plugin_action_links_taxonomy-terms-order/taxonomy-terms-order.php',                  array ( $this,  'add_plugin_action_links') );
+                    add_filter( 'network_admin_plugin_action_links_taxonomy-terms-order/taxonomy-terms-order.php' ,   array ( $this,  'add_plugin_action_links')  );
+                    
                     if ( is_admin() )
                         TTO_functions::check_table_column();                    
                 }
@@ -219,6 +222,17 @@
                     wp_cache_flush();
                         
                     die();
+                }
+                
+                
+                
+            function add_plugin_action_links( $plugin_actions )
+                {
+                    $new_actions = array();
+
+                    $new_actions['to_settings'] = sprintf( __( '<a href="%s">Settings</a>', 'taxonomy-terms-order' ), esc_url( admin_url( 'options-general.php?page=to-options' ) ) );
+
+                    return array_merge( $new_actions, $plugin_actions );    
                 }
            
         }

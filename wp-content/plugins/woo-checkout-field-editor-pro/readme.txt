@@ -5,7 +5,7 @@ Tags: Checkout  Manager, Checkout Field Editor, WooCommerce Checkout, WooCommerc
 Requires at least: 4.9
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 2.1.7
+Stable tag: 2.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,7 +155,7 @@ Display sections at 14 different locations, offering greater flexibility in orga
 
 Show/hide custom fields only when specific conditions are met.
 
-- Cart contents
+- Cart contains
 - Cart subtotal
 - Cart total
 - User Roles
@@ -163,6 +163,8 @@ Show/hide custom fields only when specific conditions are met.
 - Product Variations
 - Product Category
 - Based on other field values
+- Based on Shipping Method
+- Based on Payment Method
 
 =  ✅ CREATE & APPLY CUSTOM VALIDATIONS FOR CHECKOUT FIELDS =
 
@@ -202,10 +204,10 @@ All the custom fields in the Checkout Field Editor are available through hooks. 
 
 👉 PLUGINS
 
-*   WooCommerce PDF Invoices & Packing Slips
-*   WooCommerce Customer/Order CSV Export
+*   PDF Invoices & Packing Slips for WooCommerce by WP Overnight
+*   Customer / Order / Coupon Export for WooCommerce by SkyVerge
+*   Multi-language Support (WPML, Polylang & Loco Translate)
 *   Zapier Support
-*   Multi-language Support
 
 👉 THEMES
 
@@ -262,7 +264,7 @@ Good job guys!!!
 👉 [GET DOCUMENTATION](https://www.themehigh.com/docs/category/checkout-field-editor-for-woocommerce/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=pro_doc)
 👉 [GET THEMEHIGH SUPPORT](https://www.themehigh.com/docs/support/?utm_source=wcfe_free&utm_medium=referral&utm_campaign=cfe_support)
 👉 [JOIN COMMUNITY](https://www.facebook.com/groups/themehigh/)
-👉 FOLLOW US ON [Facebook](https://www.facebook.com/ThemeHigh-319611541768603/), [LinkedIn](https://www.linkedin.com/company/themehigh/), [Twitter](https://twitter.com/themehigh/) , [YouTube](https://www.youtube.com/channel/UC-_uMXaC_21j1Y2_nGjTyvg/) & [Reddit](https://www.reddit.com/r/themehigh).
+👉 FOLLOW US ON [Facebook](https://www.facebook.com/ThemeHigh-319611541768603/), [LinkedIn](https://www.linkedin.com/company/themehigh/), [X](https://twitter.com/themehigh/) , [YouTube](https://www.youtube.com/channel/UC-_uMXaC_21j1Y2_nGjTyvg/) & [Reddit](https://www.reddit.com/r/themehigh).
 
 == Installation ==
 = Minimum Requirements =
@@ -344,6 +346,10 @@ No, the free version does not support this feature. However, with the pro versio
 12. Block checkout custom fields( Radio and Text)
 
 == Changelog ==
+= 2.1.8 =
+* Security: Fixed a Stored XSS vulnerability affecting custom  fields submitted through the WooCommerce Store API checkout endpoint reported by Dmitrii Ignatyev.
+* Added WooCommerce 10.5 compatibility.
+
 = 2.1.7 =
 * Fixed incorrect use of translation function in paragraph field.
 

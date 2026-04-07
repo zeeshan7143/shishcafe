@@ -241,43 +241,43 @@ class THWCFD_Utils_Block {
 	public static function get_block_field_set(){
 		
 	}
-
+	// phpcs:disable WordPress.WP.I18n.TextDomainMismatch
 	public static function prepare_default_fields($fields){
 		$field_objects = array();
-		$default_fields_id = array(
-					'first_name' => array(
-						'label'          => 'First name',
-					),
-					'last_name'  => array(
-						'label'          => 'Last name',
-					),
-					'company'    => array(
-						'label'          => 'Company name',
-					),
-					'country'    => array(
-						'label'          =>  'Country / Region',
-					),	
-					'address_1'  => array(
-						'label'          => 'Street address',
-						'placeholder'  	 => 'House number and street name',
-					),
-					'address_2'  => array(
-						'label'        => 'Apartment, suite, unit, etc.',
-						'placeholder'  => 'Apartment, suite, unit, etc. (optional)',
-					),
-					'city'       => array(
-						'label'        => 'Town / City',
-					),
-					'state'      => array(
-						'label'        => 'State / County',
-					),
-					'postcode'   => array(
-						'label'        => 'Postcode / ZIP',
-					),
-					'email' => array(
-						'label' => 'Email Address',
-					)
-				);
+			$default_fields_id = array(
+				'first_name' => array(
+					'label' => __( 'First name', 'woocommerce' ),
+				),
+				'last_name'  => array(
+					'label' => __( 'Last name', 'woocommerce' ),
+				),
+				'company'    => array(
+					'label' => __( 'Company name', 'woocommerce' ),
+				),
+				'country'    => array(
+					'label' => __( 'Country / Region', 'woocommerce' ),
+				),
+				'address_1'  => array(
+					'label'       => __( 'Street address', 'woocommerce' ),
+					'placeholder' => __( 'House number and street name', 'woocommerce' ),
+				),
+				'address_2'  => array(
+					'label'       => __( 'Apartment, suite, unit, etc.', 'woocommerce' ),
+					'placeholder' => __( 'Apartment, suite, unit, etc. (optional)', 'woocommerce' ),
+				),
+				'city'       => array(
+					'label' => __( 'Town / City', 'woocommerce' ),
+				),
+				'state'      => array(
+					'label' => __( 'State / County', 'woocommerce' ),
+				),
+				'postcode'   => array(
+					'label' => __( 'Postcode / ZIP', 'woocommerce' ),
+				),
+				'email'      => array(
+					'label' => __( 'Email address', 'woocommerce' ),
+				),
+			);
 
 		if(is_array($fields)){
 			foreach($fields as $name => $field){

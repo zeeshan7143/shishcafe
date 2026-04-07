@@ -40384,3 +40384,408 @@ Stack trace:
 [12-Mar-2026 10:10:40 UTC]   Automatic plugin updates starting...
 [12-Mar-2026 10:10:40 UTC]   Automatic plugin updates complete.
 [12-Mar-2026 10:10:41 UTC] Automatic updates complete.
+[17-Mar-2026 10:11:23 UTC] Automatic updates starting...
+[17-Mar-2026 10:11:25 UTC]   Automatic plugin updates starting...
+[17-Mar-2026 10:11:25 UTC]   Automatic plugin updates complete.
+[17-Mar-2026 10:11:26 UTC] Automatic updates complete.
+[25-Mar-2026 09:58:27 UTC] Automatic updates starting...
+[25-Mar-2026 09:58:29 UTC]   Automatic plugin updates starting...
+[25-Mar-2026 09:58:29 UTC]   Automatic plugin updates complete.
+[25-Mar-2026 09:58:30 UTC] Automatic updates complete.
+[25-Mar-2026 10:01:14 UTC] === CHECKING RAMZAN-DEALS PRODUCTS ===
+[25-Mar-2026 10:01:14 UTC] Found 4 products with ramzan-deals category
+[25-Mar-2026 10:01:14 UTC]   - Product: Chicken Biryani (ID: 6482)
+[25-Mar-2026 10:01:14 UTC]     Categories: Package Deals, Ramzan Deals
+[25-Mar-2026 10:01:14 UTC]     Tags: 
+[25-Mar-2026 10:01:14 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 2x C650
+    [detail_for_2] => 1x C500
+)
+
+[25-Mar-2026 10:01:14 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1x C500
+    [detail_for_8] => 2x C650
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[25-Mar-2026 10:01:14 UTC]   - Product: Roti/ Naan (ID: 6477)
+[25-Mar-2026 10:01:14 UTC]     Categories: Package Deals, Ramzan Deals
+[25-Mar-2026 10:01:14 UTC]     Tags: 
+[25-Mar-2026 10:01:14 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 4 & 4
+    [detail_for_2] => 1 & 1
+)
+
+[25-Mar-2026 10:01:14 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 1 & 1
+    [detail_for_8] => 4 & 4
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[25-Mar-2026 10:01:14 UTC]   - Product: Vegetable Pakora (ID: 6472)
+[25-Mar-2026 10:01:14 UTC]     Categories: Package Deals, Ramzan Deals
+[25-Mar-2026 10:01:14 UTC]     Tags: 
+[25-Mar-2026 10:01:14 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+    [detail_for_2] => 2 Pcs
+)
+
+[25-Mar-2026 10:01:14 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 2 Pcs
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 2
+                    [label] => for 2
+                )
+
+            [1] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[25-Mar-2026 10:01:14 UTC]   - Product: Fish Pakora (ID: 6467)
+[25-Mar-2026 10:01:14 UTC]     Categories: Package Deals, Ramzan Deals
+[25-Mar-2026 10:01:14 UTC]     Tags: 
+[25-Mar-2026 10:01:14 UTC]     ACF Fields: Array
+(
+    [dessert_qty] => 
+    [text_description_dessert] => 
+    [text_description_starters] => 
+    [all_qty_starters] => 
+    [lamb_chicken_qty_mains_mix] => 
+    [text_description_mains_mix] => 
+    [chicken_qty_mains] => 
+    [text_description_mains_chicken] => 
+    [lamb_qty_mains] => 
+    [text_description_mains_lamb] => 
+    [vegetarian_qty_mains] => 
+    [text_description_mains_vegetarian] => 
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+    [detail_for_8] => 8 Pcs
+)
+
+[25-Mar-2026 10:01:14 UTC]     ACF Subset: Array
+(
+    [detail_for_2] => 
+    [detail_for_8] => 8 Pcs
+    [qty_persons] => Array
+        (
+            [0] => Array
+                (
+                    [value] => for 8
+                    [label] => for 8
+                )
+
+        )
+
+)
+
+[25-Mar-2026 10:01:14 UTC] === END RAMZAN CHECK ===
+[25-Mar-2026 10:01:25 UTC] Product tags: Array
+(
+)
+
+[25-Mar-2026 12:24:56 UTC] PHP Warning:  plugins_api(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[25-Mar-2026 12:25:30 UTC] [RWPP INFO] Product order table created/verified
+[25-Mar-2026 12:25:30 UTC] [RWPP INFO] Global sorting migration: 384 records migrated
+[25-Mar-2026 12:25:30 UTC] [RWPP INFO] Category sorting migration: 0 records migrated
+[25-Mar-2026 12:25:30 UTC] [RWPP INFO] Data migration completed successfully
+[25-Mar-2026 12:26:37 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:26:37 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:26:43 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:26:43 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:26:48 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:26:48 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:26:49 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:26:49 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:27:03 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:27:03 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:27:39 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:27:39 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:28:14 UTC] [RWPP WARNING] Invalid nonce in load_more_products_handler request
+[25-Mar-2026 12:28:14 UTC] [RWPP ERROR] Exception in load_more_products_handler: Invalid security token
+[25-Mar-2026 12:29:05 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[26-Mar-2026 07:23:08 UTC] Automatic updates starting...
+[26-Mar-2026 07:23:10 UTC]   Automatic plugin updates starting...
+[26-Mar-2026 07:23:10 UTC]   Automatic plugin updates complete.
+[26-Mar-2026 07:23:13 UTC] Automatic updates complete.
+[27-Mar-2026 07:28:13 UTC] Automatic updates starting...
+[27-Mar-2026 07:28:15 UTC]   Automatic plugin updates starting...
+[27-Mar-2026 07:28:15 UTC]   Automatic plugin updates complete.
+[27-Mar-2026 07:28:16 UTC] Automatic updates complete.
+[30-Mar-2026 06:44:47 UTC] Automatic updates starting...
+[30-Mar-2026 06:44:49 UTC]   Automatic plugin updates starting...
+[30-Mar-2026 06:44:49 UTC]   Automatic plugin updates complete.
+[30-Mar-2026 06:44:50 UTC] Automatic updates complete.
+[30-Mar-2026 06:52:37 UTC] Automatic updates starting...
+[30-Mar-2026 06:52:37 UTC]   Automatic plugin updates starting...
+[30-Mar-2026 06:52:37 UTC]   Automatic plugin updates complete.
+[30-Mar-2026 06:52:37 UTC] Automatic updates complete.
+[31-Mar-2026 11:00:47 UTC] Automatic updates starting...
+[31-Mar-2026 11:00:49 UTC]   Automatic plugin updates starting...
+[31-Mar-2026 11:00:49 UTC]   Automatic plugin updates complete.
+[31-Mar-2026 11:00:50 UTC] Automatic updates complete.
+[31-Mar-2026 11:09:19 UTC] PHP Warning:  Array to string conversion in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 974
+[31-Mar-2026 11:13:14 UTC] PHP Warning:  Array to string conversion in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 982
+[01-Apr-2026 10:50:14 UTC] Automatic updates starting...
+[01-Apr-2026 10:50:15 UTC]   Automatic plugin updates starting...
+[01-Apr-2026 10:50:15 UTC]   Automatic plugin updates complete.
+[01-Apr-2026 10:50:16 UTC] Automatic updates complete.
+[01-Apr-2026 10:50:51 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[01-Apr-2026 10:51:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:51:54 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:51:54 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 32
+[01-Apr-2026 10:51:54 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:51:55 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[01-Apr-2026 10:52:28 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:52:28 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:28 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:28 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:52:29 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:52:29 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:29 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:52:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:52:33 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:33 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:33 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:52:34 UTC] PHP Warning:  Undefined array key "value" in /var/www/html/shish/wp-content/plugins/elementor/includes/controls/base-multiple.php on line 87
+[01-Apr-2026 10:52:34 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:52:34 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:34 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:34 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:52:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[01-Apr-2026 10:52:36 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:36 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:36 UTC] [SESSION] delivery_pickup_option: 
+[01-Apr-2026 10:52:36 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[01-Apr-2026 10:52:36 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:36 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:36 UTC] [Delivery Fee] Option: delivery, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:36 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:37 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:37 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:37 UTC] [Delivery Fee] Option: delivery, Distance: 0, Status: unavailable, Subtotal: 42.2
+[01-Apr-2026 10:52:37 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:38 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:38 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:38 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:38 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:39 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:39 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:39 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:39 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:39 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[01-Apr-2026 10:52:39 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:39 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:39 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:39 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:41 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:41 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:41 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:41 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:41 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[01-Apr-2026 10:52:41 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:41 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:41 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:41 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:59 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:52:59 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:52:59 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:52:59 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:53:39 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:53:39 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:53:39 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:53:39 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 10:53:39 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[01-Apr-2026 10:53:39 UTC] [custom_add_delivery_fee] Triggered!
+[01-Apr-2026 10:53:39 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 42.2
+[01-Apr-2026 10:53:39 UTC] [SESSION] delivery_pickup_option: delivery
+[01-Apr-2026 11:37:17 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:39:18 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:41:19 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:43:20 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:45:21 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:47:22 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:47:28 UTC] PHP Parse error:  Unmatched '}' in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 545
+[01-Apr-2026 11:55:43 UTC] PHP Parse error:  Unclosed '{' on line 253 in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 1254
+[01-Apr-2026 11:55:45 UTC] PHP Parse error:  Unclosed '{' on line 253 in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 1254
+[01-Apr-2026 11:55:46 UTC] PHP Parse error:  Unclosed '{' on line 253 in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 1254
+[01-Apr-2026 11:56:35 UTC] PHP Parse error:  Unclosed '{' on line 253 in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 1254
+[01-Apr-2026 11:56:37 UTC] PHP Parse error:  Unclosed '{' on line 253 in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 1254
+[01-Apr-2026 12:04:03 UTC] PHP Parse error:  syntax error, unexpected token "<" in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 627
+[01-Apr-2026 12:04:06 UTC] PHP Parse error:  syntax error, unexpected token "<" in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 627
+[01-Apr-2026 12:04:34 UTC] PHP Parse error:  syntax error, unexpected token "<" in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 627
+[01-Apr-2026 12:05:28 UTC] PHP Parse error:  syntax error, unexpected token "<" in /var/www/html/shish/wp-content/plugins/shinsh-cafe-api/shinsh-cafe-api.php on line 627
+[02-Apr-2026 13:37:22 UTC] Automatic updates starting...
+[02-Apr-2026 13:37:24 UTC]   Automatic plugin updates starting...
+[02-Apr-2026 13:37:24 UTC]   Automatic plugin updates complete.
+[02-Apr-2026 13:37:25 UTC] Automatic updates complete.
+[03-Apr-2026 07:33:43 UTC] Automatic updates starting...
+[03-Apr-2026 07:33:50 UTC]   Automatic plugin updates starting...
+[03-Apr-2026 07:33:50 UTC]   Automatic plugin updates complete.
+[03-Apr-2026 07:33:51 UTC] Automatic updates complete.
+[07-Apr-2026 07:34:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>all-in-one-wp-migration</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 07:34:11 UTC] Automatic updates starting...
+[07-Apr-2026 07:34:13 UTC]   Automatic plugin updates starting...
+[07-Apr-2026 07:34:13 UTC]   Automatic plugin updates complete.
+[07-Apr-2026 07:34:14 UTC] Automatic updates complete.
+[07-Apr-2026 07:34:35 UTC] PHP Warning:  get_core_checksums(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 07:47:12 UTC] PHP Warning:  get_core_checksums(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 07:47:18 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[07-Apr-2026 07:47:24 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131

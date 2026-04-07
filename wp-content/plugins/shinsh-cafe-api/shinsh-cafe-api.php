@@ -425,9 +425,16 @@ function shinsh_cafe_generate_order_html($order_or_id)
         $ppom_options_display = [];
         $ppom_total = 0;
         $meta_display = [];
+        $customer_note = '';
 
         foreach ($item->get_formatted_meta_data() as $meta) {
             if ($meta->display_key === 'Location') {
+                continue;
+            }
+
+            $meta_display_key = isset($meta->display_key) ? (string) $meta->display_key : '';
+            if ($meta_display_key !== '' && strcasecmp(trim($meta_display_key), 'Customer Note') === 0) {
+                $customer_note = wp_strip_all_tags($meta->display_value);
                 continue;
             }
 
@@ -538,6 +545,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
             'ppom_total'   => '£' . number_format($final_ppom_total, 2),
             'total'        => $total,
             'short_description' => $short_description,
+            'customer_note' => $customer_note,
             'meta'         => $meta_display,
             'variations'   => $variations,
             'ppom_options' => $ppom_options_display,
@@ -555,15 +563,74 @@ function shinsh_cafe_generate_order_html($order_or_id)
     // Clean total
     $clean_total = wp_strip_all_tags($order->get_formatted_order_total());
 
+    // Build structured JSON data (same as API response)
+    $items_json = [];
+    foreach ($products as $prod) {
+        // Extract size from variations
+        $size = '';
+        foreach ($prod['variations'] as $var) {
+            if (strtolower($var['label']) === 'size') {
+                preg_match('/\d+(\.\d+)?/', $var['value'], $matches);
+                $size = $matches[0] ?? '';
+                break;
+            }
+        }
+
+        // Clean meta values
+        $meta_clean = [];
+        foreach ($prod['meta'] as $m) {
+            $meta_clean[] = [
+                'label' => $m['label'],
+                'value' => wp_strip_all_tags($m['value'])
+            ];
+        }
+
+        $items_json[] = [
+            'product_name' => $prod['product_name'],
+            'quantity' => $prod['quantity'],
+            'size' => $size,
+            'description' => preg_replace('/\s+/', ' ', wp_strip_all_tags($prod['short_description'])),
+            'unit_price' => $prod['unit_price'],
+            'total_price' => $prod['base_price'],
+            'customer_note' => $prod['customer_note'] ?? '',
+            'meta' => $meta_clean,
+            'variations' => $prod['variations'] ?? [],
+            'ppom_options' => $prod['ppom_options'] ?? []
+        ];
+    }
+
+    $order_data_json = [
+        'order' => [
+            'order_number' => $order->get_order_number(),
+            'order_type' => $order_type ? ucfirst($order_type) : 'Unknown',
+            'date' => wc_format_datetime($order->get_date_created(), 'd-m-y h:i A'),
+            'customer' => [
+                'name' => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
+                'phone' => $order->get_billing_phone(),
+                'address' => $billing_address
+            ]
+        ],
+        'items' => $items_json,
+        'summary' => [
+            'subtotal' => '£' . number_format($order_subtotal, 2),
+            'delivery_fee' => $delivery_fee,
+            'total' => '£' . number_format($order_total, 2)
+        ],
+        'footer' => [
+            'message' => 'Thank You For Ordering From Shish Cafe!'
+        ]
+    ];
+
     // Build HTML (same structure you use)
     ob_start();
 ?>
 
-    <html>
-
     <head>
         <meta charset="utf-8" />
         <title>Order Receipt</title>
+        <script type="application/json" id="order-data">
+            <?php echo wp_json_encode($order_data_json); ?>
+        </script>
         <!-- 		<style>
 			@page{{
 				size : 80mm auto;
@@ -573,7 +640,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
     </head>
 
     <body style="margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;color:#000;">
-        <div style="width:300px;padding:8px;margin:0 auto;box-sizing:border-box;color:#000;">
+        <div style="width:80mm;padding:8px;margin:0 auto;box-sizing:border-box;color:#000;">
             <div style="text-align:center;margin-bottom:6px;">
                 <img src="<?php echo esc_url(get_site_url() . '/wp-content/uploads/2025/03/shishcafe-logo-200x60-1.png'); ?>"
                     alt="Logo" style="max-width:180px;display:block;margin:0 auto;" />
@@ -732,6 +799,30 @@ function shinsh_cafe_generate_order_html($order_or_id)
                     <?php endforeach; ?>
                 </tbody>
             </table>
+
+            <!-- Customer Note Section -->
+            <?php
+            $has_customer_note = false;
+            foreach ($products as $prod) {
+                if (!empty($prod['customer_note'])) {
+                    $has_customer_note = true;
+                    break;
+                }
+            }
+            ?>
+            <?php if ($has_customer_note): ?>
+                <div style="margin-top:12px; padding:8px;">
+                    <div style="font-size:12px; font-weight:bold; margin-bottom:6px;">Customer Notes:</div>
+                    <?php foreach ($products as $prod): ?>
+                        <?php if (!empty($prod['customer_note'])): ?>
+                            <div style="font-size:11px; line-height:1.5; margin-bottom:4px;">
+                                <span style="padding-left:8px; display:block;"><?php echo esc_html($prod['customer_note']); ?></span>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+
             <table style="width:100%;border-collapse:collapse;font-size:12px; margin-top: 20px;">
                 <tr>
                     <td colspan="2" style="border:0px solid #000;padding:4px;text-align:right;"><strong>Subtotal:</strong></td>
@@ -832,7 +923,7 @@ function shinsh_cafe_get_order_print_data($data)
         shinsh_cafe_generate_order_html($order);
     }
 
-    // Collect products
+    // Collect products for JSON output
     $products = [];
     foreach ($order->get_items() as $item) {
         $product = $item->get_product();
@@ -855,10 +946,17 @@ function shinsh_cafe_get_order_print_data($data)
         $meta_display = [];
         $ppom_options_display = [];
         $ppom_total = 0;
+        $customer_note = '';
 
         foreach ($item->get_formatted_meta_data() as $meta) {
             // Do not show "Location" in any array
             if ($meta->display_key === 'Location') {
+                continue;
+            }
+
+            $meta_display_key = isset($meta->display_key) ? (string) $meta->display_key : '';
+            if ($meta_display_key !== '' && strcasecmp(trim($meta_display_key), 'Customer Note') === 0) {
+                $customer_note = wp_strip_all_tags($meta->display_value);
                 continue;
             }
 
@@ -921,7 +1019,9 @@ function shinsh_cafe_get_order_print_data($data)
                             $ppom_options_display[] = [
                                 'label' => $label,
                                 'value' => $current_val,
-                                'price' => $item_price,
+                                'quantity' => $quantity,
+                                'unit_price' => $item_price,
+                                'total_price' => $item_price ? '£' . number_format((float)str_replace('£', '', $item_price) * $quantity, 2) : ''
                             ];
                         }
                     }
@@ -930,7 +1030,10 @@ function shinsh_cafe_get_order_print_data($data)
             }
 
             // Standard meta data
-            $meta_display[] = $meta->display_key . ': ' . wp_kses_post($meta->display_value);
+            $meta_display[] = [
+                'label' => $meta->display_key,
+                'value' => wp_strip_all_tags($meta->display_value)
+            ];
         }
 
         $final_ppom_total = $ppom_total * $quantity;
@@ -962,8 +1065,9 @@ function shinsh_cafe_get_order_print_data($data)
             'ppom_total'        => '£' . number_format($final_ppom_total, 2),
             'total'             => $total,
             'short_description' => $short_description,
+            'customer_note'     => $customer_note,
             'variations'        => $variations,
-            'meta'              => implode(', ', $meta_display),
+            'meta'              => $meta_display,
             'ppom_options'      => $ppom_options_display,
             'order_type'        => $order_type,
         ];
@@ -987,6 +1091,57 @@ function shinsh_cafe_get_order_print_data($data)
         }
     }
 
+    // Build structured JSON output
+    $order_subtotal = $order->get_total() - floatval(str_replace('£', '', $delivery_fee));
+
+    $items_json = [];
+    foreach ($products as $prod) {
+        // Extract size from variations
+        $size = '';
+        foreach ($prod['variations'] as $var) {
+            if (strtolower($var['label']) === 'size') {
+                preg_match('/\d+(\.\d+)?/', $var['value'], $matches);
+                $size = $matches[0] ?? '';
+                break;
+            }
+        }
+
+        $items_json[] = [
+            'product_name' => $prod['product_name'],
+            'quantity' => $prod['quantity'],
+            'size' => $size,
+            'description' => preg_replace('/\s+/', ' ', wp_strip_all_tags($prod['short_description'])),
+            'unit_price' => $prod['unit_price'],
+            'total_price' => $prod['base_price'],
+            'customer_note' => $prod['customer_note'] ?? '',
+            'meta' => $prod['meta'] ?? [],
+            'variations' => $prod['variations'] ?? [],
+            'ppom_options' => $prod['ppom_options'] ?? []
+        ];
+    }
+
+    $html_output = [
+        'order' => [
+            'order_number' => $order->get_order_number(),
+            'order_type' => $order_type ? ucfirst($order_type) : 'Unknown',
+            'date' => wc_format_datetime($order->get_date_created(), 'd-m-y h:i A'),
+            'customer' => [
+                'name' => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
+                'phone' => $order->get_billing_phone(),
+                'address' => $billing_address
+            ]
+        ],
+        'items' => $items_json,
+        'summary' => [
+            'subtotal' => '£' . number_format($order_subtotal, 2),
+            'delivery_fee' => $delivery_fee,
+            'total' => '£' . number_format($order->get_total(), 2)
+        ],
+        'footer' => [
+            'message' => 'Thank You For Ordering From Shish Cafe!'
+        ]
+    ];
+
     return new WP_REST_Response([
         'success'         => true,
         'order_id'        => $order_id,
@@ -998,6 +1153,7 @@ function shinsh_cafe_get_order_print_data($data)
         'status'          => wc_get_order_status_name($order->get_status()),
         'print_file_path' => $file_path,
         'print_file_url'  => $file_url,
+        'html_output'     => $html_output,
     ], 200);
 }
 

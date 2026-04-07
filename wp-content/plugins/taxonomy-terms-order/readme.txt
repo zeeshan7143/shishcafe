@@ -4,7 +4,7 @@ Donate link: http://www.nsp-code.com/donate.php
 Tags: category order,terms order, taxonomy order, categories sort
 Requires at least: 2.8
 Tested up to: 6.9
-Stable tag: 1.9.4
+Stable tag: 1.9.5
 
 Drag-and-drop ordering for Categories & any taxonomy (hierarchically) using a Drag and Drop Sortable JavaScript capability.
 
@@ -75,6 +75,10 @@ All ideas are welcome and i put them on my list to be implemented into the new v
 Consider upgrading to our advanced version of this plugin at a very resonable price <a target="_blank" href="http://www.nsp-code.com/premium-plugins/wordpress-plugins/advanced-taxonomy-terms-order/">Advanced Taxonomy Terms Order Order</a>
 
 == Change Log ==
+
+= 1.9.5 =
+ - Add a Settings link for the plugin in the Plugins area to make it easier for users to access and get started.
+ - Implement minor code improvements.
 
 = 1.9.4 =
  - On Rest Request, evaluate the admin sort settings to apply or not the customized order.
