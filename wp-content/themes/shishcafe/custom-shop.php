@@ -46,7 +46,7 @@ function custom_shop_shortcode()
 
         <main class="custom-shop-products">
             <div id="product-list" class="products"></div>
-            <button id="load-more" data-page="1">Load More</button>
+            <button id="load-more" data-page="1" style="display: none;">Load More</button>
             <!-- <p id="not-found" style="text-align: center;">No products found.</p> -->
         </main>
     </div>

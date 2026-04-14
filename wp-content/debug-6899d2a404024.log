@@ -40789,3 +40789,1330 @@ Stack trace:
 [07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
 [07-Apr-2026 07:47:20 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/html/shish/wp-admin/includes/class-wp-filesystem-direct.php on line 173
 [07-Apr-2026 07:47:24 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 08:02:13 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>all-in-one-wp-migration</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 08:09:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:19 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:19 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:19 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:22 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:22 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:22 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:22 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:23 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:23 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:23 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:26 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:26 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:26 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:26 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:26 UTC] PHP Warning:  Undefined array key "value" in /var/www/html/shish/wp-content/plugins/elementor/includes/controls/base-multiple.php on line 87
+[07-Apr-2026 08:09:27 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:27 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:27 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:40 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:40 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:40 UTC] [Session NOT SET] delivery_pickup_option missing in form_data
+[07-Apr-2026 08:09:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:40 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:40 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:44 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 08:09:44 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:44 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 08:09:44 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:46 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:46 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:46 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:09:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:09:57 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:09:57 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:03 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:03 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:03 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:03 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:03 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:03 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:04 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:04 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:04 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:04 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:04 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:05 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:10:05 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:10:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:10:05 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:11:47 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:11:47 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:11:47 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:11:47 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:13:48 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:13:48 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:13:48 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:13:48 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:15:49 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:15:49 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:15:49 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:15:49 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 08:17:50 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 08:17:50 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 08:17:50 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 08:17:50 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:09 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:09 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 10:15:09 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 10:15:09 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:09 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:09 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 10:15:09 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 10:15:09 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:15 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:15 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 10:15:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 10:15:15 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:15 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 10:15:15 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 10:15:15 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[07-Apr-2026 10:15:15 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:16:33 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 13:16:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:16:49 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:16:49 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[07-Apr-2026 13:16:49 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:16:50 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 13:16:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:16:55 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:16:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:16:55 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:16:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:16:57 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:16:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:16:57 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:17:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:17:04 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:17:04 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:17:04 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:17:12 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:17:12 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:17:12 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:17:12 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:17:20 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:17:20 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:17:20 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:17:20 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:18:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:18:19 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:18:19 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:18:19 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:19:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:19:15 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:19:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:19:15 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:19:23 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:19:23 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:19:23 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:19:23 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:19:27 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:19:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:19:27 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:19:27 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:19:34 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[07-Apr-2026 13:19:35 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 13:20:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:06 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 12.7
+[07-Apr-2026 13:20:06 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:06 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 24.7
+[07-Apr-2026 13:20:06 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:07 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[07-Apr-2026 13:20:14 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:15 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:15 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:16 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:16 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:16 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:17 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:17 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:17 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:20 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:20 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:20 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:20 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:20 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:20 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:20 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:21 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:21 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:21 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:21 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:21 UTC] [Session NOT SET] delivery_pickup_option missing in form_data
+[07-Apr-2026 13:20:21 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:21 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:21 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:21 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:25 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[07-Apr-2026 13:20:25 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:25 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 37.9
+[07-Apr-2026 13:20:25 UTC] [SESSION] delivery_pickup_option: 
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:27 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:27 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 13:20:27 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:27 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:27 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:27 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:27 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[07-Apr-2026 13:20:27 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:28 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:28 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:28 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:31 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:31 UTC] [SESSION] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[07-Apr-2026 13:20:32 UTC] [custom_add_delivery_fee] Triggered!
+[07-Apr-2026 13:20:32 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 37.9
+[07-Apr-2026 13:20:32 UTC] [SESSION] delivery_pickup_option: pickup
+[08-Apr-2026 06:44:31 UTC] Automatic updates starting...
+[08-Apr-2026 06:44:34 UTC] Automatic updates complete.
+[08-Apr-2026 06:55:45 UTC] Automatic updates starting...
+[08-Apr-2026 06:55:45 UTC] Automatic updates complete.
+[08-Apr-2026 13:11:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>all-in-one-wp-migration</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[09-Apr-2026 06:46:52 UTC] Automatic updates starting...
+[09-Apr-2026 06:46:57 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[09-Apr-2026 06:46:59 UTC]   Automatic plugin updates starting...
+[09-Apr-2026 06:46:59 UTC]   Automatic plugin updates complete.
+[09-Apr-2026 06:47:00 UTC] Automatic updates complete.
+[09-Apr-2026 06:52:51 UTC] Automatic updates starting...
+[09-Apr-2026 06:52:51 UTC]   Automatic plugin updates starting...
+[09-Apr-2026 06:52:51 UTC]   Automatic plugin updates complete.
+[09-Apr-2026 06:52:51 UTC] Automatic updates complete.
+[09-Apr-2026 11:14:40 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/shish/wp-includes/functions.php on line 6131
+[10-Apr-2026 07:06:40 UTC] Automatic updates starting...
+[10-Apr-2026 07:06:42 UTC]   Automatic plugin updates starting...
+[10-Apr-2026 07:06:42 UTC]   Automatic plugin updates complete.
+[10-Apr-2026 07:06:43 UTC] Automatic updates complete.
+[13-Apr-2026 06:27:07 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>all-in-one-wp-migration</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[13-Apr-2026 06:27:14 UTC] Automatic updates starting...
+[13-Apr-2026 06:27:16 UTC]   Automatic plugin updates starting...
+[13-Apr-2026 06:27:16 UTC]   Automatic plugin updates complete.
+[13-Apr-2026 06:27:18 UTC] Automatic updates complete.
+[13-Apr-2026 07:07:47 UTC] Automatic updates starting...
+[13-Apr-2026 07:07:47 UTC]   Automatic plugin updates starting...
+[13-Apr-2026 07:07:47 UTC]   Automatic plugin updates complete.
+[13-Apr-2026 07:07:47 UTC] Automatic updates complete.
+[13-Apr-2026 07:18:29 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce-payments</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[13-Apr-2026 07:18:29 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce-payments</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[13-Apr-2026 10:42:09 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:09 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:09 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:09 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:13 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:13 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:13 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:13 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:16 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:16 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:16 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:16 UTC] PHP Warning:  Undefined array key "value" in /var/www/html/shish/wp-content/plugins/elementor/includes/controls/base-multiple.php on line 87
+[13-Apr-2026 10:42:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:17 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:17 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:17 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:42:19 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:19 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:42:19 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:19 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee] Option: delivery, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:19 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:19 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:19 UTC] [Delivery Fee] Option: delivery, Distance: 0, Status: unavailable, Subtotal: 6
+[13-Apr-2026 10:42:19 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:20 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:20 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:20 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:20 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:21 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:21 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:21 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:21 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:21 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[13-Apr-2026 10:42:21 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:21 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:21 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:21 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:23 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:23 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:23 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:23 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:23 UTC] [Session Updated] delivery_pickup_option set to: delivery
+[13-Apr-2026 10:42:23 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:23 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:23 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:23 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:28 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:28 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:28 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee Hook] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:29 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee] Option: delivery, Distance: 4.79, Status: available, Subtotal: 6
+[13-Apr-2026 10:42:29 UTC] [SESSION] delivery_pickup_option: delivery
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:29 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:29 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:29 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:29 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:29 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:29 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:29 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:30 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:30 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:30 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:31 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:31 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:31 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:42:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:42:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:42:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:46:49 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:49 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:49 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:49 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:51 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:51 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:51 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:53 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:53 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:53 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:53 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:53 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:53 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:55 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:55 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:55 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:55 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:46:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:46:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:46:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:01 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:01 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:01 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:01 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:03 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:03 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:03 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:03 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:04 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:04 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:04 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:04 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:04 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Session NOT SET] delivery_pickup_option missing in form_data
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:06 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:06 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:06 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:06 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:07 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:07 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:07 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:07 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:07 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:09 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:09 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:47:09 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 6
+[13-Apr-2026 10:47:09 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:09 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:09 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:09 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:11 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:11 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:13 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:13 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:13 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:13 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:47:13 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:47:13 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 6
+[13-Apr-2026 10:47:13 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:56:00 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[13-Apr-2026 10:56:36 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:36 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:36 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:36 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:38 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:38 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:38 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:38 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:38 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:39 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:39 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:39 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:39 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:40 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:40 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:40 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:40 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:40 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:40 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:41 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:41 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:41 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:41 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:41 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:42 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:42 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:42 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:42 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:42 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:42 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:42 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:42 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:43 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:43 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:43 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:43 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:43 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:44 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:44 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:44 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:44 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:44 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:44 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:44 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:44 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:45 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:45 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:45 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:45 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:45 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:45 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:46 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:46 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:46 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:46 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:46 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:47 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:47 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:47 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:47 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:50 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:50 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:50 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:50 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:51 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:51 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:51 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:51 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:52 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:52 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:52 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:53 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:53 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:53 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:53 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:53 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:53 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:53 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:54 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:54 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:54 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:55 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:55 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:55 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:55 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [Session NOT SET] delivery_pickup_option missing in form_data
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:56 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:56 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:56 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:57 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:57 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:57 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 10:56:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 8
+[13-Apr-2026 10:56:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:56:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:58 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:56:58 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:56:59 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:56:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:56:59 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:56:59 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:56:59 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:00 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:00 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:00 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:00 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:00 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:01 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:01 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:04 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:04 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:04 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:04 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 10:57:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 10:57:05 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 8
+[13-Apr-2026 10:57:05 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:05:55 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:05:55 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:05:55 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:05:55 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:05:58 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:05:58 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:05:58 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:05:58 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:05:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:05:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:05:59 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:05:59 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:05:59 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:00 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:00 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:00 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:01 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:01 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:01 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:01 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:01 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:01 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:02 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:02 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:02 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:02 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:03 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:03 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:03 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:03 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:03 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:03 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:03 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:03 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:04 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:04 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:04 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:04 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:05 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:05 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:05 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:06 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:06 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:06 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:06 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:06 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:07 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:07 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:07 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:07 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:07 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:07 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:07 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:08 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:08 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:08 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:08 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:09 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:09 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:09 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:09 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:10 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:10 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:10 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:10 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:10 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:11 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:11 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:11 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:11 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:11 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:11 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:11 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:13 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:13 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:13 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:13 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:15 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:15 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:15 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:15 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:15 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:15 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:15 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:16 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:16 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:16 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:16 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:17 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:17 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:17 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:17 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:17 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:17 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:18 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:18 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:18 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:18 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:18 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:18 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:18 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:18 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:19 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:19 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:19 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:19 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:19 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:19 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:19 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:33 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:33 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [Session NOT SET] delivery_pickup_option missing in form_data
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:33 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:33 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:33 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:33 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:37 UTC] [Delivery Fee Hook] delivery_pickup_option: 
+[13-Apr-2026 11:06:37 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:37 UTC] [Delivery Fee] Option: , Distance: 0, Status: , Subtotal: 4
+[13-Apr-2026 11:06:37 UTC] [SESSION] delivery_pickup_option: 
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [Session Updated] delivery_pickup_option set to: pickup
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee Hook] delivery_pickup_option: pickup
+[13-Apr-2026 11:06:39 UTC] [custom_add_delivery_fee] Triggered!
+[13-Apr-2026 11:06:39 UTC] [Delivery Fee] Option: pickup, Distance: 0, Status: not_required, Subtotal: 4
+[13-Apr-2026 11:06:39 UTC] [SESSION] delivery_pickup_option: pickup
+[14-Apr-2026 10:21:10 UTC] Automatic updates starting...
+[14-Apr-2026 10:21:11 UTC]   Automatic plugin updates starting...
+[14-Apr-2026 10:21:11 UTC]   Automatic plugin updates complete.
+[14-Apr-2026 10:21:12 UTC] Automatic updates complete.
+[14-Apr-2026 10:24:12 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:24:51 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:25:04 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/shish/wp-includes/functions.php on line 6131
+[14-Apr-2026 10:25:36 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:25:41 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:26:49 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:27:00 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:27:01 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:27:07 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:31:14 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Apr-2026 10:46:08 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}

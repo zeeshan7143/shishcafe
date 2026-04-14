@@ -57,6 +57,49 @@ add_action('woocommerce_order_status_processing', function ($order_id, $order = 
     }
 }, 20, 2);
 
+add_action('woocommerce_order_status_on-hold', function ($order_id, $order = null) {
+    if (!$order instanceof WC_Order) {
+        $order = wc_get_order($order_id);
+    }
+
+    if (!$order) {
+        return;
+    }
+
+    // Keep timing fields empty while order is on-hold.
+    $order->delete_meta_data('_order_ar_date_time');
+    $order->delete_meta_data('_order_due_time');
+    $order->delete_meta_data('_order_prep_time');
+    $order->delete_meta_data('_order_reject_reason');
+    $order->save();
+}, 20, 2);
+
+function shinsh_cafe_get_order_time_meta($order, $meta_key)
+{
+    if (!$order instanceof WC_Order) {
+        return '';
+    }
+
+    if (in_array($order->get_status(), ['on-hold', 'cancelled'], true)) {
+        return '';
+    }
+
+    return (string) $order->get_meta($meta_key);
+}
+
+function shinsh_cafe_get_order_reject_reason($order)
+{
+    if (!$order instanceof WC_Order) {
+        return '';
+    }
+
+    if ($order->get_status() === 'on-hold') {
+        return '';
+    }
+
+    return (string) $order->get_meta('_order_reject_reason');
+}
+
 
 /**
  * Extra safety: if order is submitted at checkout, force On-Hold
@@ -141,6 +184,8 @@ function custom_update_order_status(WP_REST_Request $request)
     $status   = $request->get_param('status');
     $time     = $request->get_param('time');
     $reason   = $request->get_param('reason');
+    $ar_date_time = sanitize_text_field((string) $request->get_param('ar_date_time'));
+    $due_time = sanitize_text_field((string) $request->get_param('due_time'));
 
     if (!$order_id || !$status) {
         return new WP_Error('missing_data', 'Order ID and Status are required.', ['status' => 400]);
@@ -149,6 +194,13 @@ function custom_update_order_status(WP_REST_Request $request)
     $order = wc_get_order($order_id);
     if (!$order) {
         return new WP_Error('invalid_order', 'Invalid Order ID.', ['status' => 404]);
+    }
+
+    if ($ar_date_time !== '') {
+        $order->update_meta_data('_order_ar_date_time', $ar_date_time);
+    }
+    if ($due_time !== '') {
+        $order->update_meta_data('_order_due_time', $due_time);
     }
 
     // ✅ Update status logic
@@ -170,6 +222,8 @@ function custom_update_order_status(WP_REST_Request $request)
         if ($reason) {
             $order->update_meta_data('_order_reject_reason', sanitize_text_field($reason));
         }
+        $order->delete_meta_data('_order_ar_date_time');
+        $order->delete_meta_data('_order_due_time');
         $order->delete_meta_data('_order_prep_time');
     } elseif ($status === 'completed') {
         $order->update_status('completed', 'Order completed via app.');
@@ -240,8 +294,10 @@ function custom_update_order_status(WP_REST_Request $request)
             'address'   => $billing_address,
             'total'     => $clean_total,
             'status'    => $custom_status,
-            'prep_time' => $order->get_meta('_order_prep_time'),
-            'reject_reason' => $order->get_meta('_order_reject_reason'),
+            'prep_time' => shinsh_cafe_get_order_time_meta($order, '_order_prep_time'),
+            'reject_reason' => shinsh_cafe_get_order_reject_reason($order),
+            'ar_date_time' => shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time'),
+            'due_time' => shinsh_cafe_get_order_time_meta($order, '_order_due_time'),
         ]
     ], 200);
 }
@@ -339,8 +395,8 @@ function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
             'address'       => $address,
             'total'         => wp_strip_all_tags($wc_order->get_formatted_order_total()),
             'status'        => wc_get_order_status_name($wc_order->get_status()),
-            'prep_time'     => $wc_order->get_meta('_order_prep_time'),
-            'reject_reason' => $wc_order->get_meta('_order_reject_reason'),
+            'prep_time'     => shinsh_cafe_get_order_time_meta($wc_order, '_order_prep_time'),
+            'reject_reason' => shinsh_cafe_get_order_reject_reason($wc_order),
         ];
     }
 
@@ -373,6 +429,8 @@ function shinsh_cafe_generate_order_html($order_or_id)
 
     // Build data (same logic as your print assembly)
     $order_id = $order->get_id();
+    $ar_date_time = trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time'));
+    $due_time = trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time'));
     // Get order type (Delivery / Pickup)
     $order_type = $order->get_meta('_custom_delivery_option');
     if (!$order_type) {
@@ -563,6 +621,20 @@ function shinsh_cafe_generate_order_html($order_or_id)
     // Clean total
     $clean_total = wp_strip_all_tags($order->get_formatted_order_total());
 
+    // Guest orders do not always have user accounts, so resolve history by billing email.
+    $customer_email = trim((string) $order->get_billing_email());
+    $previous_orders = [];
+    if ($customer_email !== '') {
+        $previous_orders = wc_get_orders([
+            'billing_email' => $customer_email,
+            'exclude'       => [$order_id],
+            'orderby'       => 'date',
+            'order'         => 'DESC',
+            'limit'         => -1,
+            'return'        => 'objects',
+        ]);
+    }
+
     // Build structured JSON data (same as API response)
     $items_json = [];
     foreach ($products as $prod) {
@@ -604,6 +676,8 @@ function shinsh_cafe_generate_order_html($order_or_id)
             'order_number' => $order->get_order_number(),
             'order_type' => $order_type ? ucfirst($order_type) : 'Unknown',
             'date' => wc_format_datetime($order->get_date_created(), 'd-m-y h:i A'),
+            'ar_date_time' => $ar_date_time,
+            'due_time' => $due_time,
             'customer' => [
                 'name' => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
                 'phone' => $order->get_billing_phone(),
@@ -642,27 +716,23 @@ function shinsh_cafe_generate_order_html($order_or_id)
     <body style="margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;color:#000;">
         <div style="width:80mm;padding:8px;margin:0 auto;box-sizing:border-box;color:#000;">
             <div style="text-align:center;margin-bottom:6px;">
-                <img src="<?php echo esc_url(get_site_url() . '/wp-content/uploads/2025/03/shishcafe-logo-200x60-1.png'); ?>"
+                <img src="<?php echo esc_url(get_site_url() . '/wp-content/uploads/2026/04/shish-logo-dark.png'); ?>"
                     alt="Logo" style="max-width:180px;display:block;margin:0 auto;" />
             </div>
-            <div style="text-align:center;font-size:14px;font-weight:bold;margin-bottom:4px;line-height:1.9;">
-                Order #<?php echo esc_html($order->get_order_number()); ?>
-            </div>
             <?php if ($order_type): ?>
-                <div style="text-align:center;font-size:15px;font-weight:bold;margin-bottom:10px;">
-                    <strong>Order Type:</strong> <?php echo esc_html(ucfirst($order_type)); ?>
+                <div style="text-align:center;font-size:18px;font-weight:bold;margin-bottom:10px;">
+                    <?php echo esc_html(ucfirst($order_type)); ?>
                 </div>
             <?php endif; ?>
-
-            <div style="font-size:12px;margin-bottom:8px;line-height:1.7;">
-                <div><strong>Date:</strong> <?php echo esc_html(wc_format_datetime($order->get_date_created(), 'd-m-y h:i A')); ?></div>
-                <div><strong>Customer:</strong> <?php echo esc_html($order->get_billing_first_name() . ' ' . $order->get_billing_last_name()); ?></div>
-                <div><strong>Phone:</strong> <?php echo esc_html($order->get_billing_phone()); ?></div>
-                <div><strong>Address:</strong> <?php echo esc_html($billing_address); ?></div>
+            <?php if ($due_time !== ''): ?>
+                <div style="text-align:center;font-size:12px;font-weight:600;margin-bottom:6px;line-height:1.35;">
+                    Due Time: <?php echo esc_html($due_time); ?>
+                </div>
+            <?php endif; ?>
+            <div style="text-align:center;font-size:18px;font-weight:bold;margin-bottom:4px;line-height:1.2;">
+                #<?php echo esc_html($order->get_order_number()); ?>
             </div>
-
             <div style="border-top:1px solid #000;margin:6px 0;"></div>
-
             <div style="font-size:12px;font-weight:bold;margin:4px 0;">Items:</div>
             <table style="width:100%;border-collapse:collapse;font-size:12px;">
                 <thead>
@@ -673,7 +743,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($products as $prod): ?>
+                    <?php foreach ($products as $prod_index => $prod): ?>
                         <?php
                         $is_pizza_or_fatayer = false;
 
@@ -710,7 +780,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                         <?php echo esc_html($prod['quantity']); ?> x
                                         <?php echo esc_html($prod['product_name']); ?>
                                     </span>
-                                    <span style="font-weight: 600; width: 30px; text-align: right;">
+                                    <span style="font-weight: 600; width: 30px; text-align:">
                                         <?php if ($size_value): ?>
                                             <?php echo esc_html($size_value); ?> "
                                         <?php endif; ?>
@@ -718,7 +788,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                 </div>
                                 <!-- Product Description -->
                                 <?php if (!empty($prod['short_description'])): ?>
-                                    <span style="display: block; padding:4px 4px 4px 8px; font-size: 11px; color: #555; line-height: 1.4;">
+                                    <span style="display: block; padding:4px 4px 4px 8px; font-size: 11px; color: #000; line-height: 1.4;">
                                         <?php echo wp_kses_post(wp_strip_all_tags($prod['short_description'], true)); ?>
                                     </span>
                                 <?php endif; ?>
@@ -770,7 +840,7 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                 <tr>
                                     <td style="border:0px solid #000;padding:4px;text-align:left; padding-left: 8px; font-size: 11px;">
                                         <span style="font-weight: bold;"><?php echo esc_html($ppom['label']); ?>:</span></br>
-                                        <span style="padding-left: 10px; padding-top: 3px; display: inline-block;"><?php echo esc_html($ppom['qty'] . ' x ' . $ppom['value']); ?></span>
+                                        <span style="padding-left: 10px; padding-top: 3px; display: block;"><?php echo esc_html($ppom['qty'] . ' x ' . $ppom['value']); ?></span>
                                     </td>
                                     <td style="border:0px solid #000;padding:4px;text-align:right;">
                                         <?php echo esc_html(! empty($ppom['item_price']) ? $ppom['item_price'] : '£0.00'); ?>
@@ -786,6 +856,15 @@ function shinsh_cafe_generate_order_html($order_or_id)
                             <?php endforeach; ?>
                         <?php endif; ?>
 
+                        <?php if (!empty($prod['customer_note'])): ?>
+                            <tr>
+                                <td colspan="3" style="border:0px solid #000;padding:6px 4px 4px 8px;font-size:11px;line-height:1.4;color:#000;">
+                                    <strong>Customer Note:</strong><br>
+                                    <span style="margin-left:4px; display: block"><?php echo esc_html($prod['customer_note']); ?></span>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+
                         <!-- Item total row -->
                         <tr style="display: none">
                             <td></td>
@@ -796,32 +875,17 @@ function shinsh_cafe_generate_order_html($order_or_id)
                                 <strong><?php echo esc_html($prod['total']); ?></strong>
                             </td>
                         </tr>
+
+                        <?php if ($prod_index < (count($products) - 1)): ?>
+                            <tr>
+                                <td colspan="3" style="padding:0;border:0;">
+                                    <div style="border-top:1px solid #000;margin:6px 0;"></div>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </tbody>
             </table>
-
-            <!-- Customer Note Section -->
-            <?php
-            $has_customer_note = false;
-            foreach ($products as $prod) {
-                if (!empty($prod['customer_note'])) {
-                    $has_customer_note = true;
-                    break;
-                }
-            }
-            ?>
-            <?php if ($has_customer_note): ?>
-                <div style="margin-top:12px; padding:8px;">
-                    <div style="font-size:12px; font-weight:bold; margin-bottom:6px;">Customer Notes:</div>
-                    <?php foreach ($products as $prod): ?>
-                        <?php if (!empty($prod['customer_note'])): ?>
-                            <div style="font-size:11px; line-height:1.5; margin-bottom:4px;">
-                                <span style="padding-left:8px; display:block;"><?php echo esc_html($prod['customer_note']); ?></span>
-                            </div>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </div>
-            <?php endif; ?>
 
             <table style="width:100%;border-collapse:collapse;font-size:12px; margin-top: 20px;">
                 <tr>
@@ -851,11 +915,92 @@ function shinsh_cafe_generate_order_html($order_or_id)
                 <span>Total:</span>
                 <span><?php echo esc_html($clean_total); ?></span>
             </div>
+            <div style="border-top:1px solid #000;margin:6px 0;"></div>
+            <?php if (!empty($status) && strtolower($status) != 'cancelled'): ?>
+                <div style="text-align:center;font-size:18px;font-weight:bold;margin-bottom:4px;line-height:1.2; text-transform: uppercase;">
+                    Order has been paid
+                </div>
+                <div style="border-top:1px solid #000;margin:6px 0;"></div>
+            <?php endif; ?>
+            <div style="font-size:12px;margin-bottom:8px;line-height:1.7;">
+                <div style="text-align:center;font-size:15px;font-weight:500;margin-bottom:4px;line-height:1.2; text-transform: uppercase;">
+                    Customer Details
+                </div>
+                <div style="display: none;"><strong>Date:</strong> <?php echo esc_html(strtolower(wc_format_datetime($order->get_date_created(), 'd-M-Y, g.ia'))); ?></div>
+                <div><strong>Name:</strong> <?php echo esc_html($order->get_billing_first_name() . ' ' . $order->get_billing_last_name()); ?></div>
+                <div><strong>Phone:</strong> <?php echo esc_html($order->get_billing_phone()); ?></div>
+                <?php if (!empty($order_type) && strtolower($order_type) === 'delivery'): ?>
 
+                    <div><strong>Address:</strong> <?php echo esc_html($billing_address); ?></div>
+
+                <?php endif; ?>
+            </div>
+            <div style="border-top:1px solid #000;margin:6px 0;"></div>
+            <div style="font-size:12px;margin-bottom:8px;line-height:1.2; display: block;">
+                <?php if (count($previous_orders) > 0): ?>
+                    <div><strong>Previous orders from this customer:</strong> <?php echo esc_html((string) count($previous_orders)); ?></div>
+                <?php endif; ?>
+                <div style="margin-top:8px;font-size:13px; display: block;">
+                    <span style="font-weight:bold;">Order placed at:</span>
+                    <span style="float: right;"><?php echo esc_html(strtolower(wc_format_datetime($order->get_date_created(), 'd-M-Y, g:ia'))); ?></span>
+                </div>
+                <div style="margin-top:8px;font-size:13px; display: block;">
+                    <?php if ($ar_date_time !== ''): ?>
+                        <span style="font-weight:bold;">Order accepted at:</span>
+                        <span style="float: right;"> <?php echo esc_html($ar_date_time); ?></span>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div style="border-top:1px solid #000;margin:6px 0;"></div>
+            <div style="font-size:12px;margin-bottom:8px;line-height:1.7;">
+                <div style="text-align:center;font-size:15px;font-weight:500;margin-bottom:4px;line-height:1.2; text-transform: uppercase;">
+                    Store Details
+                </div>
+                <?php
+                $store_details = [
+                    'rochdale' => [
+                        'address' => '31-33 Tweedale Street Rochdale Ol11 1hh',
+                        'phone'   => '01706-666601',
+                    ],
+                    'oldham' => [
+                        'address' => '173-175 Lees Road, Oldham OL4 1JP',
+                        'phone'   => '0161 222 7860',
+                    ],
+                    'manchester' => [
+                        'address' => '70 Bury Old Road Cheetham Hill, Manchester M8 5B8',
+                        'phone'   => '0161 394 0006',
+                    ],
+                    'stockport' => [
+                        'address' => '587B Stockport Road, Longsight Manchester, M13 ORX',
+                        'phone'   => '0161 394 0777',
+                    ],
+                ];
+
+                $location_key = strtolower((string) $location);
+                $matched_store = null;
+
+                foreach ($store_details as $key => $details) {
+                    if (strpos($location_key, $key) !== false) {
+                        $matched_store = $details;
+                        break;
+                    }
+                }
+                ?>
+                <?php if ($matched_store): ?>
+                    <div style="margin-top:8px;font-size:13px; display: block; line-height: 1.4;">
+                        <span style="font-weight:bold;">Address: </span>
+                        <span style=""><?php echo esc_html($matched_store['address']); ?></span>
+                    </div>
+                    <div style="margin-top:0px;font-size:13px; display: block;">
+                        <span style="font-weight:bold;">Phone Number: </span>
+                        <span style=""><?php echo esc_html($matched_store['phone']); ?></span>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <div style="border-top:1px solid #000;margin:6px 0;"></div>
             <div style="text-align:center;font-size:11px;margin-top:10px;">
                 Thank You For Ordering From Shish Cafe!
             </div>
-
         </div>
     </body>
 
@@ -898,30 +1043,11 @@ function shinsh_cafe_get_order_print_data($data)
     $file_path = $folder . 'order-' . $order_id . '.html';
     $file_url  = trailingslashit($upload_dir['baseurl']) . 'order-prints/order-' . $order_id . '.html';
 
-    // Conditions to (re)generate:
-    $regen = false;
-    if (!file_exists($file_path)) {
-        $regen = true;
-    } else {
-        $file_mtime = filemtime($file_path);
-        if ($file_mtime < (time() - DAY_IN_SECONDS)) {
-            $regen = true;
-        } else {
-            $order_modified = 0;
-            if (method_exists($order, 'get_date_modified') && $order->get_date_modified()) {
-                $order_modified = $order->get_date_modified()->getTimestamp();
-            } elseif ($order->get_date_created()) {
-                $order_modified = $order->get_date_created()->getTimestamp();
-            }
-            if ($order_modified && $file_mtime < $order_modified) {
-                $regen = true;
-            }
-        }
+    // Always regenerate print HTML for this order on every request.
+    if (file_exists($file_path)) {
+        @unlink($file_path);
     }
-
-    if ($regen) {
-        shinsh_cafe_generate_order_html($order);
-    }
+    shinsh_cafe_generate_order_html($order);
 
     // Collect products for JSON output
     $products = [];
@@ -1125,6 +1251,8 @@ function shinsh_cafe_get_order_print_data($data)
             'order_number' => $order->get_order_number(),
             'order_type' => $order_type ? ucfirst($order_type) : 'Unknown',
             'date' => wc_format_datetime($order->get_date_created(), 'd-m-y h:i A'),
+            'ar_date_time' => trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time')),
+            'due_time' => trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time')),
             'customer' => [
                 'name' => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
                 'phone' => $order->get_billing_phone(),
@@ -1151,6 +1279,8 @@ function shinsh_cafe_get_order_print_data($data)
         'delivery_fee'    => $delivery_fee,
         'total'           => $final_total,
         'status'          => wc_get_order_status_name($order->get_status()),
+        'ar_date_time'    => trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time')),
+        'due_time'        => trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time')),
         'print_file_path' => $file_path,
         'print_file_url'  => $file_url,
         'html_output'     => $html_output,

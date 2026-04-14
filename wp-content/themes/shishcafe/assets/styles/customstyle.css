@@ -211,6 +211,7 @@ form#category-filter label {
     height: 100%;
 /*     display: flex; */
     align-items: center;
+    margin-top: 12px;
 }
 @keyframes spin {
     0% {
@@ -502,9 +503,6 @@ select#location {
 {
         display: none !important;
     }
-select#location{
-/* 	 display: none !important; */
-}
 .cart-page .form-group.ppom-input-location, .cart-page .form-group.ppom-input-location .label label[for='location'], select#location_ppom, .cart-page .form-group.ppom-input-location_ppom label.form-control-label{
 	 display: none !important;
 }

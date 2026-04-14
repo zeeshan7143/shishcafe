@@ -191,6 +191,8 @@ require_once get_template_directory() . '/custom-delivery.php';
 
 // Cusotm Features
 require_once get_template_directory() . '/custom-features.php';
+// Customize Stripe Metadata
+require_once get_template_directory() . '/customize-stripe.php';
 /**
  * Implement the Custom Header feature.
  */
