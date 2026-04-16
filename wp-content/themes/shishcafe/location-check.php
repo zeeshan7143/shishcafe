@@ -1,3 +1,4 @@
+<!-- When change location while other locations product already in cart  -->
 <?php
 if (! defined('ABSPATH')) exit;
 
