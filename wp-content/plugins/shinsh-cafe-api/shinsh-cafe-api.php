@@ -167,10 +167,14 @@ function shinsh_cafe_get_latest_order_id()
 
     if (!empty($orders)) {
         $order = $orders[0];
-        return new WP_REST_Response([
-            'success'  => true,
-            'order_id' => $order->get_id()
-        ], 200);
+        $order_id = $order->get_id();
+        
+        // Create a fake request object to pass to the order print data function
+        $request = new WP_REST_Request('GET');
+        $request->set_param('id', $order_id);
+        
+        // Return the full order details using the same function as /order/{id}
+        return shinsh_cafe_get_order_print_data($request->get_json_params() ?: ['id' => $order_id]);
     }
 
     return new WP_REST_Response(['success' => false, 'message' => 'No orders found'], 404);
@@ -308,38 +312,95 @@ function custom_update_order_status(WP_REST_Request $request)
 function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
 {
     $location_filter = sanitize_text_field($request->get_param('location'));
+    $status_filter_raw = sanitize_text_field((string) $request->get_param('status'));
+    $status_filter = '';
 
-    // --- call WooCommerce REST API instead of wc_get_orders() ---
-    $url = rest_url('wc/v3/orders');
-    $url = add_query_arg([
-        'orderby'        => 'date',
-        'order'          => 'desc',
-        'per_page'        => 30,
-        'consumer_key'   => SHINSH_CAFE_CONSUMER_KEY,
-        'consumer_secret' => SHINSH_CAFE_CONSUMER_SECRET
-    ], $url);
+    if ($status_filter_raw !== '') {
+        $status_filter = strtolower(trim($status_filter_raw));
+        $status_filter = str_replace(['_', ' '], '-', $status_filter);
+        if ($status_filter === 'onhold') {
+            $status_filter = 'on-hold';
+        }
 
-    $response = wp_remote_get($url, [
-        'timeout' => 15,
-        'headers' => ['Cache-Control' => 'no-cache']
-    ]);
-
-    if (is_wp_error($response)) {
-        return new WP_Error('api_error', 'Failed to fetch WooCommerce orders', ['status' => 500]);
+        $allowed_statuses = ['on-hold', 'cancelled', 'processing', 'completed'];
+        if (!in_array($status_filter, $allowed_statuses, true)) {
+            return new WP_Error(
+                'invalid_status',
+                'Invalid status. Allowed values: on hold, cancelled, processing, completed.',
+                ['status' => 400]
+            );
+        }
     }
 
-    $orders = json_decode(wp_remote_retrieve_body($response), true);
+    $orders = [];
+
+    // Prefer Woo REST fetch (live behavior), but gracefully fall back on localhost loopback failures.
+    if (defined('SHINSH_CAFE_CONSUMER_KEY') && defined('SHINSH_CAFE_CONSUMER_SECRET')) {
+        $url = rest_url('wc/v3/orders');
+        
+        $query_args = [
+            'orderby'         => 'date',
+            'order'           => 'desc',
+            'per_page'        => 100,
+            'consumer_key'    => SHINSH_CAFE_CONSUMER_KEY,
+            'consumer_secret' => SHINSH_CAFE_CONSUMER_SECRET,
+        ];
+
+        if ($status_filter !== '') {
+            $query_args['status'] = $status_filter;
+        }
+
+        $url = add_query_arg($query_args, $url);
+
+        $response = wp_remote_get($url, [
+            'timeout' => 15,
+            'headers' => ['Cache-Control' => 'no-cache']
+        ]);
+
+        if (!is_wp_error($response) && (int) wp_remote_retrieve_response_code($response) === 200) {
+            $decoded = json_decode(wp_remote_retrieve_body($response), true);
+            if (is_array($decoded)) {
+                $orders = $decoded;
+            }
+        }
+    }
+
     if (empty($orders)) {
-        return new WP_REST_Response(['success' => true, 'orders' => []], 200);
+        $wc_orders_args = [
+            'limit'   => -1,
+            'orderby' => 'date',
+            'order'   => 'DESC',
+            'return'  => 'ids',
+        ];
+
+        if ($status_filter !== '') {
+            $wc_orders_args['status'] = [$status_filter];
+        }
+
+        $orders = wc_get_orders($wc_orders_args);
     }
-    $cutoff = strtotime('-1000 hours');
+
+    if (empty($orders)) {
+        return new WP_REST_Response(['success' => true, 'order_count' => 0, 'orders' => []], 200);
+    }
+    
+    // Apply 24-hour time filter
+    $cutoff = strtotime('-0 hours');
+    
     $data = [];
     foreach ($orders as $order) {
-        $wc_order = wc_get_order($order['id']); // reuse WC object for meta + formatting
+        $order_id = is_array($order) ? ($order['id'] ?? 0) : $order;
+        $wc_order = wc_get_order($order_id); // reuse WC object for meta + formatting
         if (!$wc_order) continue;
+
+        // Filter by time: only show orders from last 24 hours
         $created = $wc_order->get_date_created();
-        if (!$created || $created->getTimestamp() < $cutoff) {
-            continue; // skip if older than 24h
+        if (!$created || $created->getTimestamp() > $cutoff) {
+            continue;
+        }
+
+        if ($status_filter !== '' && $wc_order->get_status() !== $status_filter) {
+            continue;
         }
 
         // Extract location(s)
@@ -402,6 +463,7 @@ function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
 
     return new WP_REST_Response([
         'success' => true,
+        'order_count' => count($data),
         'orders'  => $data,
     ], 200);
 }

@@ -1,1 +1,0 @@
-<?php /* Disabled by seraphinite-accelerator */
