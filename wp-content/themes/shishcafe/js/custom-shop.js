@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingIndicator.innerHTML = '<div class="loading-spinner"></div>';
     loadingIndicator.style.display = "none";
     loadingIndicator.style.textAlign = "center";
-    productList.parentNode.insertBefore(loadingIndicator, productList);
+    loadMoreBtn.parentNode.insertBefore(loadingIndicator, loadMoreBtn.nextSibling);
     let allLoadedProducts = []; // Store all loaded product HTML
     function getSelectedCategories() {
         let selectedCategories = [];
@@ -161,8 +161,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let xhr = new XMLHttpRequest();
         xhr.open("POST", ajax_object.ajax_url, true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        loadingIndicator.style.display = "flex";
-        loadMoreBtn.style.display = "none";
+        loadingIndicator.style.display = "block";
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.innerText = "Loading...";
         xhr.onload = function () {
             if (this.status === 200) {
                 let response = JSON.parse(this.responseText);
@@ -230,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         loadMoreBtn.style.display = "none";
                     } else {
                         loadMoreBtn.style.display = "block";
+                        loadMoreBtn.disabled = false;
                         loadMoreBtn.innerText = "Load More";
                     }
                 } else if (!append) {
@@ -237,11 +239,17 @@ document.addEventListener("DOMContentLoaded", function () {
                         '<p style="text-align:center; font-size:16px; color:#888;">No products found.</p>';
                     loadMoreBtn.style.display = "none";
                 }
+                loadMoreBtn.disabled = false;
                 // console.log("productList after append:", productList.innerHTML);
                 updateResetButtonVisibility();
                 filterVisibleProductsByLocation(); // Filter after loading and attribute update
                 // console.log("All Loaded Products:", allLoadedProducts);
             }
+        };
+        xhr.onerror = function () {
+            loadingIndicator.style.display = "none";
+            loadMoreBtn.disabled = false;
+            loadMoreBtn.innerText = "Load More";
         };
         let formData = `action=load_more_products&page=${page}&categories=${categoryParam}&selected_location=${location}`;
         // console.log("AJAX request data:", formData);

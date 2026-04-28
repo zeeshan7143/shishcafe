@@ -1,8 +1,0 @@
-/* Nivo Slider for jQuery */
-body:is(.seraph-accel-js-lzl-ing, .seraph-accel-js-lzl-ing-ani) .nivo-caption {
-	opacity: 1 !important;
-}
-
-.nivo-caption {
-	display: none;
-}

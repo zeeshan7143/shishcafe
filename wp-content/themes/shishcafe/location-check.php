@@ -3,6 +3,7 @@ if (! defined('ABSPATH')) exit;
 
 /**
  * Enqueue separate JS file
+ * <!-- When change location while other locations product already in cart  -->
  */
 add_action('wp_enqueue_scripts', function () {
 

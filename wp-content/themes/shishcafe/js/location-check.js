@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
 
     // console.log('wc_loc_guard object:', wc_loc_guard);
@@ -17,13 +16,12 @@ jQuery(document).ready(function ($) {
                 <div id="location-popup">
                     <span id="close-popup">✕</span>
                     <p> 
-                        You’re switching from your previous location <strong style="text-transform: capitalize">${currentLocation}</strong> to a new location <strong style="text-transform: capitalize">${newLocation}</strong>.<br>
-                        Your cart currently contains items from the old location.
-                        To continue, please choose one of the options below:
+                        You are switching from <strong style="text-transform: capitalize">${currentLocation}</strong> to <strong style="text-transform: capitalize">${newLocation}</strong>.<br>
+                        Your cart contains items from the previous location. Please choose how to proceed:
                     </p>
                     <div class="buttons">
-                        <button id="location-keep-cart">Proceed to Checkout with Current Items</button>
-                        <button id="location-clear-cart">Clear Cart & Change Location</button>
+                        <button id="location-keep-cart">Keep Current Location & Checkout</button>
+                        <button id="location-clear-cart">Change Location & Clear Cart</button>
                     </div>
                 </div>
             </div>

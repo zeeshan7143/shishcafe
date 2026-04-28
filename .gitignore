@@ -1,0 +1,18 @@
+# Ignore everything by default.
+*
+
+# Keep this file tracked.
+!.gitignore
+
+# Allow wp-content so we can selectively unignore subfolders.
+!wp-content/
+
+# Allow all themes.
+!wp-content/themes/
+!wp-content/themes/**
+
+# Ignore all plugins, then allow only shish-cafe-api.
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/shish-cafe-api/
+!wp-content/plugins/shish-cafe-api/**
