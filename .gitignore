@@ -11,8 +11,8 @@
 !wp-content/themes/
 !wp-content/themes/**
 
-# Ignore all plugins, then allow only shinsh-cafe-api.
+# Ignore all plugins, then allow only shish-cafe-api.
 !wp-content/plugins/
 wp-content/plugins/*
-!wp-content/plugins/shinsh-cafe-api/
-!wp-content/plugins/shinsh-cafe-api/**
+!wp-content/plugins/shish-cafe-api/
+!wp-content/plugins/shish-cafe-api/**

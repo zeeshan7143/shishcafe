@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Plugin Name: Shinsh Cafe API
+ * Plugin Name: Shish Cafe API
  * Description: Custom REST API endpoints for fetching and printing WooCommerce order data.
  * Version: 1.2
  * Author: Enigmatix Global
  * Author URI: https://enigmatixglobal.com/
- * Text Domain: shinsh-cafe-api
+ * Text Domain: shish-cafe-api
  */
 
 // Exit if accessed directly
@@ -17,7 +17,71 @@ if (!defined('ABSPATH')) {
 // require_once __DIR__ . '/includes/class-nocache-routes.php';
 // require_once __DIR__ . '/includes/class-cache-cleaner.php';
 // Additional FUnctional file
-require_once plugin_dir_path(__FILE__) . '/includes/shinsh-cafe-extra.php';
+require_once plugin_dir_path(__FILE__) . '/includes/shish-cafe-extra.php';
+require_once plugin_dir_path(__FILE__) . '/includes/users/users-location-loader.php';
+require_once plugin_dir_path(__FILE__) . '/includes/devices/class-shish-cafe-devices-api.php';
+
+// ✅ Firebase Integration
+require_once plugin_dir_path(__FILE__) . '/includes/firebase/class-firebase-service.php';
+require_once plugin_dir_path(__FILE__) . '/includes/firebase/class-order-notifications.php';
+
+// =======================
+// PLUGIN ACTIVATION
+// =======================
+register_activation_hook(__FILE__, 'shish_cafe_plugin_activation');
+
+function shish_cafe_plugin_activation()
+{
+    // Remove legacy shinsh_manager role if it exists
+    $old_role = get_role('shinsh_manager');
+    if ($old_role) {
+        remove_role('shinsh_manager');
+    }
+
+    // Remove old 'Manager' role and migrate users to 'Orders Manager'
+    $old_manager_role = get_role('Manager');
+    if ($old_manager_role) {
+        // Get all users with the old 'Manager' role
+        $users = get_users(['role' => 'Manager']);
+        
+        // Migrate each user to the new 'Orders Manager' role
+        foreach ($users as $user) {
+            $user->set_role('Orders Manager');
+        }
+        
+        // Remove the old 'Manager' role
+        remove_role('Manager');
+    }
+
+    // Create the new 'Orders Manager' role if it doesn't exist
+    if (!get_role('Orders Manager')) {
+        add_role(
+            'Orders Manager',
+            __('Orders Manager', 'shish-cafe-api'),
+            [
+                'read' => true,
+            ]
+        );
+    }
+
+    // Only create default locations on first installation
+    $existing_locations = get_option('shish_cafe_locations', null);
+    
+    if ($existing_locations === null) {
+        // First time - create default locations (order doesn't matter now that we have empty option)
+        $default_locations = ['Oldham', 'Manchester', 'Stockport', 'Rochdale'];
+        update_option('shish_cafe_locations', $default_locations, false);
+    }
+}
+
+// =======================
+// INITIALIZE FIREBASE
+// =======================
+// Initialize Order Notifications when plugins are loaded
+add_action('plugins_loaded', function() {
+    new Shish_Cafe_Order_Notifications();
+});
+
 /**
  * Always set new orders to On-Hold right after creation
  */
@@ -74,7 +138,7 @@ add_action('woocommerce_order_status_on-hold', function ($order_id, $order = nul
     $order->save();
 }, 20, 2);
 
-function shinsh_cafe_get_order_time_meta($order, $meta_key)
+function shish_cafe_get_order_time_meta($order, $meta_key)
 {
     if (!$order instanceof WC_Order) {
         return '';
@@ -87,7 +151,7 @@ function shinsh_cafe_get_order_time_meta($order, $meta_key)
     return (string) $order->get_meta($meta_key);
 }
 
-function shinsh_cafe_get_order_reject_reason($order)
+function shish_cafe_get_order_reject_reason($order)
 {
     if (!$order instanceof WC_Order) {
         return '';
@@ -113,38 +177,38 @@ function shinsh_cafe_get_order_reject_reason($order)
 // =======================
 // REST API ROUTES
 // =======================
-add_action('rest_api_init', 'shinsh_cafe_register_api_routes');
+add_action('rest_api_init', 'shish_cafe_register_api_routes');
 
-function shinsh_cafe_register_api_routes()
+function shish_cafe_register_api_routes()
 {
     register_rest_route('print/v1', '/order/(?P<id>\d+)', [
         'methods'             => 'GET',
-        'callback'            => 'shinsh_cafe_get_order_print_data',
-        'permission_callback' => 'shinsh_cafe_validate_auth_key',
+        'callback'            => 'shish_cafe_get_order_print_data',
+        'permission_callback' => 'shish_cafe_validate_auth_key',
     ]);
 
     register_rest_route('print/v1', '/latest-order-data-print', [
         'methods'             => 'GET',
-        'callback'            => 'shinsh_cafe_get_latest_order_id',
-        'permission_callback' => 'shinsh_cafe_validate_auth_key',
+        'callback'            => 'shish_cafe_get_latest_order_id',
+        'permission_callback' => 'shish_cafe_validate_auth_key',
     ]);
 
     register_rest_route('print/v1', '/recent-orders', [
         'methods'             => 'GET',
-        'callback'            => 'shinsh_cafe_get_recent_orders',
-        'permission_callback' => 'shinsh_cafe_validate_auth_key',
+        'callback'            => 'shish_cafe_get_recent_orders',
+        'permission_callback' => 'shish_cafe_validate_auth_key',
     ]);
     register_rest_route('order-manager/v1', '/update-order', [
         'methods'             => 'POST',
         'callback'            => 'custom_update_order_status',
-        'permission_callback' => 'shinsh_cafe_validate_auth_key',
+        'permission_callback' => 'shish_cafe_validate_auth_key',
     ]);
 }
 
 // =======================
 // AUTH VALIDATION
 // =======================
-function shinsh_cafe_validate_auth_key($request)
+function shish_cafe_validate_auth_key($request)
 {
     if (!defined('PRINT_API_KEY')) {
         return new WP_Error('api_key_not_defined', 'API key is not defined in wp-config.php.', ['status' => 500]);
@@ -156,7 +220,7 @@ function shinsh_cafe_validate_auth_key($request)
 // =======================
 // LATEST ORDER ENDPOINT
 // =======================
-function shinsh_cafe_get_latest_order_id()
+function shish_cafe_get_latest_order_id()
 {
     nocache_headers();
     $orders = wc_get_orders([
@@ -164,6 +228,17 @@ function shinsh_cafe_get_latest_order_id()
         'orderby' => 'id',
         'order'   => 'DESC',
     ]);
+
+    // if (!empty($orders)) {
+    //     $order = $orders[0];
+    //     return new WP_REST_Response([
+    //         'success'  => true,
+    //         'order_id' => $order->get_id()
+    //     ], 200);
+    // }
+
+    // return new WP_REST_Response(['success' => false, 'message' => 'No orders found'], 404);
+
 
     if (!empty($orders)) {
         $order = $orders[0];
@@ -174,7 +249,7 @@ function shinsh_cafe_get_latest_order_id()
         $request->set_param('id', $order_id);
         
         // Return the full order details using the same function as /order/{id}
-        return shinsh_cafe_get_order_print_data($request->get_json_params() ?: ['id' => $order_id]);
+        return shish_cafe_get_order_print_data($request->get_json_params() ?: ['id' => $order_id]);
     }
 
     return new WP_REST_Response(['success' => false, 'message' => 'No orders found'], 404);
@@ -239,7 +314,7 @@ function custom_update_order_status(WP_REST_Request $request)
     $order->save();
 
     // regenerate print file (keep it fresh)
-    shinsh_cafe_generate_order_html($order);
+    shish_cafe_generate_order_html($order);
 
     // ✅ Build same structured response as /recent-orders
     $locations = [];
@@ -298,10 +373,10 @@ function custom_update_order_status(WP_REST_Request $request)
             'address'   => $billing_address,
             'total'     => $clean_total,
             'status'    => $custom_status,
-            'prep_time' => shinsh_cafe_get_order_time_meta($order, '_order_prep_time'),
-            'reject_reason' => shinsh_cafe_get_order_reject_reason($order),
-            'ar_date_time' => shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time'),
-            'due_time' => shinsh_cafe_get_order_time_meta($order, '_order_due_time'),
+            'prep_time' => shish_cafe_get_order_time_meta($order, '_order_prep_time'),
+            'reject_reason' => shish_cafe_get_order_reject_reason($order),
+            'ar_date_time' => shish_cafe_get_order_time_meta($order, '_order_ar_date_time'),
+            'due_time' => shish_cafe_get_order_time_meta($order, '_order_due_time'),
         ]
     ], 200);
 }
@@ -309,7 +384,7 @@ function custom_update_order_status(WP_REST_Request $request)
 // =======================
 // RECENT 10 ORDERS ENDPOINT (Fresh Data)
 // =======================
-function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
+function shish_cafe_get_recent_orders(WP_REST_Request $request)
 {
     $location_filter = sanitize_text_field($request->get_param('location'));
     $status_filter_raw = sanitize_text_field((string) $request->get_param('status'));
@@ -456,8 +531,8 @@ function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
             'address'       => $address,
             'total'         => wp_strip_all_tags($wc_order->get_formatted_order_total()),
             'status'        => wc_get_order_status_name($wc_order->get_status()),
-            'prep_time'     => shinsh_cafe_get_order_time_meta($wc_order, '_order_prep_time'),
-            'reject_reason' => shinsh_cafe_get_order_reject_reason($wc_order),
+            'prep_time'     => shish_cafe_get_order_time_meta($wc_order, '_order_prep_time'),
+            'reject_reason' => shish_cafe_get_order_reject_reason($wc_order),
         ];
     }
 
@@ -477,7 +552,7 @@ function shinsh_cafe_get_recent_orders(WP_REST_Request $request)
  * Accepts either WC_Order object or order ID.
  * Returns full file path on success, false on failure.
  */
-function shinsh_cafe_generate_order_html($order_or_id)
+function shish_cafe_generate_order_html($order_or_id)
 {
     if (is_numeric($order_or_id)) {
         $order = wc_get_order(intval($order_or_id));
@@ -491,8 +566,8 @@ function shinsh_cafe_generate_order_html($order_or_id)
 
     // Build data (same logic as your print assembly)
     $order_id = $order->get_id();
-    $ar_date_time = trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time'));
-    $due_time = trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time'));
+    $ar_date_time = trim(shish_cafe_get_order_time_meta($order, '_order_ar_date_time'));
+    $due_time = trim(shish_cafe_get_order_time_meta($order, '_order_due_time'));
     // Get order type (Delivery / Pickup)
     $order_type = $order->get_meta('_custom_delivery_option');
     if (!$order_type) {
@@ -978,7 +1053,14 @@ function shinsh_cafe_generate_order_html($order_or_id)
                 <span><?php echo esc_html($clean_total); ?></span>
             </div>
             <div style="border-top:1px solid #000;margin:6px 0;"></div>
-            <?php if (!empty($status) && strtolower($status) != 'cancelled'): ?>
+            <?php 
+            $order_status = $order->get_status();
+            if ($order_status === 'completed'): ?>
+                <div style="text-align:center;font-size:18px;font-weight:bold;margin-bottom:4px;line-height:1.2; text-transform: uppercase;">
+                    Order is completed
+                </div>
+                <div style="border-top:1px solid #000;margin:6px 0;"></div>
+            <?php elseif (!empty($order_status) && $order_status !== 'cancelled'): ?>
                 <div style="text-align:center;font-size:18px;font-weight:bold;margin-bottom:4px;line-height:1.2; text-transform: uppercase;">
                     Order has been paid
                 </div>
@@ -1071,12 +1153,12 @@ function shinsh_cafe_generate_order_html($order_or_id)
     $html = ob_get_clean();
 
     // Save file
-    return shinsh_cafe_save_temp_html_file($order_id, $html);
+    return shish_cafe_save_temp_html_file($order_id, $html);
 }
 // =======================
 // ORDER PRINT DATA (updated to regenerate conditionally)
 // =======================
-function shinsh_cafe_get_order_print_data($data)
+function shish_cafe_get_order_print_data($data)
 {
     $order_id = intval($data['id']);
     $order    = wc_get_order($order_id);
@@ -1109,7 +1191,7 @@ function shinsh_cafe_get_order_print_data($data)
     if (file_exists($file_path)) {
         @unlink($file_path);
     }
-    shinsh_cafe_generate_order_html($order);
+    shish_cafe_generate_order_html($order);
 
     // Collect products for JSON output
     $products = [];
@@ -1313,8 +1395,8 @@ function shinsh_cafe_get_order_print_data($data)
             'order_number' => $order->get_order_number(),
             'order_type' => $order_type ? ucfirst($order_type) : 'Unknown',
             'date' => wc_format_datetime($order->get_date_created(), 'd-m-y h:i A'),
-            'ar_date_time' => trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time')),
-            'due_time' => trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time')),
+            'ar_date_time' => trim(shish_cafe_get_order_time_meta($order, '_order_ar_date_time')),
+            'due_time' => trim(shish_cafe_get_order_time_meta($order, '_order_due_time')),
             'customer' => [
                 'name' => $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(),
                 'phone' => $order->get_billing_phone(),
@@ -1341,8 +1423,10 @@ function shinsh_cafe_get_order_print_data($data)
         'delivery_fee'    => $delivery_fee,
         'total'           => $final_total,
         'status'          => wc_get_order_status_name($order->get_status()),
-        'ar_date_time'    => trim(shinsh_cafe_get_order_time_meta($order, '_order_ar_date_time')),
-        'due_time'        => trim(shinsh_cafe_get_order_time_meta($order, '_order_due_time')),
+        'order_time'      => $order->get_date_created() ? $order->get_date_created()->date('Y-m-d H:i:s') : '',
+        'reject_reason'   => shish_cafe_get_order_reject_reason($order),
+        'ar_date_time'    => trim(shish_cafe_get_order_time_meta($order, '_order_ar_date_time')),
+        'due_time'        => trim(shish_cafe_get_order_time_meta($order, '_order_due_time')),
         'print_file_path' => $file_path,
         'print_file_url'  => $file_url,
         'html_output'     => $html_output,
@@ -1354,7 +1438,7 @@ function shinsh_cafe_get_order_print_data($data)
 // =======================
 // SAVE HTML FILE
 // =======================
-function shinsh_cafe_save_temp_html_file($order_id, $html)
+function shish_cafe_save_temp_html_file($order_id, $html)
 {
     $upload_dir = wp_upload_dir();
     $folder = trailingslashit($upload_dir['basedir']) . 'order-prints/';
@@ -1379,13 +1463,13 @@ function shinsh_cafe_save_temp_html_file($order_id, $html)
 
 // Schedule event if not already scheduled
 add_action('init', function () {
-    if (!wp_next_scheduled('shinsh_cafe_cleanup_old_prints')) {
-        wp_schedule_event(time(), 'daily', 'shinsh_cafe_cleanup_old_prints');
+    if (!wp_next_scheduled('shish_cafe_cleanup_old_prints')) {
+        wp_schedule_event(time(), 'daily', 'shish_cafe_cleanup_old_prints');
     }
 });
 
 // The cleanup handler
-add_action('shinsh_cafe_cleanup_old_prints', function () {
+add_action('shish_cafe_cleanup_old_prints', function () {
     $upload_dir = wp_upload_dir();
     $dir        = trailingslashit($upload_dir['basedir']) . 'order-prints/';
     if (!is_dir($dir)) return;
@@ -1399,9 +1483,9 @@ add_action('shinsh_cafe_cleanup_old_prints', function () {
 
 // Optional: clear scheduled event on plugin deactivation
 register_deactivation_hook(__FILE__, function () {
-    $timestamp = wp_next_scheduled('shinsh_cafe_cleanup_old_prints');
+    $timestamp = wp_next_scheduled('shish_cafe_cleanup_old_prints');
     if ($timestamp) {
-        wp_unschedule_event($timestamp, 'shinsh_cafe_cleanup_old_prints');
+        wp_unschedule_event($timestamp, 'shish_cafe_cleanup_old_prints');
     }
 });
 
@@ -1413,16 +1497,16 @@ add_action('save_post_shop_order', function ($post_id, $post, $update) {
     if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
     $order = wc_get_order($post_id);
     if ($order) {
-        shinsh_cafe_generate_order_html($order);
+        shish_cafe_generate_order_html($order);
     }
 }, 10, 3);
 
 // =======================
 // AUTO CLEANUP (delete old order print files > 7 days)
 // =======================
-add_action('shinsh_cafe_cleanup_prints', 'shinsh_cafe_delete_old_prints');
+add_action('shish_cafe_cleanup_prints', 'shish_cafe_delete_old_prints');
 
-function shinsh_cafe_delete_old_prints()
+function shish_cafe_delete_old_prints()
 {
     $upload_dir = wp_upload_dir();
     $folder = trailingslashit($upload_dir['basedir']) . 'order-prints/';
@@ -1441,12 +1525,12 @@ function shinsh_cafe_delete_old_prints()
 
 // Schedule daily cleanup on plugin activation
 register_activation_hook(__FILE__, function () {
-    if (!wp_next_scheduled('shinsh_cafe_cleanup_prints')) {
-        wp_schedule_event(time(), 'daily', 'shinsh_cafe_cleanup_prints');
+    if (!wp_next_scheduled('shish_cafe_cleanup_prints')) {
+        wp_schedule_event(time(), 'daily', 'shish_cafe_cleanup_prints');
     }
 });
 
 // Clear schedule on plugin deactivation
 register_deactivation_hook(__FILE__, function () {
-    wp_clear_scheduled_hook('shinsh_cafe_cleanup_prints');
+    wp_clear_scheduled_hook('shish_cafe_cleanup_prints');
 });

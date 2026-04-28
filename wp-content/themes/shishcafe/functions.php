@@ -276,8 +276,8 @@ define('STORE_ADDRESS', 'Railway Station, Bahawalpur, Pakistan');
 
 
 define('PRINT_API_KEY', 'f188d88d-94f6-4d5a-8e9c-46e145du8G89');
-define('SHINSH_CAFE_CONSUMER_KEY', 'ck_533bbba188d55bc1d0eadab9732b5bcc2d191194');
-define('SHINSH_CAFE_CONSUMER_SECRET', 'cs_6c44ecf596004c1b06e8a9bf32247f0fe29bd464');
+define('SHISH_CAFE_CONSUMER_KEY', 'ck_533bbba188d55bc1d0eadab9732b5bcc2d191194');
+define('SHISH_CAFE_CONSUMER_SECRET', 'cs_6c44ecf596004c1b06e8a9bf32247f0fe29bd464');
 
 
 
